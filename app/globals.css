@@ -1,100 +1,105 @@
 @import "tailwindcss";
 
 @theme {
-  --font-body: var(--font-hanken), "Hanken Grotesk", sans-serif;
-  --font-display: var(--font-hanken), "Hanken Grotesk", sans-serif;
+  /* ── Fonts ── */
+  --font-display: var(--font-jakarta), "Plus Jakarta Sans", sans-serif;
+  --font-body:    var(--font-hanken),  "Hanken Grotesk",   sans-serif;
 
-  /* Border radius */
-  --radius: 0.125rem;
-  --radius-lg: 0.25rem;
-  --radius-xl: 0.5rem;
-  --radius-2xl: 1rem;
+  /* ── Border radius (Light Tech — rounder) ── */
+  --radius:      0.25rem;   /* xs — chips, tags */
+  --radius-lg:   0.5rem;    /* buttons, inputs */
+  --radius-xl:   1rem;      /* cards, panels */
+  --radius-2xl:  1.5rem;    /* large containers */
   --radius-full: 9999px;
 
-  /* ── Ocean — Deep Atlantic Authority ── */
-  --color-ocean-900: #0b1f2a;
-  --color-ocean-800: #102f3e;
-  --color-ocean-700: #15506a;
-  --color-ocean-600: #1b6a86;
+  /* ═══════════════════════════════════════════════════════
+     PEGASUS PIXELS — LIGHT TECH SYSTEM
+     Source: Stitch asset/604b6c3d872942fd90c2a5de62237895
+     ═══════════════════════════════════════════════════════ */
 
-  /* ── Sun — Conversion Energy ── */
-  --color-sun-600: #f2b84b;
-  --color-sun-500: #f6c462;
-  --color-sun-400: #ffd27a;
-  --color-sun-300: #ffe3a3;
+  /* ── Steel Blue (brand authority / headings / structure) ── */
+  --color-ocean-900: #181c21;
+  --color-ocean-800: #2d3136;
+  --color-ocean-700: #0037b0;
+  --color-ocean-600: #1d4ed8;
 
-  /* ── Sky — Atmospheric Background ── */
-  --color-sky-100: #f4f9fb;
-  --color-sky-200: #e6f2f7;
-  --color-sky-300: #cfe6f0;
-  --color-sky-400: #a9d3e2;
+  /* ── Accent Yellow (conversion / CTAs) ── */
+  --color-sun-600: #facc15;
+  --color-sun-500: #fde047;
+  --color-sun-400: #fef08a;
+  --color-sun-300: #fef9c3;
 
-  /* ── Sand — Warm Foundation ── */
-  --color-sand-50: #fbf7f1;
-  --color-sand-100: #f3e9dc;
-  --color-sand-200: #e6d6c2;
-  --color-sand-300: #d2bea3;
+  /* ── Cool Blue-Gray (backgrounds / text on dark) ── */
+  --color-sky-100: #f8f9ff;
+  --color-sky-200: #ebeef5;
+  --color-sky-300: #c4c5d7;
+  --color-sky-400: #9899b0;
 
-  /* ── Ink — Readable Authority ── */
-  --color-ink-900: #0e1215;
-  --color-ink-800: #1a2328;
-  --color-ink-700: #2a353b;
-  --color-ink-600: #3c4a52;
+  /* ── Neutral Light (surfaces / cards) ── */
+  --color-sand-50:  #ffffff;
+  --color-sand-100: #f1f3fb;
+  --color-sand-200: #e5e8f0;
+  --color-sand-300: #c4c5d7;
+
+  /* ── Ink (typography scale) ── */
+  --color-ink-900: #181c21;
+  --color-ink-800: #2d3136;
+  --color-ink-700: #434655;
+  --color-ink-600: #5a5e70;
 
   /* ── Semantic aliases ── */
 
-  /* Surfaces — warm, never pure white */
-  --color-surface: #fbf7f1;             /* sand-50: nav bg, cards, panels */
-  --color-surface-container: #f4f9fb;   /* sky-100: main page background */
-  --color-surface-container-high: #e6f2f7; /* sky-200: section contrast / stats strip */
-  --color-surface-container-highest: #cfe6f0; /* sky-300 */
+  /* Surfaces */
+  --color-surface:                    #ffffff;   /* cards, nav panels */
+  --color-surface-container:          #f8f9ff;   /* page background */
+  --color-surface-container-high:     #ebeef5;   /* section contrast */
+  --color-surface-container-highest:  #e5e8f0;   /* stats strip */
 
   /* Text */
-  --color-on-surface: #0e1215;          /* ink-900: primary text */
-  --color-on-surface-variant: #2a353b;  /* ink-700: secondary text */
-  --color-on-primary: #0b1f2a;          /* ocean-900: text on sun buttons */
+  --color-on-surface:         #181c21;   /* primary headings */
+  --color-on-surface-variant: #434655;   /* body / secondary text */
+  --color-on-primary:         #ffffff;   /* text on blue CTA */
 
   /* Brand */
-  --color-primary: #f2b84b;             /* sun-600: CTAs only */
-  --color-primary-hover: #f6c462;       /* sun-500: CTA hover */
-  --color-primary-variant: #15506a;     /* ocean-700: icons, labels, structural accents */
+  --color-primary:         #1d4ed8;   /* blue — primary CTA */
+  --color-primary-hover:   #2563eb;   /* blue hover */
+  --color-primary-variant: #0037b0;   /* deep blue — icons, labels */
 
   /* Structure */
-  --color-outline: #e6d6c2;             /* sand-200: all borders */
-  --color-background: #f4f9fb;          /* sky-100: page bg */
+  --color-outline:    #c4c5d7;   /* all borders */
+  --color-background: #f8f9ff;   /* html background */
 
   /* Semantic */
-  --color-secondary: #2a353b;
-  --color-success: #22c55e;
+  --color-secondary: #434655;
+  --color-success:   #22c55e;
 
-  /* Typography scale */
-  --text-display-lg: 72px;
-  --text-display-lg--line-height: 1.1;
-  --text-display-lg--letter-spacing: -0.03em;
-  --text-display-lg--font-weight: 600;
+  /* ── Typography scale ── */
+  --text-display-lg:                  48px;
+  --text-display-lg--line-height:     1.1;
+  --text-display-lg--letter-spacing:  -0.02em;
+  --text-display-lg--font-weight:     700;
 
-  --text-headline-lg: 48px;
-  --text-headline-lg--line-height: 1.2;
-  --text-headline-lg--letter-spacing: -0.02em;
-  --text-headline-lg--font-weight: 500;
+  --text-headline-lg:                 32px;
+  --text-headline-lg--line-height:    1.2;
+  --text-headline-lg--letter-spacing: -0.01em;
+  --text-headline-lg--font-weight:    600;
 
-  --text-headline-md: 24px;
-  --text-headline-md--line-height: 1.4;
-  --text-headline-md--letter-spacing: -0.01em;
-  --text-headline-md--font-weight: 500;
+  --text-headline-md:               24px;
+  --text-headline-md--line-height:  1.3;
+  --text-headline-md--font-weight:  600;
 
-  --text-body-lg: 18px;
-  --text-body-lg--line-height: 1.6;
-  --text-body-lg--font-weight: 400;
+  --text-body-lg:               18px;
+  --text-body-lg--line-height:  1.6;
+  --text-body-lg--font-weight:  400;
 
-  --text-body-md: 16px;
-  --text-body-md--line-height: 1.6;
-  --text-body-md--font-weight: 400;
+  --text-body-md:               16px;
+  --text-body-md--line-height:  1.5;
+  --text-body-md--font-weight:  400;
 
-  --text-label-sm: 12px;
-  --text-label-sm--line-height: 1;
-  --text-label-sm--letter-spacing: 0.1em;
-  --text-label-sm--font-weight: 600;
+  --text-label-sm:                  13px;
+  --text-label-sm--line-height:     1;
+  --text-label-sm--letter-spacing:  0.08em;
+  --text-label-sm--font-weight:     600;
 }
 
 /* ── Keyframe animations ── */
@@ -115,9 +120,9 @@
 }
 
 /* Hero load animations */
-.anim-fade-up   { animation: fadeUp   0.75s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.anim-fade-up    { animation: fadeUp   0.75s cubic-bezier(0.16, 1, 0.3, 1) both; }
 .anim-fade-right { animation: fadeRight 0.85s cubic-bezier(0.16, 1, 0.3, 1) both; }
-.anim-fade-in   { animation: fadeIn   0.6s ease both; }
+.anim-fade-in    { animation: fadeIn   0.6s ease both; }
 
 /* Staggered delays */
 .delay-0   { animation-delay: 0ms; }
@@ -131,9 +136,9 @@
 /* Scroll-triggered animation (JS adds .in-view) */
 .scroll-fade-up {
   opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(24px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .scroll-fade-up.in-view {
   opacity: 1;
@@ -149,9 +154,23 @@
 }
 .hero-photo:hover {
   transform: scale(1.03) translateY(-6px);
-  filter: brightness(1.06);
-  box-shadow: 0 24px 60px -12px rgba(11, 31, 42, 0.22),
-              0 0 0 2px rgba(242, 184, 75, 0.3);
+  filter: brightness(1.04);
+  box-shadow: 0 24px 60px -12px rgba(11, 15, 20, 0.16),
+              0 0 0 2px rgba(29, 78, 216, 0.25);
+}
+
+/* Light Tech elevation system */
+.coastal-shadow {
+  box-shadow: 0 4px 20px rgba(11, 15, 20, 0.08);
+}
+
+.hover-lift {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.5s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(11, 15, 20, 0.12);
 }
 
 *,
@@ -165,29 +184,23 @@ html {
 }
 
 body {
-  background-color: #f4f9fb;
-  color: #0e1215;
+  background-color: #f8f9ff;
+  color: #181c21;
   font-family: var(--font-hanken), "Hanken Grotesk", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Headlines use Plus Jakarta Sans */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-jakarta), "Plus Jakarta Sans", sans-serif;
+}
+
 ::selection {
-  background-color: #ffd27a;
-  color: #0b1f2a;
+  background-color: #1d4ed8;
+  color: #ffffff;
 }
 
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-}
-
-.coastal-shadow {
-  box-shadow: 0 10px 40px -15px rgba(11, 31, 42, 0.14);
-}
-
-.hover-lift {
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.hover-lift:hover {
-  transform: translateY(-4px);
 }

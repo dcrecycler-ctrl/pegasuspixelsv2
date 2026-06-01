@@ -49,13 +49,13 @@ export function Nav() {
 
   return (
     <nav
-      className={`top-0 sticky z-50 border-b border-outline/40 h-20 transition-all duration-300 backdrop-blur-md ${
+      className={`top-0 sticky z-50 border-b border-outline/40 transition-all duration-300 backdrop-blur-md ${
         scrolled
-          ? "bg-white/95 coastal-shadow"
-          : "bg-white/10"
+          ? "bg-white/98 coastal-shadow"
+          : "bg-white/90"
       }`}
     >
-      <div className="flex justify-between items-center w-full px-5 md:px-16 h-full max-w-[1440px] mx-auto">
+      <div className="flex justify-between items-center w-full px-5 md:px-16 h-20 max-w-[1440px] mx-auto">
         {/* Logo */}
         <Link
           href="/"
