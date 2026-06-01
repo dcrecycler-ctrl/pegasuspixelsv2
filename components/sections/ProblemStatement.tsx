@@ -14,13 +14,13 @@ export function ProblemStatement() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div className="space-y-3">
-                <span className="text-label-sm text-primary uppercase">Desconexión</span>
+                <span className="text-label-sm text-primary-variant uppercase">Desconexión</span>
                 <p className="text-body-md text-on-surface-variant">
                   Sitios web y plataformas que no reflejan la exclusividad de su marca.
                 </p>
               </div>
               <div className="space-y-3">
-                <span className="text-label-sm text-primary uppercase">Fricción</span>
+                <span className="text-label-sm text-primary-variant uppercase">Fricción</span>
                 <p className="text-body-md text-on-surface-variant">
                   Procesos de gestión manuales que ralentizan el crecimiento y la atención.
                 </p>

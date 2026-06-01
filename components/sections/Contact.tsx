@@ -63,11 +63,11 @@ export function Contact() {
           <div className="space-y-8">
             {/* Email */}
             <div className="flex items-center gap-6">
-              <span className="material-symbols-outlined text-primary bg-surface-container p-4 rounded-full border border-outline/30">
+              <span className="material-symbols-outlined text-primary-variant bg-surface-container p-4 rounded-full border border-outline/30">
                 mail
               </span>
               <div>
-                <span className="block text-label-sm text-primary uppercase mb-1">
+                <span className="block text-label-sm text-primary-variant uppercase mb-1">
                   Email
                 </span>
                 <a
@@ -81,11 +81,11 @@ export function Contact() {
 
             {/* Location */}
             <div className="flex items-center gap-6">
-              <span className="material-symbols-outlined text-primary bg-surface-container p-4 rounded-full border border-outline/30">
+              <span className="material-symbols-outlined text-primary-variant bg-surface-container p-4 rounded-full border border-outline/30">
                 location_on
               </span>
               <div>
-                <span className="block text-label-sm text-primary uppercase mb-1">
+                <span className="block text-label-sm text-primary-variant uppercase mb-1">
                   Ubicación
                 </span>
                 <span className="text-body-md">
@@ -120,7 +120,7 @@ export function Contact() {
             <form onSubmit={handleSubmit} className="space-y-10">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div className="border-b border-outline pb-3">
-                  <label className="text-label-sm uppercase text-on-surface-variant block mb-2">
+                  <label className="text-label-sm uppercase text-ink-600 block mb-2">
                     Nombre
                   </label>
                   <input
@@ -133,7 +133,7 @@ export function Contact() {
                   />
                 </div>
                 <div className="border-b border-outline pb-3">
-                  <label className="text-label-sm uppercase text-on-surface-variant block mb-2">
+                  <label className="text-label-sm uppercase text-ink-600 block mb-2">
                     Empresa
                   </label>
                   <input
@@ -149,7 +149,7 @@ export function Contact() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div className="border-b border-outline pb-3">
-                  <label className="text-label-sm uppercase text-on-surface-variant block mb-2">
+                  <label className="text-label-sm uppercase text-ink-600 block mb-2">
                     Email
                   </label>
                   <input
@@ -162,7 +162,7 @@ export function Contact() {
                   />
                 </div>
                 <div className="border-b border-outline pb-3">
-                  <label className="text-label-sm uppercase text-on-surface-variant block mb-2">
+                  <label className="text-label-sm uppercase text-ink-600 block mb-2">
                     Teléfono
                   </label>
                   <input
@@ -176,7 +176,7 @@ export function Contact() {
               </div>
 
               <div className="border-b border-outline pb-3">
-                <label className="text-label-sm uppercase text-on-surface-variant block mb-2">
+                <label className="text-label-sm uppercase text-ink-600 block mb-2">
                   Mensaje
                 </label>
                 <textarea

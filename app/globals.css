@@ -11,32 +11,63 @@
   --radius-2xl: 1rem;
   --radius-full: 9999px;
 
-  /* ─── Color Palette ─── */
+  /* ── Named tokens (use these for precise targeting) ── */
+
+  /* Ocean — Deep Authority */
+  --color-ocean-900: #0b1f2a;
+  --color-ocean-800: #0f2e3d;
+  --color-ocean-700: #123f52;
+  --color-ocean-600: #16556e;
+
+  /* Sun — Conversion Energy */
+  --color-sun-600: #f2b84b;
+  --color-sun-500: #f6c462;
+  --color-sun-400: #ffd27a;
+  --color-sun-300: #ffe3a3;
+
+  /* Sky — Atmospheric Background */
+  --color-sky-100: #f4f9fb;
+  --color-sky-200: #e6f2f7;
+  --color-sky-300: #cfe6f0;
+  --color-sky-400: #a9d3e2;
+
+  /* Sand — Warm Foundation */
+  --color-sand-50: #fbf7f1;
+  --color-sand-100: #f3e9dc;
+  --color-sand-200: #e6d6c2;
+  --color-sand-300: #d2bea3;
+
+  /* Ink — Readable Authority */
+  --color-ink-900: #0e1215;
+  --color-ink-800: #1a2328;
+  --color-ink-700: #2a353b;
+  --color-ink-600: #3c4a52;
+
+  /* ── Semantic aliases (used by all utility classes) ── */
 
   /* Surfaces */
-  --color-surface: #ffffff;
-  --color-surface-container: #f5f7fb;
-  --color-surface-container-high: #eef3ff;
-  --color-surface-container-highest: #e4e9f2;
+  --color-surface: #fbf7f1;             /* sand-50: warm base */
+  --color-surface-container: #f4f9fb;   /* sky-100: main page background */
+  --color-surface-container-high: #e6f2f7; /* sky-200: section contrast */
+  --color-surface-container-highest: #cfe6f0; /* sky-300 */
 
   /* Text */
-  --color-on-surface: #0b1220;
-  --color-on-surface-variant: #5a6475;
-  --color-on-primary: #ffffff;
+  --color-on-surface: #0e1215;          /* ink-900: primary text */
+  --color-on-surface-variant: #2a353b;  /* ink-700: secondary text */
+  --color-on-primary: #0e1215;          /* ink-900: dark text on sun buttons */
 
   /* Brand */
-  --color-primary: #2563ff;
-  --color-primary-hover: #1e4ed8;
-  --color-primary-variant: #00c2ff;
-  --color-secondary: #5a6475;
+  --color-primary: #f2b84b;             /* sun-600: CTAs only */
+  --color-primary-hover: #f6c462;       /* sun-500: CTA hover */
+  --color-primary-variant: #16556e;     /* ocean-600: links, labels, icons, structure */
+  --color-secondary: #2a353b;           /* ink-700 */
 
-  /* Structural */
-  --color-outline: #e4e9f2;
-  --color-background: #f5f7fb;
+  /* Structure */
+  --color-outline: #e6d6c2;             /* sand-200: all borders */
+  --color-background: #f4f9fb;          /* sky-100 */
 
   /* Semantic */
   --color-success: #22c55e;
-  --color-cta-urgency: #f97316;
 
   /* Typography scale */
   --text-display-lg: 72px;
@@ -79,24 +110,25 @@ html {
 }
 
 body {
-  background-color: #f5f7fb;
-  color: #0b1220;
+  background-color: #f4f9fb;
+  color: #0e1215;
   font-family: var(--font-hanken), "Hanken Grotesk", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
-  background-color: color-mix(in srgb, #2563ff 20%, transparent);
-  color: #0b1220;
+  background-color: #ffd27a;
+  color: #0e1215;
 }
 
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
 }
 
+/* Shadow using ocean-900 base for warmth */
 .coastal-shadow {
-  box-shadow: 0 10px 40px -15px rgba(11, 18, 32, 0.12);
+  box-shadow: 0 10px 40px -15px rgba(11, 31, 42, 0.14);
 }
 
 .hover-lift {

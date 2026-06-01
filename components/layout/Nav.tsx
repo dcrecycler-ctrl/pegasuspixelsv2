@@ -30,7 +30,7 @@ export function Nav() {
         {/* Logo */}
         <Link
           href="/"
-          className="text-headline-md font-bold text-on-surface tracking-tighter hover:text-primary transition-colors duration-300"
+          className="text-headline-md font-bold text-on-surface tracking-tighter hover:text-primary-variant transition-colors duration-300"
         >
           Pegasus Pixels
         </Link>
@@ -41,7 +41,7 @@ export function Nav() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-on-surface-variant hover:text-primary transition-colors duration-300 text-[16px] font-medium"
+              className="text-on-surface-variant hover:text-primary-variant transition-colors duration-300 text-[16px] font-medium"
             >
               {link.label}
             </Link>
@@ -87,7 +87,7 @@ export function Nav() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-on-surface-variant hover:text-primary transition-colors text-[16px] font-medium"
+              className="text-on-surface-variant hover:text-primary-variant transition-colors text-[16px] font-medium"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}

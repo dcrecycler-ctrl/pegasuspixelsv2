@@ -40,7 +40,7 @@ export function Solutions() {
             key={sol.title}
             className="p-10 bg-white border border-outline/30 rounded-xl hover-lift coastal-shadow"
           >
-            <span className="material-symbols-outlined text-primary text-4xl mb-8 block">
+            <span className="material-symbols-outlined text-primary-variant text-4xl mb-8 block">
               {sol.icon}
             </span>
             <h3 className="text-headline-md mb-4 text-on-surface">{sol.title}</h3>

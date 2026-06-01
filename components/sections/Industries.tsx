@@ -43,10 +43,10 @@ export function Industries() {
   return (
     <section
       id="industrias"
-      className="py-32 bg-on-surface text-surface-container"
+      className="py-32 bg-ocean-900 text-sky-100"
     >
       <div className="max-w-[1440px] mx-auto px-5 md:px-16">
-        <span className="text-label-sm text-primary-variant uppercase tracking-[0.3em] block mb-16 text-center">
+        <span className="text-label-sm text-sun-400 uppercase tracking-[0.3em] block mb-16 text-center">
           Sectores de Especialidad
         </span>
 
@@ -61,12 +61,12 @@ export function Industries() {
                 <h3 className="text-headline-lg mb-6 uppercase text-white">
                   {industry.title}
                 </h3>
-                <p className="text-body-lg text-surface-container/70 mb-10 max-w-lg">
+                <p className="text-body-lg text-sky-200 mb-10 max-w-lg">
                   {industry.description}
                 </p>
                 <Link
                   href="/portfolio"
-                  className="flex items-center gap-2 group text-label-sm uppercase tracking-widest border-b border-primary-variant pb-1 hover:text-white transition-colors w-fit"
+                  className="flex items-center gap-2 group text-label-sm text-sun-400 uppercase tracking-widest border-b border-sun-400 pb-1 hover:text-sun-300 transition-colors w-fit"
                 >
                   Ver Portfolio{" "}
                   <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform text-[18px]">

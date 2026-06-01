@@ -15,22 +15,22 @@ export function Footer() {
 
         {/* Navigation */}
         <div className="flex flex-col gap-6">
-          <span className="text-label-sm uppercase text-primary">Navegación</span>
+          <span className="text-label-sm uppercase text-primary-variant">Navegación</span>
           <a
             href="#soluciones"
-            className="text-on-surface-variant hover:text-primary transition-colors text-body-md"
+            className="text-on-surface-variant hover:text-ocean-700-variant transition-colors text-body-md"
           >
             Soluciones
           </a>
           <a
             href="#industrias"
-            className="text-on-surface-variant hover:text-primary transition-colors text-body-md"
+            className="text-on-surface-variant hover:text-ocean-700-variant transition-colors text-body-md"
           >
             Industrias
           </a>
           <a
             href="#portfolio"
-            className="text-on-surface-variant hover:text-primary transition-colors text-body-md"
+            className="text-on-surface-variant hover:text-ocean-700-variant transition-colors text-body-md"
           >
             Portfolio
           </a>
@@ -38,16 +38,16 @@ export function Footer() {
 
         {/* Legal */}
         <div className="flex flex-col gap-6">
-          <span className="text-label-sm uppercase text-primary">Legal</span>
+          <span className="text-label-sm uppercase text-primary-variant">Legal</span>
           <a
             href="#"
-            className="text-on-surface-variant hover:text-primary transition-colors text-body-md"
+            className="text-on-surface-variant hover:text-ocean-700-variant transition-colors text-body-md"
           >
             Privacidad
           </a>
           <a
             href="#"
-            className="text-on-surface-variant hover:text-primary transition-colors text-body-md"
+            className="text-on-surface-variant hover:text-ocean-700-variant transition-colors text-body-md"
           >
             Términos
           </a>

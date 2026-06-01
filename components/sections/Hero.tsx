@@ -7,7 +7,7 @@ export function Hero() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         {/* Left: Content */}
         <div className="lg:col-span-6">
-          <span className="text-label-sm text-primary uppercase tracking-[0.2em] block mb-6">
+          <span className="text-label-sm text-primary-variant uppercase tracking-[0.2em] block mb-6">
             Arquitectura de Sistemas Digitales
           </span>
           <h1 className="text-[52px] md:text-display-lg leading-[1.1] mb-8 text-on-surface">
@@ -25,7 +25,7 @@ export function Hero() {
             </Link>
             <Link
               href="/contacto"
-              className="border border-primary text-primary px-10 py-4 text-label-sm uppercase hover:bg-surface-container-high transition-colors rounded-lg text-center"
+              className="border border-primary-variant text-primary-variant px-10 py-4 text-label-sm uppercase hover:bg-sky-200 transition-colors rounded-lg text-center"
             >
               Solicitar Consulta
             </Link>
