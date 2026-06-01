@@ -1,7 +1,6 @@
 export function ProblemStatement() {
   return (
     <section
-      id="soluciones"
       className="py-32 bg-surface-container px-5 md:px-16 border-y border-outline/20"
     >
       <div className="max-w-[1440px] mx-auto">

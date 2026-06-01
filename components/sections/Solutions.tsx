@@ -23,7 +23,7 @@ const solutions = [
 
 export function Solutions() {
   return (
-    <section className="py-40 px-5 md:px-16 max-w-[1440px] mx-auto">
+    <section id="soluciones" className="py-40 px-5 md:px-16 max-w-[1440px] mx-auto">
       <div className="text-center mb-24">
         <h2 className="text-headline-lg md:text-[56px] mb-8 text-on-surface">
           Diseñamos Herramientas Que Reflejan la Calidad de Tu Negocio
