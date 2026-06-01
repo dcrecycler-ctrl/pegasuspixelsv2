@@ -46,7 +46,7 @@ export function Industries() {
       className="py-32 bg-ocean-900 text-sky-100"
     >
       <div className="max-w-[1440px] mx-auto px-5 md:px-16">
-        <span className="text-label-sm text-sun-400 uppercase tracking-[0.3em] block mb-16 text-center">
+        <span className="text-[11px] font-bold text-ocean-600 uppercase tracking-[0.12em] block mb-16 text-center">
           Sectores de Especialidad
         </span>
 
@@ -58,15 +58,15 @@ export function Industries() {
             >
               {/* Text block */}
               <div className={industry.imageFirst ? "order-2" : "order-2 lg:order-1"}>
-                <h3 className="text-headline-lg mb-6 uppercase text-white">
+                <h3 className="text-headline-lg font-black tracking-[-0.03em] leading-[1.1] mb-6 uppercase text-white">
                   {industry.title}
                 </h3>
-                <p className="text-body-lg text-sky-200 mb-10 max-w-lg">
+                <p className="text-[17px] font-light leading-[1.65] text-sky-200 mb-10 max-w-lg">
                   {industry.description}
                 </p>
                 <Link
                   href="/portfolio"
-                  className="flex items-center gap-2 group text-label-sm text-sun-400 uppercase tracking-widest border-b border-sun-400 pb-1 hover:text-sun-300 transition-colors w-fit"
+                  className="flex items-center gap-2 group text-[11px] font-bold text-ocean-600 uppercase tracking-[0.12em] border-b border-ocean-600 pb-1 hover:text-sun-500 hover:border-sun-500 transition-colors w-fit"
                 >
                   Ver Portfolio{" "}
                   <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform text-[18px]">

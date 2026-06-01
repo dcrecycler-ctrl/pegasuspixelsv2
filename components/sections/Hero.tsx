@@ -14,25 +14,25 @@ export function Hero() {
 
           {/* Left: Content — staggered load animations */}
           <div className="lg:col-span-6">
-            <span className="anim-fade-up delay-0 text-label-sm text-primary-variant uppercase tracking-[0.2em] block mb-6">
+            <span className="anim-fade-up delay-0 text-[11px] font-bold tracking-[0.12em] text-primary-variant uppercase block mb-6">
               Arquitectura de Sistemas Digitales
             </span>
-            <h1 className="anim-fade-up delay-100 text-[52px] md:text-display-lg leading-[1.1] mb-8 text-ocean-900">
+            <h1 className="anim-fade-up delay-100 text-[52px] md:text-display-lg font-black leading-[1.05] tracking-[-0.03em] mb-8 text-on-surface">
               Tecnología y Experiencias Digitales para Empresas Modernas
             </h1>
-            <p className="anim-fade-up delay-200 text-body-lg text-ink-800 max-w-xl mb-12">
+            <p className="anim-fade-up delay-200 text-[17px] font-light leading-[1.65] text-ink-700 max-w-xl mb-12">
               Ayudamos a inmobiliarias, automotoras y empresas de hospitalidad a mejorar su presencia digital, organizar operaciones y ofrecer una experiencia moderna a sus clientes.
             </p>
             <div className="anim-fade-up delay-300 flex flex-col sm:flex-row gap-6">
               <Link
                 href="/soluciones"
-                className="bg-primary text-on-primary px-10 py-4 text-label-sm uppercase hover:bg-primary-hover transition-colors rounded-lg text-center"
+                className="bg-primary text-on-primary px-10 py-4 text-[14px] font-semibold uppercase hover:bg-primary-hover transition-colors rounded-lg text-center"
               >
                 Explorar Soluciones
               </Link>
               <Link
                 href="/contacto"
-                className="border border-primary-variant text-primary-variant px-10 py-4 text-label-sm uppercase hover:bg-sky-200 transition-colors rounded-lg text-center"
+                className="border border-outline text-on-surface px-10 py-4 text-[14px] font-medium uppercase hover:bg-surface-container-high transition-colors rounded-lg text-center"
               >
                 Solicitar Consulta
               </Link>

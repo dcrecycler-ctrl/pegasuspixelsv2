@@ -71,7 +71,7 @@ export function Nav() {
           <div className="relative" ref={dropdownRef}>
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
-              className="flex items-center gap-1.5 text-ocean-800 hover:text-ocean-700 transition-colors duration-300 text-[16px] font-medium"
+              className="flex items-center gap-1.5 text-ink-700 hover:text-primary transition-colors duration-300 text-[14px] font-medium"
             >
               Soluciones
               <span
@@ -128,17 +128,17 @@ export function Nav() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-ocean-800 hover:text-ocean-700 transition-colors duration-300 text-[16px] font-medium"
+              className="text-ink-700 hover:text-primary transition-colors duration-300 text-[14px] font-medium"
             >
               {link.label}
             </Link>
           ))}
         </div>
 
-        {/* CTA — Sun 600 with Ocean 900 text */}
+        {/* CTA — dark bg / white text per brand spec */}
         <Link
           href="/contacto"
-          className="hidden md:block bg-primary text-on-primary px-7 py-3 text-label-sm uppercase hover:bg-primary-hover transition-all rounded-lg font-semibold"
+          className="hidden md:block bg-ocean-900 text-sky-100 px-7 py-3 text-[12px] font-semibold tracking-[0.06em] uppercase hover:bg-ink-800 transition-all rounded-lg"
         >
           SOLICITAR CONSULTA
         </Link>
@@ -160,7 +160,7 @@ export function Nav() {
         <div className="md:hidden bg-surface border-t border-outline py-6 px-5 flex flex-col gap-5">
           <Link
             href="/soluciones"
-            className="text-ocean-800 hover:text-ocean-700 transition-colors text-[16px] font-medium"
+            className="text-ink-700 hover:text-primary transition-colors text-[14px] font-medium"
             onClick={() => setMenuOpen(false)}
           >
             Soluciones
@@ -169,7 +169,7 @@ export function Nav() {
             <Link
               key={item.href}
               href={item.href}
-              className="flex items-center gap-3 pl-4 text-ink-700 hover:text-ocean-700 transition-colors text-[15px] font-medium"
+              className="flex items-center gap-3 pl-4 text-ink-700 hover:text-primary transition-colors text-[14px] font-medium"
               onClick={() => setMenuOpen(false)}
             >
               <span className="material-symbols-outlined text-primary-variant text-[18px]">{item.icon}</span>
@@ -180,7 +180,7 @@ export function Nav() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-ocean-800 hover:text-ocean-700 transition-colors text-[16px] font-medium"
+              className="text-ink-700 hover:text-primary transition-colors text-[14px] font-medium"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
@@ -188,7 +188,7 @@ export function Nav() {
           ))}
           <Link
             href="/contacto"
-            className="bg-primary text-on-primary px-7 py-3 text-label-sm uppercase text-center rounded-lg mt-2 font-semibold"
+            className="bg-ocean-900 text-sky-100 px-7 py-3 text-[12px] font-semibold tracking-[0.06em] uppercase text-center rounded-lg mt-2"
             onClick={() => setMenuOpen(false)}
           >
             SOLICITAR CONSULTA

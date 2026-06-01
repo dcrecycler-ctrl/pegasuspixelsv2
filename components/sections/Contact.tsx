@@ -53,10 +53,10 @@ export function Contact() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-32">
         {/* Left: Info */}
         <div>
-          <h2 className="text-headline-lg mb-8 text-on-surface">
+          <h2 className="text-headline-lg font-black tracking-[-0.03em] leading-[1.1] mb-8 text-on-surface">
             Comencemos a Construir
           </h2>
-          <p className="text-body-lg text-on-surface-variant mb-12">
+          <p className="text-[17px] font-light leading-[1.65] text-ink-700 mb-12">
             ¿Listo para elevar la infraestructura digital de su empresa? Complete el formulario y agendaremos una sesión de consultoría técnica sin compromiso.
           </p>
 
@@ -67,7 +67,7 @@ export function Contact() {
                 mail
               </span>
               <div>
-                <span className="block text-label-sm text-primary-variant uppercase mb-1">
+                <span className="block text-[11px] font-bold tracking-[0.12em] text-primary-variant uppercase mb-1">
                   Email
                 </span>
                 <a
@@ -85,7 +85,7 @@ export function Contact() {
                 location_on
               </span>
               <div>
-                <span className="block text-label-sm text-primary-variant uppercase mb-1">
+                <span className="block text-[11px] font-bold tracking-[0.12em] text-primary-variant uppercase mb-1">
                   Ubicación
                 </span>
                 <span className="text-body-md">
@@ -111,7 +111,7 @@ export function Contact() {
               </p>
               <button
                 onClick={() => setStatus("idle")}
-                className="text-label-sm uppercase text-primary hover:text-primary-variant transition-colors"
+                className="text-[11px] font-bold tracking-[0.12em] uppercase text-primary hover:text-primary-variant transition-colors"
               >
                 Enviar otro mensaje →
               </button>
@@ -120,7 +120,7 @@ export function Contact() {
             <form onSubmit={handleSubmit} className="space-y-10">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div className="border-b border-outline pb-3">
-                  <label className="text-label-sm uppercase text-ink-600 block mb-2">
+                  <label className="text-[11px] font-bold tracking-[0.08em] uppercase text-ink-600 block mb-2">
                     Nombre
                   </label>
                   <input
@@ -133,7 +133,7 @@ export function Contact() {
                   />
                 </div>
                 <div className="border-b border-outline pb-3">
-                  <label className="text-label-sm uppercase text-ink-600 block mb-2">
+                  <label className="text-[11px] font-bold tracking-[0.08em] uppercase text-ink-600 block mb-2">
                     Empresa
                   </label>
                   <input
@@ -149,7 +149,7 @@ export function Contact() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div className="border-b border-outline pb-3">
-                  <label className="text-label-sm uppercase text-ink-600 block mb-2">
+                  <label className="text-[11px] font-bold tracking-[0.08em] uppercase text-ink-600 block mb-2">
                     Email
                   </label>
                   <input
@@ -162,7 +162,7 @@ export function Contact() {
                   />
                 </div>
                 <div className="border-b border-outline pb-3">
-                  <label className="text-label-sm uppercase text-ink-600 block mb-2">
+                  <label className="text-[11px] font-bold tracking-[0.08em] uppercase text-ink-600 block mb-2">
                     Teléfono
                   </label>
                   <input
@@ -198,7 +198,7 @@ export function Contact() {
               <button
                 type="submit"
                 disabled={status === "loading"}
-                className="w-full bg-primary text-on-primary py-5 text-label-sm uppercase hover:bg-primary-hover transition-all rounded-lg disabled:opacity-60"
+                className="w-full bg-primary text-on-primary py-5 text-[14px] font-semibold uppercase hover:bg-primary-hover transition-all rounded-lg disabled:opacity-60"
               >
                 {status === "loading" ? "Enviando..." : "Enviar Solicitud"}
               </button>
