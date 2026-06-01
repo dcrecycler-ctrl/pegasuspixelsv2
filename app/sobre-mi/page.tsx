@@ -63,7 +63,7 @@ export default function SobreMiPage() {
               <img
                 alt="Fundador de Pegasus Pixels"
                 className="w-full aspect-[4/5] object-cover rounded-2xl coastal-shadow"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHFTU2l2FUw6eqLukriNe5NQMuCvs7EGyFLfNSzFDlQGJ7iUAMVHQKbRGsc9nUqO1-c8ePPZab-9YjTsy4mNrKa62ySh8q-Ad1qQwW0qlioh3MpIcO-NAe3de948k8aXkF4JOrh5imN8utLZ-hElVjwU4QKkTB2Q6Umz1WFDMlryWAoOaKeQ4obX0vVw4drhWm3bVHUldpXzKEifurAO1sgsqkPxHv7i9PLDEWvQ7T98RiRmAnMJCbdT1f4bG_g4j95DCtU0QaRdc"
+                src="/foto-perfil.jpg.jpg"
               />
             </div>
             <div className="lg:col-span-7 flex flex-col justify-center">

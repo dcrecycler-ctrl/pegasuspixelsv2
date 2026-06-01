@@ -39,7 +39,7 @@ export function Hero() {
               <img
                 alt="Digital dashboard interface"
                 className="w-full h-80 object-cover rounded-xl coastal-shadow"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRFtUjgK88EapPn-achgjLn8252wTwVtquqjhomuUcH9hwsrGs3-eHsnNiQn0fbKd708kpAO691hk-aIp--CYgkeFrd0P81xVWZguu_Egdk9P2-MN7IsZjboilmBTTQC9xIfNIJN8qHHXuo8v8xvXLzhonA87GO0Ne8poHDEFTwwrZpE9UkVIuhpNcWA84OGeU-9JL1Isj2p_kYNzVjH3UB9n8Vb3mvVSoXoK5PuPLibMicNDbuaedQzqaAqZZhdlRuMjbdP_7k7s"
+                src="/agente-inmobiliario.png"
               />
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
