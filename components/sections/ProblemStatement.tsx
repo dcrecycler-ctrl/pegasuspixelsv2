@@ -1,9 +1,7 @@
 export function ProblemStatement() {
   return (
-    <section
-      className="py-32 bg-surface-container px-5 md:px-16 border-y border-outline/20"
-    >
-      <div className="max-w-[1440px] mx-auto">
+    <section className="py-32 bg-surface-container border-y border-outline/20">
+      <div className="max-w-[1440px] mx-auto px-5 md:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           <div>
             <h2 className="text-headline-lg mb-8 max-w-md text-on-surface">

@@ -1,7 +1,8 @@
 export function About() {
   return (
-    <section id="sobre-mi" className="py-40 bg-surface px-5 md:px-16">
-      <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-20">
+    <section id="sobre-mi" className="py-40 bg-surface">
+      <div className="max-w-[1440px] mx-auto px-5 md:px-16">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
         {/* Portrait */}
         <div className="lg:col-span-5">
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -45,6 +46,7 @@ export function About() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

@@ -43,9 +43,9 @@ export function Industries() {
   return (
     <section
       id="industrias"
-      className="py-32 bg-on-surface text-surface-container px-5 md:px-16"
+      className="py-32 bg-on-surface text-surface-container"
     >
-      <div className="max-w-[1440px] mx-auto">
+      <div className="max-w-[1440px] mx-auto px-5 md:px-16">
         <span className="text-label-sm text-primary-variant uppercase tracking-[0.3em] block mb-16 text-center">
           Sectores de Especialidad
         </span>

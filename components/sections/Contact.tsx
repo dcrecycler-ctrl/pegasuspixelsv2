@@ -47,8 +47,9 @@ export function Contact() {
   return (
     <section
       id="contacto"
-      className="py-40 px-5 md:px-16 max-w-[1440px] mx-auto"
+      className="py-40"
     >
+      <div className="max-w-[1440px] mx-auto px-5 md:px-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-32">
         {/* Left: Info */}
         <div>
@@ -204,6 +205,7 @@ export function Contact() {
             </form>
           )}
         </div>
+      </div>
       </div>
     </section>
   );

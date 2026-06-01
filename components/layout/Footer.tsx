@@ -1,7 +1,8 @@
 export function Footer() {
   return (
     <footer className="bg-surface-container border-t border-outline/30">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-20 py-24 px-5 md:px-16 max-w-[1440px] mx-auto">
+      <div className="max-w-[1440px] mx-auto px-5 md:px-16 py-24">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
         {/* Brand */}
         <div className="space-y-8">
           <div className="text-headline-md font-bold text-on-surface tracking-tighter">
@@ -54,6 +55,7 @@ export function Footer() {
             © 2025 Pegasus Pixels. Architecture for the Digital Age.
           </p>
         </div>
+      </div>
       </div>
     </footer>
   );

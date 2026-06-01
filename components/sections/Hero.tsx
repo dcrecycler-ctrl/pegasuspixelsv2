@@ -2,7 +2,8 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="pt-24 pb-32 px-5 md:px-16 max-w-[1440px] mx-auto">
+    <section className="pt-24 pb-32">
+      <div className="max-w-[1440px] mx-auto px-5 md:px-16">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         {/* Left: Content */}
         <div className="lg:col-span-6">
@@ -58,6 +59,7 @@ export function Hero() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );
