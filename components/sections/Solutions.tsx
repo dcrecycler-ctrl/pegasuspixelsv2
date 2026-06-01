@@ -21,24 +21,26 @@ const solutions = [
   },
 ];
 
+import { AnimateIn } from "@/components/ui/AnimateIn";
+
 export function Solutions() {
   return (
     <section id="soluciones" className="py-40">
       <div className="max-w-[1440px] mx-auto px-5 md:px-16">
-      <div className="text-center mb-24">
+      <AnimateIn className="text-center mb-24">
         <h2 className="text-headline-lg md:text-[56px] mb-8 text-on-surface">
           Diseñamos Herramientas Que Reflejan la Calidad de Tu Negocio
         </h2>
         <p className="text-body-lg text-on-surface-variant max-w-3xl mx-auto">
           Fusionamos diseño estructural, tecnología de punta y optimización de operaciones para crear ecosistemas digitales que funcionan con la precisión de un reloj suizo.
         </p>
-      </div>
+      </AnimateIn>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {solutions.map((sol) => (
+        {solutions.map((sol, i) => (
+          <AnimateIn key={sol.title} delay={i * 80}>
           <div
-            key={sol.title}
-            className="p-10 bg-surface border border-outline rounded-xl hover-lift coastal-shadow hover:bg-sand-100 transition-colors duration-300"
+            className="p-10 bg-surface border border-outline rounded-xl hover-lift coastal-shadow hover:bg-sand-100 transition-colors duration-300 h-full"
           >
             <span className="material-symbols-outlined text-primary-variant text-4xl mb-8 block">
               {sol.icon}
@@ -46,6 +48,7 @@ export function Solutions() {
             <h3 className="text-headline-md mb-4 text-on-surface">{sol.title}</h3>
             <p className="text-body-md text-on-surface-variant">{sol.description}</p>
           </div>
+          </AnimateIn>
         ))}
       </div>
       </div>

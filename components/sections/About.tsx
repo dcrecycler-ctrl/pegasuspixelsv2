@@ -1,20 +1,22 @@
+import { AnimateIn } from "@/components/ui/AnimateIn";
+
 export function About() {
   return (
     <section id="sobre-mi" className="py-40 bg-surface-container-high">
       <div className="max-w-[1440px] mx-auto px-5 md:px-16">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
         {/* Portrait */}
-        <div className="lg:col-span-5">
+        <AnimateIn className="lg:col-span-5">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             alt="Consultant portrait"
             className="w-full aspect-[4/5] object-cover rounded-2xl coastal-shadow"
             src="/foto-perfil.jpg.jpg"
           />
-        </div>
+        </AnimateIn>
 
         {/* Content */}
-        <div className="lg:col-span-7 flex flex-col justify-center">
+        <AnimateIn delay={150} className="lg:col-span-7 flex flex-col justify-center">
           <span className="text-label-sm text-primary-variant uppercase tracking-[0.2em] mb-8 block">
             Consultoría y Estrategia
           </span>
@@ -45,7 +47,7 @@ export function About() {
               </span>
             </div>
           </div>
-        </div>
+        </AnimateIn>
       </div>
       </div>
     </section>

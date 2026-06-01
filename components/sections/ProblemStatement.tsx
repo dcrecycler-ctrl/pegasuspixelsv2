@@ -1,14 +1,16 @@
+import { AnimateIn } from "@/components/ui/AnimateIn";
+
 export function ProblemStatement() {
   return (
     <section className="py-32 bg-surface-container border-y border-outline/20">
       <div className="max-w-[1440px] mx-auto px-5 md:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-          <div>
+          <AnimateIn>
             <h2 className="text-headline-lg mb-8 max-w-md text-on-surface">
               La Primera Impresión Ya No Ocurre Solamente en Tu Negocio
             </h2>
-          </div>
-          <div className="space-y-10">
+          </AnimateIn>
+          <AnimateIn delay={100} className="space-y-10">
             <p className="text-body-lg text-on-surface-variant">
               Existe una desconexión crítica entre la calidad física de sus servicios y su presencia digital. Un showroom de lujo o una propiedad de diseño no pueden verse representados por sistemas lentos o procesos manuales obsoletos.
             </p>
@@ -26,7 +28,7 @@ export function ProblemStatement() {
                 </p>
               </div>
             </div>
-          </div>
+          </AnimateIn>
         </div>
       </div>
     </section>
