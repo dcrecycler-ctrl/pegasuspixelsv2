@@ -2,12 +2,12 @@ import { AnimateIn } from "@/components/ui/AnimateIn";
 
 export function ProblemStatement() {
   return (
-    <section className="py-32 bg-surface-container border-y border-outline/20">
+    <section className="py-32 bg-white border-y border-outline/20">
       <div className="max-w-[1440px] mx-auto px-5 md:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           <AnimateIn>
             <h2 className="text-headline-lg mb-8 max-w-md text-on-surface">
-              La Primera Impresión Ya No Ocurre Solamente en Tu Negocio
+              La primera impresión ya no empieza en tu negocio
             </h2>
           </AnimateIn>
           <AnimateIn delay={100} className="space-y-10">

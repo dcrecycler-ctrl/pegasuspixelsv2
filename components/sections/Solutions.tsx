@@ -29,7 +29,7 @@ export function Solutions() {
       <div className="max-w-[1440px] mx-auto px-5 md:px-16">
       <AnimateIn className="text-center mb-24">
         <h2 className="text-headline-lg md:text-[56px] mb-8 text-on-surface">
-          Diseñamos Herramientas Que Reflejan la Calidad de Tu Negocio
+          Creamos sistemas digitales que reflejan<br />el valor real de tu negocio
         </h2>
         <p className="text-body-lg text-on-surface-variant max-w-3xl mx-auto">
           Fusionamos diseño estructural, tecnología de punta y optimización de operaciones para crear ecosistemas digitales que funcionan con la precisión de un reloj suizo.

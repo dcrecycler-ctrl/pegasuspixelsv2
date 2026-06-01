@@ -21,7 +21,7 @@ export function About() {
             Consultoría y Estrategia
           </span>
           <h2 className="text-headline-lg mb-8 text-on-surface">
-            La Optimización es un Arte Estructural
+            La Optimización es<br />un Arte Estructural
           </h2>
           <p className="text-body-lg text-on-surface-variant mb-8">
             No soy solo un diseñador o desarrollador. Soy un consultor que entiende los nexos entre tecnología, operaciones y marketing. Mi enfoque se inspira en la arquitectura moderna: cada línea de código debe tener un propósito estructural y cada interfaz debe ser un espacio donde el usuario se sienta en control.
