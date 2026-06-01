@@ -81,7 +81,8 @@ export default function PortfolioPage() {
         />
 
         {/* Category tabs */}
-        <section className="px-5 md:px-16 max-w-[1440px] mx-auto pb-4">
+        <section className="pb-4">
+          <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           <div className="flex flex-wrap gap-3 border-b border-outline/30 pb-6">
             {categories.map((cat, i) => (
               <span
@@ -96,10 +97,12 @@ export default function PortfolioPage() {
               </span>
             ))}
           </div>
+          </div>
         </section>
 
         {/* Projects grid */}
-        <section className="py-16 px-5 md:px-16 max-w-[1440px] mx-auto">
+        <section className="py-16">
+          <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
               <div
@@ -131,11 +134,13 @@ export default function PortfolioPage() {
               </div>
             ))}
           </div>
+          </div>
         </section>
 
         {/* Approach — dark section */}
-        <section className="py-32 bg-on-surface text-surface-container px-5 md:px-16">
-          <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <section className="py-32 bg-on-surface text-surface-container">
+          <div className="max-w-[1440px] mx-auto px-5 md:px-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div>
               <span className="text-label-sm text-primary-variant uppercase tracking-[0.3em] block mb-8">
                 Nuestro Enfoque
@@ -174,11 +179,12 @@ export default function PortfolioPage() {
               ))}
             </div>
           </div>
+          </div>
         </section>
 
         {/* CTA */}
-        <section className="py-40 bg-surface-container border-t border-outline/20 px-5 md:px-16">
-          <div className="max-w-[1440px] mx-auto text-center">
+        <section className="py-40 bg-surface-container border-t border-outline/20">
+          <div className="max-w-[1440px] mx-auto px-5 md:px-16 text-center">
             <span className="text-label-sm text-primary uppercase tracking-[0.2em] block mb-6">
               Su Proyecto es el Siguiente
             </span>

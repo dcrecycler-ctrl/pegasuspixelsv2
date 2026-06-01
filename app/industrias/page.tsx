@@ -103,8 +103,8 @@ export default function IndustriasPage() {
         />
 
         {/* Industry rows — dark section */}
-        <section className="py-16 bg-on-surface text-surface-container px-5 md:px-16">
-          <div className="max-w-[1440px] mx-auto">
+        <section className="py-16 bg-on-surface text-surface-container">
+          <div className="max-w-[1440px] mx-auto px-5 md:px-16">
             <div className="space-y-40">
               {industries.map((industry) => (
                 <div
@@ -196,8 +196,8 @@ export default function IndustriasPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-40 bg-surface-container border-t border-outline/20 px-5 md:px-16">
-          <div className="max-w-[1440px] mx-auto text-center">
+        <section className="py-40 bg-surface-container border-t border-outline/20">
+          <div className="max-w-[1440px] mx-auto px-5 md:px-16 text-center">
             <span className="text-label-sm text-primary uppercase tracking-[0.2em] block mb-6">
               Trabajemos Juntos
             </span>

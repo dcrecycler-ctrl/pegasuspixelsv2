@@ -72,7 +72,8 @@ export function ContactoPageClient() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-24 pb-20 px-5 md:px-16 max-w-[1440px] mx-auto">
+      <section className="pt-24 pb-20">
+        <div className="max-w-[1440px] mx-auto px-5 md:px-16">
         <span className="text-label-sm text-primary uppercase tracking-[0.2em] block mb-6">Contacto</span>
         <h1 className="text-[52px] md:text-display-lg leading-[1.1] mb-8 text-on-surface max-w-3xl">
           Comencemos una Conversación
@@ -80,10 +81,12 @@ export function ContactoPageClient() {
         <p className="text-body-lg text-on-surface-variant max-w-2xl">
           ¿Listo para elevar la infraestructura digital de su empresa? Cuéntenos sobre su negocio y agendaremos una sesión de diagnóstico sin compromiso.
         </p>
+        </div>
       </section>
 
       {/* Contact form + info */}
-      <section className="pb-20 px-5 md:px-16 max-w-[1440px] mx-auto">
+      <section className="pb-20">
+        <div className="max-w-[1440px] mx-auto px-5 md:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-32">
           {/* Left: Info */}
           <div>
@@ -185,11 +188,12 @@ export function ContactoPageClient() {
             )}
           </div>
         </div>
+        </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-32 bg-surface-container-high border-y border-outline/20 px-5 md:px-16">
-        <div className="max-w-[1440px] mx-auto">
+      <section className="py-32 bg-surface-container-high border-y border-outline/20">
+        <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
             <div className="lg:col-span-4">
               <span className="text-label-sm text-primary uppercase tracking-[0.2em] block mb-6">FAQ</span>
@@ -227,8 +231,8 @@ export function ContactoPageClient() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-32 bg-surface-container-high px-5 md:px-16">
-        <div className="max-w-[1440px] mx-auto text-center">
+      <section className="py-32 bg-surface-container-high">
+        <div className="max-w-[1440px] mx-auto px-5 md:px-16 text-center">
           <span className="text-label-sm text-primary uppercase tracking-[0.3em] block mb-6">¿Listo para Empezar?</span>
           <h2 className="text-headline-lg text-on-surface mb-8 max-w-2xl mx-auto">
             La Primera Conversación No Tiene Costo

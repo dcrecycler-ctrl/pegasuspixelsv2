@@ -56,8 +56,9 @@ export default function SobreMiPage() {
       <Nav />
       <main>
         {/* Hero — 2-col with portrait, mirrors homepage About section style */}
-        <section className="pt-24 pb-20 px-5 md:px-16 bg-surface">
-          <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
+        <section className="pt-24 pb-20 bg-surface">
+          <div className="max-w-[1440px] mx-auto px-5 md:px-16">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
             <div className="lg:col-span-5">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -91,11 +92,13 @@ export default function SobreMiPage() {
               </div>
             </div>
           </div>
+          </div>
         </section>
 
         {/* Por qué nació Pegasus Pixels */}
-        <section className="py-40 bg-surface-container border-y border-outline/20 px-5 md:px-16">
-          <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+        <section className="py-40 bg-surface-container border-y border-outline/20">
+          <div className="max-w-[1440px] mx-auto px-5 md:px-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
             <div>
               <span className="text-label-sm text-primary uppercase tracking-[0.2em] block mb-6">
                 El Origen
@@ -116,11 +119,12 @@ export default function SobreMiPage() {
               </p>
             </div>
           </div>
+          </div>
         </section>
 
         {/* Filosofía — valores */}
-        <section className="py-40 bg-surface px-5 md:px-16">
-          <div className="max-w-[1440px] mx-auto">
+        <section className="py-40 bg-surface">
+          <div className="max-w-[1440px] mx-auto px-5 md:px-16">
             <div className="text-center mb-24">
               <span className="text-label-sm text-primary uppercase tracking-[0.2em] block mb-6">
                 Filosofía de Trabajo
@@ -142,8 +146,8 @@ export default function SobreMiPage() {
         </section>
 
         {/* Experiencia timeline — dark section */}
-        <section className="py-32 bg-on-surface text-surface-container px-5 md:px-16">
-          <div className="max-w-[1440px] mx-auto">
+        <section className="py-32 bg-on-surface text-surface-container">
+          <div className="max-w-[1440px] mx-auto px-5 md:px-16">
             <span className="text-label-sm text-primary-variant uppercase tracking-[0.3em] block mb-16 text-center">
               Trayectoria
             </span>
@@ -167,8 +171,8 @@ export default function SobreMiPage() {
         </section>
 
         {/* Cómo trabajo con clientes */}
-        <section className="py-40 bg-surface-container border-y border-outline/20 px-5 md:px-16">
-          <div className="max-w-[1440px] mx-auto">
+        <section className="py-40 bg-surface-container border-y border-outline/20">
+          <div className="max-w-[1440px] mx-auto px-5 md:px-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
               <div>
                 <span className="text-label-sm text-primary uppercase tracking-[0.2em] block mb-6">
@@ -205,8 +209,8 @@ export default function SobreMiPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-40 bg-surface-container-high px-5 md:px-16">
-          <div className="max-w-[1440px] mx-auto text-center">
+        <section className="py-40 bg-surface-container-high">
+          <div className="max-w-[1440px] mx-auto px-5 md:px-16 text-center">
             <span className="text-label-sm text-primary uppercase tracking-[0.2em] block mb-6">
               ¿Trabajamos Juntos?
             </span>

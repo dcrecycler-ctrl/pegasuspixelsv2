@@ -100,7 +100,8 @@ export default function SolucionesPage() {
         />
 
         {/* Services grid */}
-        <section className="py-20 px-5 md:px-16 max-w-[1440px] mx-auto">
+        <section className="py-20">
+          <div className="max-w-[1440px] mx-auto px-5 md:px-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service) => (
               <div
@@ -115,11 +116,12 @@ export default function SolucionesPage() {
               </div>
             ))}
           </div>
+          </div>
         </section>
 
         {/* Metodología — dark inverted section */}
-        <section className="py-32 bg-on-surface text-surface-container px-5 md:px-16">
-          <div className="max-w-[1440px] mx-auto">
+        <section className="py-32 bg-on-surface text-surface-container">
+          <div className="max-w-[1440px] mx-auto px-5 md:px-16">
             <span className="text-label-sm text-primary-variant uppercase tracking-[0.3em] block mb-16 text-center">
               Proceso de Trabajo
             </span>
@@ -142,8 +144,9 @@ export default function SolucionesPage() {
         </section>
 
         {/* Por qué nosotros — light section */}
-        <section className="py-40 bg-surface px-5 md:px-16">
-          <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <section className="py-40 bg-surface">
+          <div className="max-w-[1440px] mx-auto px-5 md:px-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div>
               <span className="text-label-sm text-primary uppercase tracking-[0.2em] block mb-6">
                 Nuestra Diferencia
@@ -185,11 +188,12 @@ export default function SolucionesPage() {
               ))}
             </div>
           </div>
+          </div>
         </section>
 
         {/* CTA final */}
-        <section className="py-32 bg-surface-container-high border-y border-outline/20 px-5 md:px-16">
-          <div className="max-w-[1440px] mx-auto text-center">
+        <section className="py-32 bg-surface-container-high border-y border-outline/20">
+          <div className="max-w-[1440px] mx-auto px-5 md:px-16 text-center">
             <span className="text-label-sm text-primary uppercase tracking-[0.2em] block mb-6">
               ¿Listo para comenzar?
             </span>
