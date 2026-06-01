@@ -205,7 +205,7 @@ export default function SobreMiPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-40 bg-surface px-5 md:px-16">
+        <section className="py-40 bg-surface-container-high px-5 md:px-16">
           <div className="max-w-[1440px] mx-auto text-center">
             <span className="text-label-sm text-primary uppercase tracking-[0.2em] block mb-6">
               ¿Trabajamos Juntos?
@@ -218,7 +218,7 @@ export default function SobreMiPage() {
             </p>
             <Link
               href="/contacto"
-              className="inline-block bg-on-surface text-surface px-10 py-4 text-label-sm uppercase hover:bg-primary transition-colors rounded-lg"
+              className="inline-block bg-primary text-on-primary px-10 py-4 text-label-sm uppercase hover:bg-primary-hover transition-colors rounded-lg"
             >
               Agendar Consulta
             </Link>

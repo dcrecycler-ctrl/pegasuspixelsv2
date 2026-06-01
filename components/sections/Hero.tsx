@@ -19,13 +19,13 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row gap-6">
             <Link
               href="/soluciones"
-              className="bg-on-surface text-surface px-10 py-4 text-label-sm uppercase hover:bg-primary transition-colors rounded-lg text-center"
+              className="bg-primary text-on-primary px-10 py-4 text-label-sm uppercase hover:bg-primary-hover transition-colors rounded-lg text-center"
             >
               Explorar Soluciones
             </Link>
             <Link
               href="/contacto"
-              className="border border-outline text-on-surface px-10 py-4 text-label-sm uppercase hover:bg-surface-container transition-colors rounded-lg text-center"
+              className="border border-primary text-primary px-10 py-4 text-label-sm uppercase hover:bg-surface-container-high transition-colors rounded-lg text-center"
             >
               Solicitar Consulta
             </Link>

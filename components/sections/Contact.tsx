@@ -198,7 +198,7 @@ export function Contact() {
               <button
                 type="submit"
                 disabled={status === "loading"}
-                className="w-full bg-on-surface text-surface py-5 text-label-sm uppercase hover:bg-primary transition-all rounded-lg disabled:opacity-60"
+                className="w-full bg-primary text-on-primary py-5 text-label-sm uppercase hover:bg-primary-hover transition-all rounded-lg disabled:opacity-60"
               >
                 {status === "loading" ? "Enviando..." : "Enviar Solicitud"}
               </button>

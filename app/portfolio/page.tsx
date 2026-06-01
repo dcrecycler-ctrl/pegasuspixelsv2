@@ -88,8 +88,8 @@ export default function PortfolioPage() {
                 key={cat}
                 className={`px-5 py-2 text-label-sm uppercase rounded-lg cursor-pointer transition-colors ${
                   i === 0
-                    ? "bg-on-surface text-surface"
-                    : "border border-outline text-on-surface-variant hover:border-on-surface hover:text-on-surface"
+                    ? "bg-primary text-on-primary"
+                    : "border border-outline text-on-surface-variant hover:border-primary hover:text-primary"
                 }`}
               >
                 {cat}
@@ -190,7 +190,7 @@ export default function PortfolioPage() {
             </p>
             <Link
               href="/contacto"
-              className="inline-block bg-on-surface text-surface px-10 py-4 text-label-sm uppercase hover:bg-primary transition-colors rounded-lg"
+              className="inline-block bg-primary text-on-primary px-10 py-4 text-label-sm uppercase hover:bg-primary-hover transition-colors rounded-lg"
             >
               Solicitar Consulta
             </Link>

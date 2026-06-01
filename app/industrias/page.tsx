@@ -159,7 +159,7 @@ export default function IndustriasPage() {
                         <ul className="space-y-3">
                           {industry.benefits.map((b) => (
                             <li key={b} className="flex items-start gap-3">
-                              <span className="material-symbols-outlined text-[#3E8FB0] text-[18px] mt-0.5 flex-shrink-0">
+                              <span className="material-symbols-outlined text-primary-variant text-[18px] mt-0.5 flex-shrink-0">
                                 trending_up
                               </span>
                               <span className="text-body-md text-white">{b}</span>
@@ -209,7 +209,7 @@ export default function IndustriasPage() {
             </p>
             <Link
               href="/contacto"
-              className="inline-block bg-on-surface text-surface px-10 py-4 text-label-sm uppercase hover:bg-primary transition-colors rounded-lg"
+              className="inline-block bg-primary text-on-primary px-10 py-4 text-label-sm uppercase hover:bg-primary-hover transition-colors rounded-lg"
             >
               Agendar Consulta
             </Link>

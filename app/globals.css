@@ -4,25 +4,39 @@
   --font-body: var(--font-hanken), "Hanken Grotesk", sans-serif;
   --font-display: var(--font-hanken), "Hanken Grotesk", sans-serif;
 
-  /* Border radius — matches Stitch Tailwind config overrides exactly */
+  /* Border radius */
   --radius: 0.125rem;
   --radius-lg: 0.25rem;
   --radius-xl: 0.5rem;
   --radius-2xl: 1rem;
   --radius-full: 9999px;
 
-  /* Color palette — Ocean Tech Refinement */
+  /* ─── Color Palette ─── */
+
+  /* Surfaces */
   --color-surface: #ffffff;
-  --color-surface-container: #f8fbfd;
-  --color-surface-container-high: #ebf2f7;
-  --color-on-surface: #183042;
-  --color-on-surface-variant: #5d7382;
-  --color-primary: #2e6f95;
-  --color-primary-variant: #3e8fb0;
+  --color-surface-container: #f5f7fb;
+  --color-surface-container-high: #eef3ff;
+  --color-surface-container-highest: #e4e9f2;
+
+  /* Text */
+  --color-on-surface: #0b1220;
+  --color-on-surface-variant: #5a6475;
   --color-on-primary: #ffffff;
-  --color-secondary: #5d7382;
-  --color-outline: #d7e5ec;
-  --color-background: #f8fbfd;
+
+  /* Brand */
+  --color-primary: #2563ff;
+  --color-primary-hover: #1e4ed8;
+  --color-primary-variant: #00c2ff;
+  --color-secondary: #5a6475;
+
+  /* Structural */
+  --color-outline: #e4e9f2;
+  --color-background: #f5f7fb;
+
+  /* Semantic */
+  --color-success: #22c55e;
+  --color-cta-urgency: #f97316;
 
   /* Typography scale */
   --text-display-lg: 72px;
@@ -65,29 +79,26 @@ html {
 }
 
 body {
-  background-color: #f8fbfd;
-  color: #183042;
+  background-color: #f5f7fb;
+  color: #0b1220;
   font-family: var(--font-hanken), "Hanken Grotesk", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
-  background-color: color-mix(in srgb, #2e6f95 20%, transparent);
-  color: #183042;
+  background-color: color-mix(in srgb, #2563ff 20%, transparent);
+  color: #0b1220;
 }
 
-/* Material Symbols style override */
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
 }
 
-/* Coastal shadow — matches Stitch design exactly */
 .coastal-shadow {
-  box-shadow: 0 10px 40px -15px rgba(24, 48, 66, 0.12);
+  box-shadow: 0 10px 40px -15px rgba(11, 18, 32, 0.12);
 }
 
-/* Hover lift animation */
 .hover-lift {
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }

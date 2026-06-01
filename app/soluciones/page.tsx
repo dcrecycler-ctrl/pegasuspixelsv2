@@ -159,7 +159,7 @@ export default function SolucionesPage() {
               </p>
               <Link
                 href="/contacto"
-                className="inline-block bg-on-surface text-surface px-10 py-4 text-label-sm uppercase hover:bg-primary transition-colors rounded-lg"
+                className="inline-block bg-primary text-on-primary px-10 py-4 text-label-sm uppercase hover:bg-primary-hover transition-colors rounded-lg"
               >
                 Agendar Consulta
               </Link>
@@ -188,7 +188,7 @@ export default function SolucionesPage() {
         </section>
 
         {/* CTA final */}
-        <section className="py-32 bg-surface-container border-y border-outline/20 px-5 md:px-16">
+        <section className="py-32 bg-surface-container-high border-y border-outline/20 px-5 md:px-16">
           <div className="max-w-[1440px] mx-auto text-center">
             <span className="text-label-sm text-primary uppercase tracking-[0.2em] block mb-6">
               ¿Listo para comenzar?
@@ -202,13 +202,13 @@ export default function SolucionesPage() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
                 href="/contacto"
-                className="bg-on-surface text-surface px-10 py-4 text-label-sm uppercase hover:bg-primary transition-colors rounded-lg"
+                className="bg-primary text-on-primary px-10 py-4 text-label-sm uppercase hover:bg-primary-hover transition-colors rounded-lg"
               >
                 Solicitar Consulta
               </Link>
               <Link
                 href="/portfolio"
-                className="border border-outline text-on-surface px-10 py-4 text-label-sm uppercase hover:bg-surface-container transition-colors rounded-lg"
+                className="border border-primary text-primary px-10 py-4 text-label-sm uppercase hover:bg-surface-container-high transition-colors rounded-lg"
               >
                 Ver Portfolio
               </Link>

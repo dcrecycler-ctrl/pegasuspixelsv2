@@ -178,7 +178,7 @@ export function ContactoPageClient() {
                 {status === "error" && (
                   <p className="text-body-md text-red-600">Hubo un error. Por favor intente nuevamente.</p>
                 )}
-                <button type="submit" disabled={status === "loading"} className="w-full bg-on-surface text-surface py-5 text-label-sm uppercase hover:bg-primary transition-all rounded-lg disabled:opacity-60">
+                <button type="submit" disabled={status === "loading"} className="w-full bg-primary text-on-primary py-5 text-label-sm uppercase hover:bg-primary-hover transition-all rounded-lg disabled:opacity-60">
                   {status === "loading" ? "Enviando..." : "Enviar Solicitud"}
                 </button>
               </form>
@@ -188,7 +188,7 @@ export function ContactoPageClient() {
       </section>
 
       {/* FAQ */}
-      <section className="py-32 bg-surface-container border-y border-outline/20 px-5 md:px-16">
+      <section className="py-32 bg-surface-container-high border-y border-outline/20 px-5 md:px-16">
         <div className="max-w-[1440px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
             <div className="lg:col-span-4">
@@ -227,18 +227,18 @@ export function ContactoPageClient() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-32 bg-on-surface px-5 md:px-16">
+      <section className="py-32 bg-surface-container-high px-5 md:px-16">
         <div className="max-w-[1440px] mx-auto text-center">
-          <span className="text-label-sm text-primary-variant uppercase tracking-[0.3em] block mb-6">¿Listo para Empezar?</span>
-          <h2 className="text-headline-lg text-white mb-8 max-w-2xl mx-auto">
+          <span className="text-label-sm text-primary uppercase tracking-[0.3em] block mb-6">¿Listo para Empezar?</span>
+          <h2 className="text-headline-lg text-on-surface mb-8 max-w-2xl mx-auto">
             La Primera Conversación No Tiene Costo
           </h2>
-          <p className="text-body-lg text-surface-container/70 max-w-xl mx-auto mb-12">
+          <p className="text-body-lg text-on-surface-variant max-w-xl mx-auto mb-12">
             La sesión de diagnóstico inicial es completamente gratuita. Saldrá de ella con claridad sobre sus opciones, independientemente de si decidimos trabajar juntos.
           </p>
           <Link
             href="mailto:estudio@pegasuspixels.com"
-            className="inline-flex items-center gap-3 border border-primary-variant text-white px-10 py-4 text-label-sm uppercase hover:bg-primary transition-colors rounded-lg"
+            className="inline-flex items-center gap-3 bg-primary text-on-primary px-10 py-4 text-label-sm uppercase hover:bg-primary-hover transition-colors rounded-lg"
           >
             <span className="material-symbols-outlined text-[18px]">mail</span>
             estudio@pegasuspixels.com
