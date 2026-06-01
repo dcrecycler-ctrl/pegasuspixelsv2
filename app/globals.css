@@ -1,20 +1,50 @@
 @import "tailwindcss";
 
 @theme {
-  --font-display: var(--font-playfair), "Playfair Display", serif;
   --font-body: var(--font-hanken), "Hanken Grotesk", sans-serif;
+  --font-display: var(--font-hanken), "Hanken Grotesk", sans-serif;
 
-  --color-ink: #131313;
-  --color-ink-low: #1b1c1c;
-  --color-ink-mid: #1f2020;
-  --color-ink-high: #2a2a2a;
-  --color-ink-highest: #353535;
-  --color-gold: #dac769;
-  --color-gold-dim: #c5b358;
-  --color-cream: #e4e2e1;
-  --color-cream-dim: #c4c7c7;
-  --color-outline: #444748;
-  --color-outline-muted: #8e9192;
+  /* Color palette — Ocean Tech Refinement */
+  --color-surface: #ffffff;
+  --color-surface-container: #f8fbfd;
+  --color-surface-container-high: #ebf2f7;
+  --color-on-surface: #183042;
+  --color-on-surface-variant: #5d7382;
+  --color-primary: #2e6f95;
+  --color-primary-variant: #3e8fb0;
+  --color-on-primary: #ffffff;
+  --color-secondary: #5d7382;
+  --color-outline: #d7e5ec;
+  --color-background: #f8fbfd;
+
+  /* Typography scale */
+  --text-display-lg: 72px;
+  --text-display-lg--line-height: 1.1;
+  --text-display-lg--letter-spacing: -0.03em;
+  --text-display-lg--font-weight: 600;
+
+  --text-headline-lg: 48px;
+  --text-headline-lg--line-height: 1.2;
+  --text-headline-lg--letter-spacing: -0.02em;
+  --text-headline-lg--font-weight: 500;
+
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 1.4;
+  --text-headline-md--letter-spacing: -0.01em;
+  --text-headline-md--font-weight: 500;
+
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 1.6;
+  --text-body-lg--font-weight: 400;
+
+  --text-body-md: 16px;
+  --text-body-md--line-height: 1.6;
+  --text-body-md--font-weight: 400;
+
+  --text-label-sm: 12px;
+  --text-label-sm--line-height: 1;
+  --text-label-sm--letter-spacing: 0.1em;
+  --text-label-sm--font-weight: 600;
 }
 
 *,
@@ -28,23 +58,34 @@ html {
 }
 
 body {
-  background-color: #131313;
-  color: #e4e2e1;
-  font-family: var(--font-body), "Hanken Grotesk", sans-serif;
+  background-color: #f8fbfd;
+  color: #183042;
+  font-family: var(--font-hanken), "Hanken Grotesk", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.font-display {
-  font-family: var(--font-display), "Playfair Display", serif;
-}
-
 ::selection {
-  background-color: #dac769;
-  color: #131313;
+  background-color: #2e6f95;
+  color: #ffffff;
+  background-color: color-mix(in srgb, #2e6f95 20%, transparent);
+  color: #183042;
 }
 
-input,
-textarea {
-  font-family: inherit;
+/* Material Symbols style override */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Coastal shadow — matches Stitch design exactly */
+.coastal-shadow {
+  box-shadow: 0 10px 40px -15px rgba(24, 48, 66, 0.12);
+}
+
+/* Hover lift animation */
+.hover-lift {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
 }

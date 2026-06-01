@@ -1,95 +1,58 @@
-const footerLinks = [
-  { label: "Soluciones", href: "#soluciones" },
-  { label: "Industrias", href: "#industrias" },
-  { label: "Portfolio", href: "#portfolio" },
-];
-
-const legalLinks = [
-  { label: "Privacidad", href: "#" },
-  { label: "Términos", href: "#" },
-];
-
 export function Footer() {
   return (
-    <footer className="bg-ink-low border-t border-outline/30">
-      <div className="max-w-[1440px] mx-auto px-5 md:px-20 py-16 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 mb-16">
-          {/* Brand */}
-          <div className="md:col-span-1">
-            <a
-              href="#"
-              className="font-display text-lg font-semibold text-cream hover:text-gold transition-colors duration-200 block mb-4"
-            >
-              Pegasus Pixels
-            </a>
-            <p className="font-body text-sm text-outline-muted leading-relaxed max-w-xs">
-              Arquitectura digital de precisión para empresas que no aceptan compromisos.
-            </p>
+    <footer className="bg-surface-container border-t border-outline/30">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-20 py-24 px-5 md:px-16 max-w-[1440px] mx-auto">
+        {/* Brand */}
+        <div className="space-y-8">
+          <div className="text-headline-md font-bold text-on-surface tracking-tighter">
+            Pegasus Pixels
           </div>
-
-          {/* Nav links */}
-          <div>
-            <p className="font-body text-[11px] font-semibold tracking-[0.18em] uppercase text-outline-muted mb-5">
-              Navegación
-            </p>
-            <ul className="flex flex-col gap-3">
-              {footerLinks.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    className="font-body text-sm text-cream-dim hover:text-cream transition-colors duration-200"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <p className="font-body text-[11px] font-semibold tracking-[0.18em] uppercase text-outline-muted mb-5">
-              Contacto
-            </p>
-            <ul className="flex flex-col gap-3">
-              <li>
-                <a
-                  href="mailto:estudio@pegasuspixels.com"
-                  className="font-body text-sm text-cream-dim hover:text-cream hover:text-gold transition-colors duration-200"
-                >
-                  estudio@pegasuspixels.com
-                </a>
-              </li>
-              <li>
-                <span className="font-body text-sm text-outline-muted">
-                  Punta del Este, Uruguay
-                </span>
-              </li>
-              <li>
-                <span className="font-body text-sm text-outline-muted">
-                  Global Services
-                </span>
-              </li>
-            </ul>
-          </div>
+          <p className="text-body-md text-on-surface-variant max-w-xs">
+            Arquitectura digital de precisión para empresas que lideran sus industrias.
+          </p>
         </div>
 
-        {/* Bottom bar */}
-        <div className="border-t border-outline/30 pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <p className="font-body text-xs text-outline-muted">
+        {/* Navigation */}
+        <div className="flex flex-col gap-6">
+          <span className="text-label-sm uppercase text-primary">Navegación</span>
+          <a
+            href="#soluciones"
+            className="text-on-surface-variant hover:text-primary transition-colors text-body-md"
+          >
+            Soluciones
+          </a>
+          <a
+            href="#industrias"
+            className="text-on-surface-variant hover:text-primary transition-colors text-body-md"
+          >
+            Industrias
+          </a>
+          <a
+            href="#portfolio"
+            className="text-on-surface-variant hover:text-primary transition-colors text-body-md"
+          >
+            Portfolio
+          </a>
+        </div>
+
+        {/* Legal */}
+        <div className="flex flex-col gap-6">
+          <span className="text-label-sm uppercase text-primary">Legal</span>
+          <a
+            href="#"
+            className="text-on-surface-variant hover:text-primary transition-colors text-body-md"
+          >
+            Privacidad
+          </a>
+          <a
+            href="#"
+            className="text-on-surface-variant hover:text-primary transition-colors text-body-md"
+          >
+            Términos
+          </a>
+          <p className="mt-8 text-[11px] uppercase tracking-widest text-on-surface-variant/40">
             © 2025 Pegasus Pixels. Architecture for the Digital Age.
           </p>
-          <div className="flex items-center gap-6">
-            {legalLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="font-body text-xs text-outline-muted hover:text-cream-dim transition-colors duration-200"
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
         </div>
       </div>
     </footer>

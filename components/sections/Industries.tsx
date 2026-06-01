@@ -1,156 +1,86 @@
-"use client";
-
-import { useState } from "react";
-import { SectionLabel } from "@/components/ui/SectionLabel";
-
 const industries = [
   {
     id: "inmobiliarias",
-    label: "Inmobiliarias",
-    title: "Plataformas de visualización para propiedades premium",
+    title: "INMOBILIARIAS",
     description:
-      "Portales de propiedades que capturan la calidad arquitectónica de cada proyecto. Tours virtuales, fichas interactivas, CRM de leads calificados y dashboards de gestión para brokers y desarrolladores.",
-    capabilities: [
-      "Portal de propiedades a medida",
-      "CRM de clientes y leads",
-      "Tours virtuales integrados",
-      "Dashboard de gestión para brokers",
-      "Módulo de valuaciones",
-    ],
+      "Plataformas de visualización de propiedades de alta gama con recorridos virtuales integrados y sistemas de reserva inteligente.",
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAcLHW6IKq2vaE-iyWy5u1Ne0L5oIPNG7xyL0O5R_uM0WnNYvlKHOjcNGr1lGv-nffxWz-zMa2hdqGdYxjmINlFoc1NVGG7hf8F4KUwVdWo_oRsgpeKIIei41PYjHSKnYHM3po5Pn-3OKBO_5dO2R02lrZ5y_jF6rSyS8yrH2lVtgQg45ma1GahFXwDWR-uqiZ4TK-zDen430-3xnZAb45Zvn5zwDnRtsXJ3bZg7av2Spk5W8qDbpKHFaOw1eybM6opb3CgtSTj5gA",
+    imageAlt: "Modern villa",
+    imageFirst: false,
   },
   {
     id: "automotoras",
-    label: "Automotoras",
-    title: "Gestión de inventario premium para concesionarios de élite",
+    title: "AUTOMOTORAS",
     description:
-      "Sistemas de gestión de inventario, configuradores de vehículos, CRM de seguimiento de ventas y plataformas de financiamiento que elevan la experiencia de compra a nivel luxury.",
-    capabilities: [
-      "Inventario digital con filtros avanzados",
-      "Configurador de vehículos",
-      "Pipeline de ventas y comisiones",
-      "Integración con financiamiento",
-      "Portal para clientes VIP",
-    ],
+      "Gestión de inventario premium y configuradores de vehículos que transmiten la potencia y el diseño de su flota.",
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCqveCxfyowu1jdD-75BIY1nBeu_uOSsnlV5NZpb5q9TFawLgpV6-Wrvm32hYmON7upd282-qAOurf1D7oNfxctO4yp4Q0-YAqzas0aSEyvZeP00H9S7rZW1AltWkVucTYBxJqaMYuRp9SalcKcjRBoM8Ab7W7AQRdcR_YBKwZ3X06mCZ3JeMX-2uBXfkubK4Zix1PDuy7be3C6JFP499yRKEsHn-qPaXzEOLhTTKG17oj8yH-uAXGrDy4gDk1chCysS1UysVt8aFw",
+    imageAlt: "Luxury showroom",
+    imageFirst: true,
   },
   {
     id: "hospitality",
-    label: "Hospitality",
-    title: "Restaurantes, hoteles y experiencias gastronómicas de alto nivel",
+    title: "HOSPITALITY",
     description:
-      "Plataformas de reservas, gestión de experiencias, menús digitales interactivos y sistemas de fidelización para establecimientos que entienden que el servicio comienza antes de que el cliente llegue.",
-    capabilities: [
-      "Sistema de reservas online",
-      "Menú digital interactivo",
-      "Programa de fidelización",
-      "Gestión de eventos privados",
-      "Dashboard de ocupación y revenue",
-    ],
+      "Restaurantes, hoteles y negocios orientados a la experiencia del cliente con interfaces de alta estética.",
+    image: "https://lh3.googleusercontent.com/aida/ADBb0ugEzAO_NOE31D70RnTr2mWedsInaoTM1EurrUw6WdyamToux7WuldzSCJ6Y2FdA9WtdttqSsnWqciSz-GNle4Q0NcH6Ik7F9xXeyx4S_3d7PDNVeUN2u6dMiJ1LbELJyuwqMcFRSAhQQtaXrI7AY7Vl7kz87mEeV5ucNyzq3rDKvcmjEMnnQc2kr66X_T5RKuGOrfjs3Ur_VzLWK2qi9I6zKDU3Ay4mnVKK9E1spCsLcOnkcJNwZ7nPzVI",
+    imageAlt: "Hospitality interior",
+    imageFirst: false,
   },
   {
     id: "arquitectura",
-    label: "Arquitectura",
-    title: "Visualización de proyectos para estudios de diseño y construcción",
+    title: "ARQUITECTURA",
     description:
-      "Portfolios de proyectos inmersivos, herramientas de presentación a clientes, gestión de licitaciones y plataformas de colaboración para estudios de arquitectura e interiorismo de alta gama.",
-    capabilities: [
-      "Portfolio interactivo de proyectos",
-      "Herramienta de presentación a clientes",
-      "Gestión de licitaciones",
-      "Colaboración de equipos",
-      "Seguimiento de obra",
-    ],
+      "Visualización de proyectos, gestión de activos y presencia digital para estudios de arquitectura y desarrolladores.",
+    image: "https://lh3.googleusercontent.com/aida/ADBb0ugutlc_ah8VbjCUWZVJA4ta05WFbFt14zHXzKfJQC5lt_SlveP5hzuPOALbf1u2uCI6Gv-hiyEFmb5Te7cIfCJJKtybyFEbzu7F2uoN2eixA5prFVZdH_Q2SAeuHGf9gYVFG_W1MgNehKsl23xyTdtco97NT9i1UjcYz9AnmbTBj5YZKEeRNQXYBLtaVN1XPaNU_aRAOM0fXLSL0W4ufRkI2RiOQiPRZ7mLzHdIPkfz_j4geVd7YGIVqf4",
+    imageAlt: "Architectural detail",
+    imageFirst: true,
   },
 ];
 
 export function Industries() {
-  const [active, setActive] = useState(0);
-  const industry = industries[active];
-
   return (
-    <section id="industrias" className="bg-ink py-24 md:py-32">
-      <div className="max-w-[1440px] mx-auto px-5 md:px-20">
-        {/* Header */}
-        <div className="max-w-2xl mb-16 md:mb-20">
-          <SectionLabel className="mb-5">Industrias</SectionLabel>
-          <h2 className="font-display text-[clamp(28px,3.5vw,48px)] font-bold leading-[1.15] tracking-[-0.01em] text-cream">
-            Especialización Profunda en Cada Vertical
-          </h2>
-        </div>
+    <section
+      id="industrias"
+      className="py-32 bg-on-surface text-surface-container px-5 md:px-16"
+    >
+      <div className="max-w-[1440px] mx-auto">
+        <span className="text-label-sm text-primary-variant uppercase tracking-[0.3em] block mb-16 text-center">
+          Sectores de Especialidad
+        </span>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
-          {/* Tabs */}
-          <div className="lg:col-span-4 flex flex-row lg:flex-col gap-2 overflow-x-auto lg:overflow-x-visible pb-2 lg:pb-0">
-            {industries.map((ind, i) => (
-              <button
-                key={ind.id}
-                onClick={() => setActive(i)}
-                className={`flex-shrink-0 lg:w-full text-left px-5 py-4 rounded-[4px] border transition-all duration-200 group ${
-                  active === i
-                    ? "bg-ink-low border-gold/50 text-cream"
-                    : "bg-transparent border-outline/20 text-cream-dim hover:border-outline/50 hover:text-cream"
-                }`}
-              >
-                <span
-                  className={`font-body text-[11px] font-semibold tracking-[0.18em] uppercase block mb-1 ${
-                    active === i ? "text-gold" : "text-outline-muted"
-                  }`}
-                >
-                  0{i + 1}
-                </span>
-                <span className="font-body text-sm font-medium">{ind.label}</span>
-              </button>
-            ))}
-          </div>
-
-          {/* Content */}
-          <div className="lg:col-span-8 bg-ink-low rounded-[4px] border border-outline/30 p-8 md:p-12">
-            <div key={industry.id}>
-              <h3 className="font-display text-[clamp(22px,2.5vw,36px)] font-semibold text-cream leading-tight mb-5">
-                {industry.title}
-              </h3>
-
-              <p className="font-body text-base text-outline-muted leading-relaxed mb-10">
-                {industry.description}
-              </p>
-
-              <div className="mb-10">
-                <p className="font-body text-[11px] font-semibold tracking-[0.18em] uppercase text-outline-muted mb-5">
-                  Capacidades incluidas
+        <div className="space-y-40">
+          {industries.map((industry) => (
+            <div
+              key={industry.id}
+              className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center"
+            >
+              {/* Text block */}
+              <div className={industry.imageFirst ? "order-2" : "order-2 lg:order-1"}>
+                <h3 className="text-headline-lg mb-6 uppercase text-white">
+                  {industry.title}
+                </h3>
+                <p className="text-body-lg text-surface-container/70 mb-10 max-w-lg">
+                  {industry.description}
                 </p>
-                <ul className="flex flex-col gap-3">
-                  {industry.capabilities.map((cap) => (
-                    <li key={cap} className="flex items-start gap-3">
-                      <div className="w-px h-4 bg-gold mt-1 flex-shrink-0" />
-                      <span className="font-body text-sm text-cream-dim leading-relaxed">
-                        {cap}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
+                <button className="flex items-center gap-2 group text-label-sm uppercase tracking-widest border-b border-primary-variant pb-1 hover:text-white transition-colors">
+                  Ver Portfolio{" "}
+                  <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform text-[18px]">
+                    arrow_forward
+                  </span>
+                </button>
               </div>
 
-              <a
-                href="#portfolio"
-                className="inline-flex items-center gap-2 font-body text-sm font-semibold text-gold hover:text-gold-dim transition-colors duration-200 group"
-              >
-                Ver Portfolio
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="transition-transform duration-200 group-hover:translate-x-1"
-                >
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                  <polyline points="12 5 19 12 12 19" />
-                </svg>
-              </a>
+              {/* Image block */}
+              <div className={industry.imageFirst ? "order-1" : "order-1 lg:order-2"}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  alt={industry.imageAlt}
+                  className="w-full aspect-video object-cover rounded-2xl"
+                  src={industry.image}
+                />
+              </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
