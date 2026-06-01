@@ -38,7 +38,7 @@ export function Solutions() {
         {solutions.map((sol) => (
           <div
             key={sol.title}
-            className="p-10 bg-white border border-outline/30 rounded-xl hover-lift coastal-shadow"
+            className="p-10 bg-surface border border-outline rounded-xl hover-lift coastal-shadow hover:bg-sand-100 transition-colors duration-300"
           >
             <span className="material-symbols-outlined text-primary-variant text-4xl mb-8 block">
               {sol.icon}

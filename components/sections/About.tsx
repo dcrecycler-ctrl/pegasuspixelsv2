@@ -1,6 +1,6 @@
 export function About() {
   return (
-    <section id="sobre-mi" className="py-40 bg-surface">
+    <section id="sobre-mi" className="py-40 bg-surface-container-high">
       <div className="max-w-[1440px] mx-auto px-5 md:px-16">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
         {/* Portrait */}

@@ -10,10 +10,10 @@ export function Hero() {
           <span className="text-label-sm text-primary-variant uppercase tracking-[0.2em] block mb-6">
             Arquitectura de Sistemas Digitales
           </span>
-          <h1 className="text-[52px] md:text-display-lg leading-[1.1] mb-8 text-on-surface">
+          <h1 className="text-[52px] md:text-display-lg leading-[1.1] mb-8 text-ocean-900">
             Tecnología y Experiencias Digitales para Empresas Modernas
           </h1>
-          <p className="text-body-lg text-on-surface-variant max-w-xl mb-12">
+          <p className="text-body-lg text-ink-800 max-w-xl mb-12">
             Ayudamos a inmobiliarias, automotoras y empresas de hospitalidad a mejorar su presencia digital, organizar operaciones y ofrecer una experiencia moderna a sus clientes.
           </p>
           <div className="flex flex-col sm:flex-row gap-6">

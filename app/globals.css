@@ -11,62 +11,60 @@
   --radius-2xl: 1rem;
   --radius-full: 9999px;
 
-  /* ── Named tokens (use these for precise targeting) ── */
-
-  /* Ocean — Deep Authority */
+  /* ── Ocean — Deep Atlantic Authority ── */
   --color-ocean-900: #0b1f2a;
-  --color-ocean-800: #0f2e3d;
-  --color-ocean-700: #123f52;
-  --color-ocean-600: #16556e;
+  --color-ocean-800: #102f3e;
+  --color-ocean-700: #15506a;
+  --color-ocean-600: #1b6a86;
 
-  /* Sun — Conversion Energy */
+  /* ── Sun — Conversion Energy ── */
   --color-sun-600: #f2b84b;
   --color-sun-500: #f6c462;
   --color-sun-400: #ffd27a;
   --color-sun-300: #ffe3a3;
 
-  /* Sky — Atmospheric Background */
+  /* ── Sky — Atmospheric Background ── */
   --color-sky-100: #f4f9fb;
   --color-sky-200: #e6f2f7;
   --color-sky-300: #cfe6f0;
   --color-sky-400: #a9d3e2;
 
-  /* Sand — Warm Foundation */
+  /* ── Sand — Warm Foundation ── */
   --color-sand-50: #fbf7f1;
   --color-sand-100: #f3e9dc;
   --color-sand-200: #e6d6c2;
   --color-sand-300: #d2bea3;
 
-  /* Ink — Readable Authority */
+  /* ── Ink — Readable Authority ── */
   --color-ink-900: #0e1215;
   --color-ink-800: #1a2328;
   --color-ink-700: #2a353b;
   --color-ink-600: #3c4a52;
 
-  /* ── Semantic aliases (used by all utility classes) ── */
+  /* ── Semantic aliases ── */
 
-  /* Surfaces */
-  --color-surface: #fbf7f1;             /* sand-50: warm base */
+  /* Surfaces — warm, never pure white */
+  --color-surface: #fbf7f1;             /* sand-50: nav bg, cards, panels */
   --color-surface-container: #f4f9fb;   /* sky-100: main page background */
-  --color-surface-container-high: #e6f2f7; /* sky-200: section contrast */
+  --color-surface-container-high: #e6f2f7; /* sky-200: section contrast / stats strip */
   --color-surface-container-highest: #cfe6f0; /* sky-300 */
 
   /* Text */
   --color-on-surface: #0e1215;          /* ink-900: primary text */
   --color-on-surface-variant: #2a353b;  /* ink-700: secondary text */
-  --color-on-primary: #0e1215;          /* ink-900: dark text on sun buttons */
+  --color-on-primary: #0b1f2a;          /* ocean-900: text on sun buttons */
 
   /* Brand */
   --color-primary: #f2b84b;             /* sun-600: CTAs only */
   --color-primary-hover: #f6c462;       /* sun-500: CTA hover */
-  --color-primary-variant: #16556e;     /* ocean-600: links, labels, icons, structure */
-  --color-secondary: #2a353b;           /* ink-700 */
+  --color-primary-variant: #15506a;     /* ocean-700: icons, labels, structural accents */
 
   /* Structure */
   --color-outline: #e6d6c2;             /* sand-200: all borders */
-  --color-background: #f4f9fb;          /* sky-100 */
+  --color-background: #f4f9fb;          /* sky-100: page bg */
 
   /* Semantic */
+  --color-secondary: #2a353b;
   --color-success: #22c55e;
 
   /* Typography scale */
@@ -119,14 +117,13 @@ body {
 
 ::selection {
   background-color: #ffd27a;
-  color: #0e1215;
+  color: #0b1f2a;
 }
 
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
 }
 
-/* Shadow using ocean-900 base for warmth */
 .coastal-shadow {
   box-shadow: 0 10px 40px -15px rgba(11, 31, 42, 0.14);
 }

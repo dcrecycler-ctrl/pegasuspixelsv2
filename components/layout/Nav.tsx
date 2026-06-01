@@ -22,7 +22,7 @@ export function Nav() {
 
   return (
     <nav
-      className={`top-0 sticky z-50 bg-surface/90 backdrop-blur-md border-b border-outline/40 h-20 transition-shadow duration-300 ${
+      className={`top-0 sticky z-50 bg-surface border-b border-outline h-20 transition-shadow duration-300 ${
         scrolled ? "coastal-shadow" : ""
       }`}
     >
@@ -30,7 +30,7 @@ export function Nav() {
         {/* Logo */}
         <Link
           href="/"
-          className="text-headline-md font-bold text-on-surface tracking-tighter hover:text-primary-variant transition-colors duration-300"
+          className="text-headline-md font-bold text-ocean-900 tracking-tighter hover:text-ocean-700 transition-colors duration-300"
         >
           Pegasus Pixels
         </Link>
@@ -41,17 +41,17 @@ export function Nav() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-on-surface-variant hover:text-primary-variant transition-colors duration-300 text-[16px] font-medium"
+              className="text-ocean-800 hover:text-ocean-700 transition-colors duration-300 text-[16px] font-medium"
             >
               {link.label}
             </Link>
           ))}
         </div>
 
-        {/* CTA button */}
+        {/* CTA — Sun 600 with Ocean 900 text */}
         <Link
           href="/contacto"
-          className="hidden md:block bg-primary text-on-primary px-7 py-3 text-label-sm uppercase hover:bg-primary-variant transition-all rounded-lg"
+          className="hidden md:block bg-primary text-on-primary px-7 py-3 text-label-sm uppercase hover:bg-primary-hover transition-all rounded-lg font-semibold"
         >
           SOLICITAR CONSULTA
         </Link>
@@ -62,32 +62,20 @@ export function Nav() {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
-          <span
-            className={`block w-6 h-px bg-on-surface transition-all duration-300 ${
-              menuOpen ? "rotate-45 translate-y-[7px]" : ""
-            }`}
-          />
-          <span
-            className={`block w-6 h-px bg-on-surface transition-all duration-300 ${
-              menuOpen ? "opacity-0" : ""
-            }`}
-          />
-          <span
-            className={`block w-6 h-px bg-on-surface transition-all duration-300 ${
-              menuOpen ? "-rotate-45 -translate-y-[7px]" : ""
-            }`}
-          />
+          <span className={`block w-6 h-px bg-ocean-900 transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-[7px]" : ""}`} />
+          <span className={`block w-6 h-px bg-ocean-900 transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`} />
+          <span className={`block w-6 h-px bg-ocean-900 transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-[7px]" : ""}`} />
         </button>
       </div>
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-surface border-t border-outline/40 py-6 px-5 flex flex-col gap-5">
+        <div className="md:hidden bg-surface border-t border-outline py-6 px-5 flex flex-col gap-5">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-on-surface-variant hover:text-primary-variant transition-colors text-[16px] font-medium"
+              className="text-ocean-800 hover:text-ocean-700 transition-colors text-[16px] font-medium"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
@@ -95,7 +83,7 @@ export function Nav() {
           ))}
           <Link
             href="/contacto"
-            className="bg-primary text-on-primary px-7 py-3 text-label-sm uppercase text-center rounded-lg mt-2"
+            className="bg-primary text-on-primary px-7 py-3 text-label-sm uppercase text-center rounded-lg mt-2 font-semibold"
             onClick={() => setMenuOpen(false)}
           >
             SOLICITAR CONSULTA
