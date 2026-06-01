@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function Hero() {
   return (
     <section className="pt-24 pb-32 px-5 md:px-16 max-w-[1440px] mx-auto">
@@ -14,18 +16,18 @@ export function Hero() {
             Ayudamos a inmobiliarias, automotoras y empresas de hospitalidad a mejorar su presencia digital, organizar operaciones y ofrecer una experiencia moderna a sus clientes.
           </p>
           <div className="flex flex-col sm:flex-row gap-6">
-            <a
-              href="#soluciones"
+            <Link
+              href="/soluciones"
               className="bg-on-surface text-surface px-10 py-4 text-label-sm uppercase hover:bg-primary transition-colors rounded-lg text-center"
             >
               Explorar Soluciones
-            </a>
-            <a
-              href="#contacto"
+            </Link>
+            <Link
+              href="/contacto"
               className="border border-outline text-on-surface px-10 py-4 text-label-sm uppercase hover:bg-surface-container transition-colors rounded-lg text-center"
             >
               Solicitar Consulta
-            </a>
+            </Link>
           </div>
         </div>
 

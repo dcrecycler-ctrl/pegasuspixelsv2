@@ -1,12 +1,13 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const navLinks = [
-  { label: "Soluciones", href: "#soluciones" },
-  { label: "Industrias", href: "#industrias" },
-  { label: "Portfolio", href: "#portfolio" },
-  { label: "Sobre Mí", href: "#sobre-mi" },
+  { label: "Soluciones", href: "/soluciones" },
+  { label: "Industrias", href: "/industrias" },
+  { label: "Portfolio", href: "/portfolio" },
+  { label: "Sobre Mí", href: "/sobre-mi" },
 ];
 
 export function Nav() {
@@ -27,27 +28,33 @@ export function Nav() {
     >
       <div className="flex justify-between items-center w-full px-5 md:px-16 h-full max-w-[1440px] mx-auto">
         {/* Logo */}
-        <div className="text-headline-md font-bold text-on-surface tracking-tighter">
+        <Link
+          href="/"
+          className="text-headline-md font-bold text-on-surface tracking-tighter hover:text-primary transition-colors duration-300"
+        >
           Pegasus Pixels
-        </div>
+        </Link>
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-10">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="text-on-surface-variant hover:text-primary transition-colors duration-300 text-[16px] font-medium"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
 
         {/* CTA button */}
-        <button className="hidden md:block bg-primary text-on-primary px-7 py-3 text-label-sm uppercase hover:bg-primary-variant transition-all rounded-lg">
+        <Link
+          href="/contacto"
+          className="hidden md:block bg-primary text-on-primary px-7 py-3 text-label-sm uppercase hover:bg-primary-variant transition-all rounded-lg"
+        >
           SOLICITAR CONSULTA
-        </button>
+        </Link>
 
         {/* Mobile hamburger */}
         <button
@@ -77,22 +84,22 @@ export function Nav() {
       {menuOpen && (
         <div className="md:hidden bg-surface border-t border-outline/40 py-6 px-5 flex flex-col gap-5">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="text-on-surface-variant hover:text-primary transition-colors text-[16px] font-medium"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
-          <a
-            href="#contacto"
+          <Link
+            href="/contacto"
             className="bg-primary text-on-primary px-7 py-3 text-label-sm uppercase text-center rounded-lg mt-2"
             onClick={() => setMenuOpen(false)}
           >
             SOLICITAR CONSULTA
-          </a>
+          </Link>
         </div>
       )}
     </nav>

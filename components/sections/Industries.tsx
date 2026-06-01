@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const industries = [
   {
     id: "inmobiliarias",
@@ -62,12 +64,15 @@ export function Industries() {
                 <p className="text-body-lg text-surface-container/70 mb-10 max-w-lg">
                   {industry.description}
                 </p>
-                <button className="flex items-center gap-2 group text-label-sm uppercase tracking-widest border-b border-primary-variant pb-1 hover:text-white transition-colors">
+                <Link
+                  href="/portfolio"
+                  className="flex items-center gap-2 group text-label-sm uppercase tracking-widest border-b border-primary-variant pb-1 hover:text-white transition-colors w-fit"
+                >
                   Ver Portfolio{" "}
                   <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform text-[18px]">
                     arrow_forward
                   </span>
-                </button>
+                </Link>
               </div>
 
               {/* Image block */}
