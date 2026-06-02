@@ -86,67 +86,68 @@ export function PerceptionSection() {
           ))}
         </div>
 
-        {/* ── 4. Visual placeholder — flow diagram ── */}
+        {/* ── 4. Flow diagram ── */}
         <AnimateIn delay={120} className="mb-14">
-          <div className="rounded-[12px] border border-dashed border-[#CBD5E1] bg-white p-8 md:p-12">
-            <p className="text-[10px] font-bold tracking-[0.18em] text-[#94A3B8] uppercase mb-10 text-center">
-              Placeholder visual — Fuga de ingresos en el sistema de ventas
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-[1fr_32px_1fr_32px_1fr] gap-6 items-center">
+          <div className="rounded-[12px] bg-white border border-[#E2E8F0] p-8 md:p-12">
+            <div className="grid grid-cols-1 md:grid-cols-[1fr_40px_1fr_40px_1fr] gap-6 items-center">
 
               {/* Inputs */}
               <div>
                 <p className="text-[10px] font-bold tracking-[0.12em] text-[#94A3B8] uppercase mb-4">
-                  Entradas
+                  Cómo entra el interés
                 </p>
                 <div className="space-y-2">
-                  {sources.map(({ label, cls }) => (
-                    <div key={label} className={`rounded-[8px] border px-4 py-3 text-[13px] font-semibold ${cls}`}>
-                      {label}
-                    </div>
-                  ))}
+                  <div className="rounded-[8px] border border-green-200 bg-green-50 px-4 py-3 text-[13px] font-semibold text-green-700 flex items-center gap-2">
+                    <span className="material-symbols-outlined text-[16px]">chat</span> WhatsApp
+                  </div>
+                  <div className="rounded-[8px] border border-blue-200 bg-blue-50 px-4 py-3 text-[13px] font-semibold text-blue-700 flex items-center gap-2">
+                    <span className="material-symbols-outlined text-[16px]">web</span> Formularios web
+                  </div>
+                  <div className="rounded-[8px] border border-violet-200 bg-violet-50 px-4 py-3 text-[13px] font-semibold text-violet-700 flex items-center gap-2">
+                    <span className="material-symbols-outlined text-[16px]">call</span> Llamadas
+                  </div>
                 </div>
               </div>
 
               {/* Arrow */}
-              <div className="hidden md:flex justify-center text-[#CBD5E1] text-[20px] font-light">
-                →
+              <div className="hidden md:flex justify-center">
+                <span className="text-[#CBD5E1] text-[28px]">→</span>
               </div>
 
-              {/* Broken system */}
-              <div className="rounded-[10px] border-2 border-dashed border-red-200 bg-red-50 p-6 text-center">
-                <span className="material-symbols-outlined text-red-400 text-[28px] block mb-2">
-                  warning
+              {/* No system */}
+              <div className="rounded-[10px] border border-red-200 bg-red-50 p-6 text-center">
+                <span className="material-symbols-outlined text-red-400 text-[32px] block mb-3">
+                  scatter_plot
                 </span>
-                <p className="text-[13px] font-bold text-red-600 mb-1">
-                  Sin sistema central
-                </p>
-                <p className="text-[11px] text-red-400 leading-[1.5]">
-                  Información dispersa<br />Sin proceso estructurado
+                <p className="text-[13px] font-bold text-red-700 mb-1">Sin sistema central</p>
+                <p className="text-[11px] text-red-400 leading-[1.6]">
+                  WhatsApp, Excel y mensajes sueltos sin proceso estructurado
                 </p>
               </div>
 
               {/* Arrow */}
-              <div className="hidden md:flex justify-center text-[#CBD5E1] text-[20px] font-light">
-                →
+              <div className="hidden md:flex justify-center">
+                <span className="text-[#CBD5E1] text-[28px]">→</span>
               </div>
 
               {/* Lost outcomes */}
               <div>
                 <p className="text-[10px] font-bold tracking-[0.12em] text-[#94A3B8] uppercase mb-4">
-                  Resultado
+                  Lo que se pierde
                 </p>
                 <div className="space-y-2">
-                  {lost.map((item) => (
-                    <div
-                      key={item}
-                      className="rounded-[8px] border border-slate-100 bg-slate-50 px-4 py-3 flex items-center gap-2"
-                    >
-                      <span className="material-symbols-outlined text-red-300 text-[14px]">close</span>
-                      <span className="text-[13px] text-slate-400">{item}</span>
-                    </div>
-                  ))}
+                  <div className="rounded-[8px] border border-slate-100 bg-slate-50 px-4 py-3 flex items-center gap-3">
+                    <span className="material-symbols-outlined text-red-300 text-[16px]">cancel</span>
+                    <span className="text-[13px] text-slate-500">Lead sin registrar</span>
+                  </div>
+                  <div className="rounded-[8px] border border-slate-100 bg-slate-50 px-4 py-3 flex items-center gap-3">
+                    <span className="material-symbols-outlined text-red-300 text-[16px]">cancel</span>
+                    <span className="text-[13px] text-slate-500">Sin seguimiento</span>
+                  </div>
+                  <div className="rounded-[8px] border border-slate-100 bg-slate-50 px-4 py-3 flex items-center gap-3">
+                    <span className="material-symbols-outlined text-red-300 text-[16px]">cancel</span>
+                    <span className="text-[13px] text-slate-500">Venta no concretada</span>
+                  </div>
                 </div>
               </div>
 
