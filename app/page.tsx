@@ -8,6 +8,8 @@ import { WhatWeImprove } from "@/components/sections/WhatWeImprove";
 import { OutcomesSection } from "@/components/sections/OutcomesSection";
 import { HowItWorksSection } from "@/components/sections/HowItWorksSection";
 import { FinalCTASection } from "@/components/sections/FinalCTASection";
+import { ProductShowcase } from "@/components/sections/ProductShowcase";
+import { FounderSection } from "@/components/sections/FounderSection";
 
 export default function Home() {
   return (
@@ -21,6 +23,8 @@ export default function Home() {
         <WhatWeImprove />
         <OutcomesSection />
         <HowItWorksSection />
+        <ProductShowcase />
+        <FounderSection />
         <FinalCTASection />
       </main>
       <Footer />
