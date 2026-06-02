@@ -8,14 +8,12 @@ export function FounderSection() {
 
           {/* Left: photo placeholder */}
           <AnimateIn>
-            <div className="w-full aspect-[4/5] rounded-[16px] bg-[#EAECEF] flex items-center justify-center overflow-hidden max-w-md">
-              <div className="text-center px-8">
-                <span className="material-symbols-outlined text-[#CBD5E1] text-[48px] block mb-4">person</span>
-                <p className="text-[#94A3B8] text-[11px] font-bold tracking-[0.15em] uppercase mb-2">Foto</p>
-                <p className="text-[#94A3B8] text-[11px] tracking-[0.08em] leading-[1.6]">
-                  Foto profesional — ambiente natural, Punta del Este
-                </p>
-              </div>
+            <div className="w-full aspect-[4/5] rounded-[16px] overflow-hidden max-w-md">
+              <img
+                src="/alejandro.png"
+                alt="Alejandro González — Fundador de Pegasus Pixels"
+                className="w-full h-full object-cover object-top"
+              />
             </div>
           </AnimateIn>
 
