@@ -1,11 +1,11 @@
 import { AnimateIn } from "@/components/ui/AnimateIn";
 
 const steps = [
-  "Analizamos cómo entra la demanda hoy",
-  "Identificamos dónde se pierden oportunidades de clientes",
-  "Revisamos cómo se gestionan las consultas y el seguimiento",
-  "Detectamos procesos manuales innecesarios o ineficientes",
-  "Diseñamos e implementamos un sistema digital para mejorar todo el flujo",
+  "Mapeamos cómo llegan los clientes hoy",
+  "Identificamos dónde se pierden las comunicaciones",
+  "Revisamos cómo se gestionan las consultas",
+  "Simplificamos procesos manuales innecesarios",
+  "Conectamos todo en un sistema digital",
 ];
 
 export function HowWeWork() {
@@ -20,10 +20,10 @@ export function HowWeWork() {
               Cómo trabajamos
             </span>
             <h2 className="text-headline-lg font-black tracking-[-0.03em] leading-[1.05] text-white mb-8">
-              No construimos sitios web.
+              No empezamos con diseño.
             </h2>
             <p className="text-[17px] font-light leading-[1.65] text-white/60 max-w-sm">
-              Analizamos cómo funciona tu negocio y diseñamos el sistema digital alrededor de eso.
+              Empezamos entendiendo cómo tu negocio ya interactúa con clientes.
             </p>
           </AnimateIn>
 

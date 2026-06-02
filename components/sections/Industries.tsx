@@ -1,92 +1,41 @@
-import Link from "next/link";
+import { AnimateIn } from "@/components/ui/AnimateIn";
 
 const industries = [
-  {
-    id: "inmobiliarias",
-    title: "INMOBILIARIAS",
-    description:
-      "Plataformas de visualización de propiedades de alta gama con recorridos virtuales integrados y sistemas de reserva inteligente.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAcLHW6IKq2vaE-iyWy5u1Ne0L5oIPNG7xyL0O5R_uM0WnNYvlKHOjcNGr1lGv-nffxWz-zMa2hdqGdYxjmINlFoc1NVGG7hf8F4KUwVdWo_oRsgpeKIIei41PYjHSKnYHM3po5Pn-3OKBO_5dO2R02lrZ5y_jF6rSyS8yrH2lVtgQg45ma1GahFXwDWR-uqiZ4TK-zDen430-3xnZAb45Zvn5zwDnRtsXJ3bZg7av2Spk5W8qDbpKHFaOw1eybM6opb3CgtSTj5gA",
-    imageAlt: "Modern villa",
-    imageFirst: false,
-  },
-  {
-    id: "automotoras",
-    title: "AUTOMOTORAS",
-    description:
-      "Gestión de inventario premium y configuradores de vehículos que transmiten la potencia y el diseño de su flota.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCqveCxfyowu1jdD-75BIY1nBeu_uOSsnlV5NZpb5q9TFawLgpV6-Wrvm32hYmON7upd282-qAOurf1D7oNfxctO4yp4Q0-YAqzas0aSEyvZeP00H9S7rZW1AltWkVucTYBxJqaMYuRp9SalcKcjRBoM8Ab7W7AQRdcR_YBKwZ3X06mCZ3JeMX-2uBXfkubK4Zix1PDuy7be3C6JFP499yRKEsHn-qPaXzEOLhTTKG17oj8yH-uAXGrDy4gDk1chCysS1UysVt8aFw",
-    imageAlt: "Luxury showroom",
-    imageFirst: true,
-  },
-  {
-    id: "hospitality",
-    title: "HOSPITALITY",
-    description:
-      "Restaurantes, hoteles y negocios orientados a la experiencia del cliente con interfaces de alta estética.",
-    image: "https://lh3.googleusercontent.com/aida/ADBb0ugEzAO_NOE31D70RnTr2mWedsInaoTM1EurrUw6WdyamToux7WuldzSCJ6Y2FdA9WtdttqSsnWqciSz-GNle4Q0NcH6Ik7F9xXeyx4S_3d7PDNVeUN2u6dMiJ1LbELJyuwqMcFRSAhQQtaXrI7AY7Vl7kz87mEeV5ucNyzq3rDKvcmjEMnnQc2kr66X_T5RKuGOrfjs3Ur_VzLWK2qi9I6zKDU3Ay4mnVKK9E1spCsLcOnkcJNwZ7nPzVI",
-    imageAlt: "Hospitality interior",
-    imageFirst: false,
-  },
-  {
-    id: "arquitectura",
-    title: "ARQUITECTURA",
-    description:
-      "Visualización de proyectos, gestión de activos y presencia digital para estudios de arquitectura y desarrolladores.",
-    image: "https://lh3.googleusercontent.com/aida/ADBb0ugutlc_ah8VbjCUWZVJA4ta05WFbFt14zHXzKfJQC5lt_SlveP5hzuPOALbf1u2uCI6Gv-hiyEFmb5Te7cIfCJJKtybyFEbzu7F2uoN2eixA5prFVZdH_Q2SAeuHGf9gYVFG_W1MgNehKsl23xyTdtco97NT9i1UjcYz9AnmbTBj5YZKEeRNQXYBLtaVN1XPaNU_aRAOM0fXLSL0W4ufRkI2RiOQiPRZ7mLzHdIPkfz_j4geVd7YGIVqf4",
-    imageAlt: "Architectural detail",
-    imageFirst: true,
-  },
+  "Concesionarias",
+  "Restaurantes",
+  "Empresas náuticas",
+  "Servicios técnicos",
+  "Profesionales",
+  "Inmobiliarias",
 ];
 
 export function Industries() {
   return (
-    <section
-      id="industrias"
-      className="py-32 bg-ocean-900 text-sky-100"
-    >
+    <section id="industrias" className="py-32 bg-surface border-y border-outline/20">
       <div className="max-w-[1440px] mx-auto px-5 md:px-16">
-        <span className="text-[11px] font-bold text-ocean-600 uppercase tracking-[0.12em] block mb-16 text-center">
-          Sectores de Especialidad
-        </span>
 
-        <div className="space-y-40">
-          {industries.map((industry) => (
-            <div
-              key={industry.id}
-              className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center"
-            >
-              {/* Text block */}
-              <div className={industry.imageFirst ? "order-2" : "order-2 lg:order-1"}>
-                <h3 className="text-headline-lg font-black tracking-[-0.03em] leading-[1.1] mb-6 uppercase text-white">
-                  {industry.title}
-                </h3>
-                <p className="text-[17px] font-light leading-[1.65] text-sky-200 mb-10 max-w-lg">
-                  {industry.description}
-                </p>
-                <Link
-                  href="/portfolio"
-                  className="flex items-center gap-2 group text-[11px] font-bold text-ocean-600 uppercase tracking-[0.12em] border-b border-ocean-600 pb-1 hover:text-sun-500 hover:border-sun-500 transition-colors w-fit"
-                >
-                  Ver Portfolio{" "}
-                  <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform text-[18px]">
-                    arrow_forward
-                  </span>
-                </Link>
-              </div>
+        <AnimateIn className="mb-16">
+          <span className="text-[11px] font-bold tracking-[0.12em] text-primary-variant uppercase block mb-4">
+            Industrias
+          </span>
+          <h2 className="text-headline-lg font-black tracking-[-0.03em] leading-[1.05] text-on-surface max-w-xl">
+            Trabajamos con negocios que dependen de un flujo constante de clientes.
+          </h2>
+        </AnimateIn>
 
-              {/* Image block */}
-              <div className={industry.imageFirst ? "order-1" : "order-1 lg:order-2"}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  alt={industry.imageAlt}
-                  className="w-full aspect-video object-cover rounded-2xl"
-                  src={industry.image}
-                />
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-px bg-outline/20">
+          {industries.map((name, i) => (
+            <AnimateIn key={name} delay={i * 60}>
+              <div className="bg-surface px-8 py-10">
+                <span className="text-[11px] font-bold tracking-[0.12em] text-primary-variant uppercase block mb-3">
+                  0{i + 1}
+                </span>
+                <span className="text-[20px] font-semibold text-on-surface">{name}</span>
               </div>
-            </div>
+            </AnimateIn>
           ))}
         </div>
+
       </div>
     </section>
   );

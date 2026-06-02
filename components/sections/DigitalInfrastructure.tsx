@@ -3,19 +3,19 @@ import { AnimateIn } from "@/components/ui/AnimateIn";
 const pillars = [
   {
     title: "Sitios web",
-    body: "Sitios diseñados para generar confianza, mejorar la visibilidad y convertir visitantes en consultas.",
+    body: "Sitios diseñados para conectar la intención del cliente con consultas reales, no solo presencia.",
   },
   {
     title: "Automatización",
-    body: "Reducimos tareas repetitivas y mejoramos tiempos de respuesta mediante sistemas automatizados.",
+    body: "Sistemas simples que ayudan a responder más rápido y reducir trabajo manual.",
   },
   {
     title: "Operaciones",
-    body: "Implementamos sistemas para gestionar clientes, reservas, consultas e información de forma centralizada.",
+    body: "Herramientas para organizar consultas, reservas y comunicación en un solo lugar.",
   },
   {
     title: "Optimización",
-    body: "Analizamos procesos existentes para detectar ineficiencias y oportunidades de mejora operativa.",
+    body: "Mejoras pequeñas que hacen que el flujo digital sea más consistente y ordenado.",
   },
 ];
 
@@ -26,10 +26,10 @@ export function DigitalInfrastructure() {
 
         <AnimateIn className="mb-16">
           <h2 className="text-headline-lg font-black tracking-[-0.03em] leading-[1.1] max-w-2xl text-on-surface">
-            Infraestructura digital para pequeñas empresas
+            Infraestructura digital
           </h2>
           <p className="mt-5 text-[17px] font-light leading-[1.65] text-ink-700 max-w-2xl">
-            No se trata solo de tener un sitio web. Se trata de construir un sistema digital que ayude al negocio a operar mejor, captar más oportunidades y reducir fricción en sus procesos.
+            Esta es la estructura que usamos para conectar cómo opera tu negocio online.
           </p>
         </AnimateIn>
 
@@ -47,7 +47,7 @@ export function DigitalInfrastructure() {
         <AnimateIn delay={200}>
           <div className="mt-16 border-t border-outline/20 pt-8">
             <p className="text-[17px] font-light leading-[1.65] text-ink-700 max-w-3xl">
-              El sitio web deja de ser el producto principal y pasa a ser una parte dentro de un sistema digital más amplio orientado al rendimiento del negocio.
+              El sitio web no es el centro. Es una parte del sistema.
             </p>
           </div>
         </AnimateIn>

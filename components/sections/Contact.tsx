@@ -54,10 +54,10 @@ export function Contact() {
         {/* Left: Info */}
         <div>
           <h2 className="text-headline-lg font-black tracking-[-0.03em] leading-[1.1] mb-8 text-on-surface">
-            Comencemos a Construir
+            Agendar una consulta
           </h2>
           <p className="text-[17px] font-light leading-[1.65] text-ink-700 mb-12">
-            ¿Listo para elevar la infraestructura digital de su empresa? Complete el formulario y agendaremos una sesión de consultoría técnica sin compromiso.
+            Si quieres entender cómo tu negocio puede adaptarse mejor a cómo se comportan los clientes hoy, podemos revisar tu sistema actual e identificar oportunidades de mejora.
           </p>
 
           <div className="space-y-8">

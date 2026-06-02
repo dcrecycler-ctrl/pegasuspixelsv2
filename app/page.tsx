@@ -1,12 +1,14 @@
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
-import { ProblemStatement } from "@/components/sections/ProblemStatement";
-import { DigitalInfrastructure } from "@/components/sections/DigitalInfrastructure";
+import { RealityShift } from "@/components/sections/RealityShift";
+import { ConnectedBenefits } from "@/components/sections/ConnectedBenefits";
 import { HowWeWork } from "@/components/sections/HowWeWork";
-import { Solutions } from "@/components/sections/Solutions";
+import { DigitalInfrastructure } from "@/components/sections/DigitalInfrastructure";
+import { BusinessLayers } from "@/components/sections/BusinessLayers";
 import { Industries } from "@/components/sections/Industries";
-import { About } from "@/components/sections/About";
+import { ConnectedExample } from "@/components/sections/ConnectedExample";
+import { DigitalAudit } from "@/components/sections/DigitalAudit";
 import { Contact } from "@/components/sections/Contact";
 
 export default function Home() {
@@ -15,12 +17,14 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
-        <ProblemStatement />
-        <DigitalInfrastructure />
+        <RealityShift />
+        <ConnectedBenefits />
         <HowWeWork />
-        <Solutions />
+        <DigitalInfrastructure />
+        <BusinessLayers />
         <Industries />
-        <About />
+        <ConnectedExample />
+        <DigitalAudit />
         <Contact />
       </main>
       <Footer />
