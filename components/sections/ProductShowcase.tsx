@@ -1,6 +1,21 @@
 import { AnimateIn } from "@/components/ui/AnimateIn";
 
-const products = [
+type ScreenBlock =
+  | { type: "header"; text: string }
+  | { type: "filters"; items: string[] }
+  | { type: "cards"; items: { title: string; sub: string; tag: string }[] }
+  | { type: "lead"; text: string };
+
+interface Product {
+  label: string;
+  name: string;
+  color: string;
+  accent: string;
+  icon: string;
+  screen: ScreenBlock[];
+}
+
+const products: Product[] = [
   {
     label: "Automotoras",
     name: "Dealio",
@@ -28,7 +43,7 @@ const products = [
       { type: "header", text: "Propiedades — 18 activas" },
       { type: "filters", items: ["Todas", "Venta", "Alquiler", "PDE"] },
       { type: "cards", items: [
-        { title: "Apartamento Punta del Este", sub: "USD 185,000 · 3 amb.", tag: "En venta" },
+        { title: "Apto. Punta del Este", sub: "USD 185,000 · 3 amb.", tag: "En venta" },
         { title: "Casa Cantegril", sub: "USD 320,000 · 4 amb.", tag: "En venta" },
         { title: "Estudio Brava", sub: "USD 1,800/mes · 1 amb.", tag: "Alquiler" },
       ]},
@@ -74,9 +89,8 @@ export function ProductShowcase() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {products.map(({ label, name, color, accent, icon, screen }, i) => (
             <AnimateIn key={name} delay={i * 80}>
-              <div className="bg-white border border-[#E2E8F0] rounded-[16px] overflow-hidden h-full">
+              <div className="bg-white border border-[#E2E8F0] rounded-[16px] overflow-hidden h-full flex flex-col">
 
-                {/* Product label */}
                 <div className="px-6 pt-6 pb-4 border-b border-[#E2E8F0]">
                   <div className="flex items-center gap-3">
                     <div className={`w-9 h-9 rounded-[8px] ${color} border flex items-center justify-center`}>
@@ -89,10 +103,8 @@ export function ProductShowcase() {
                   </div>
                 </div>
 
-                {/* Mock screen */}
-                <div className="p-4 bg-[#F8FAFC]">
+                <div className="p-4 bg-[#F8FAFC] flex-1">
                   <div className="bg-white border border-[#E2E8F0] rounded-[10px] overflow-hidden">
-
                     {screen.map((block, j) => {
                       if (block.type === "header") return (
                         <div key={j} className="px-4 py-3 border-b border-[#E2E8F0] flex items-center justify-between">
@@ -102,8 +114,8 @@ export function ProductShowcase() {
                       );
                       if (block.type === "filters") return (
                         <div key={j} className="px-4 py-2 border-b border-[#E2E8F0] flex gap-2 overflow-hidden">
-                          {block.items!.map((f, k) => (
-                            <span key={k} className={`text-[10px] font-semibold px-2 py-1 rounded-full ${k === 0 ? `${color} ${accent} border` : 'text-[#94A3B8]'}`}>
+                          {block.items.map((f, k) => (
+                            <span key={k} className={`text-[10px] font-semibold px-2 py-1 rounded-full ${k === 0 ? `${color} ${accent} border` : "text-[#94A3B8]"}`}>
                               {f}
                             </span>
                           ))}
@@ -111,13 +123,13 @@ export function ProductShowcase() {
                       );
                       if (block.type === "cards") return (
                         <div key={j} className="divide-y divide-[#F1F5F9]">
-                          {block.items!.map((card, k) => (
+                          {block.items.map((card, k) => (
                             <div key={k} className="px-4 py-3 flex items-center justify-between">
                               <div>
                                 <p className="text-[11px] font-semibold text-[#0F172A]">{card.title}</p>
                                 <p className="text-[10px] text-[#94A3B8]">{card.sub}</p>
                               </div>
-                              <span className={`text-[9px] font-bold px-2 py-0.5 rounded-full border ${card.tag === "Reservado" || card.tag === "Último!" ? 'bg-amber-50 text-amber-600 border-amber-200' : `${color} ${accent} border`}`}>
+                              <span className={`text-[9px] font-bold px-2 py-0.5 rounded-full border ${card.tag === "Reservado" || card.tag === "Último!" ? "bg-amber-50 text-amber-600 border-amber-200" : `${color} ${accent} border`}`}>
                                 {card.tag}
                               </span>
                             </div>
@@ -132,12 +144,10 @@ export function ProductShowcase() {
                       );
                       return null;
                     })}
-
                   </div>
                 </div>
 
-                {/* CTA */}
-                <div className="px-6 pb-6 pt-2">
+                <div className="px-6 pb-6 pt-3">
                   <a href="/contacto" className={`text-[13px] font-semibold ${accent} flex items-center gap-1.5`}>
                     Ver demo de {name}
                     <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
