@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <section className="bg-white py-24">
       <div className="max-w-[1440px] mx-auto px-5 md:px-16">
-        <div className="max-w-[760px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
           <p className="anim-fade-up text-[11px] font-bold tracking-[0.18em] text-[#2563EB] uppercase mb-6">
             Punta del Este, Uruguay
@@ -40,6 +40,20 @@ export function Hero() {
           </div>
 
         </div>
+
+        {/* Right: hero image */}
+        <div className="anim-fade-right delay-200 hidden lg:block">
+          <div className="w-full aspect-[4/3] rounded-[16px] bg-[#EAECEF] flex items-center justify-center overflow-hidden">
+            {/* Replace with real photo — see Gemini prompt below */}
+            <div className="text-center px-8">
+              <p className="text-[#94A3B8] text-[11px] font-bold tracking-[0.15em] uppercase mb-3">Foto recomendada</p>
+              <p className="text-[#94A3B8] text-[12px] leading-[1.6]">
+                Dueño o equipo de un negocio revisando su sitio web o sistema en una tablet o laptop — ambiente profesional, luz natural, Punta del Este o Montevideo.
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );
