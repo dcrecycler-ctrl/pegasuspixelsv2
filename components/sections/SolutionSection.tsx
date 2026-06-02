@@ -2,28 +2,18 @@ import { AnimateIn } from "@/components/ui/AnimateIn";
 
 export function SolutionSection() {
   return (
-    <section className="bg-[#F7F8FA] py-24">
-      <div className="max-w-[1440px] mx-auto px-5 md:px-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section className="bg-white border-y border-slate-200 py-24 md:py-28">
+      <div className="max-w-[1200px] mx-auto px-5 md:px-10">
+        <div className="max-w-[680px]">
 
           <AnimateIn>
-            <span className="text-[11px] font-bold tracking-[0.2em] text-blue-600 uppercase block mb-6">
-              La solución
-            </span>
-            <h2 className="text-[36px] md:text-[52px] font-black tracking-[-0.03em] leading-[1.05] text-slate-900 mb-5">
-              Organizamos cómo tu negocio <span className="text-blue-600">gestiona clientes</span>
+            <div className="w-10 h-px bg-blue-600 mb-10" />
+            <h2 className="text-[36px] md:text-[48px] font-black tracking-[-0.03em] leading-[1.05] text-slate-900 mb-8">
+              Ordenamos cómo tu negocio se presenta online
             </h2>
-            <p className="text-[18px] font-light text-slate-500 leading-[1.55]">
-              Todo queda estructurado. Nada se pierde.
+            <p className="text-[18px] font-light text-slate-600 leading-[1.65]">
+              Convertimos tu presencia digital en una estructura clara donde el cliente puede ver, entender y contactarte sin fricción.
             </p>
-          </AnimateIn>
-
-          <AnimateIn delay={100}>
-            <div className="w-full aspect-square rounded-2xl border border-blue-100 bg-blue-50 flex items-center justify-center">
-              <p className="text-blue-200 text-[11px] tracking-[0.12em] uppercase text-center px-8">
-                SYSTEM_FLOW_IMAGE — Cliente → Sistema → Equipo → Venta
-              </p>
-            </div>
           </AnimateIn>
 
         </div>

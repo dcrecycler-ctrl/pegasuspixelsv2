@@ -9,13 +9,13 @@ export function TrustClarity() {
           <AnimateIn>
             <div className="w-10 h-px bg-blue-600 mb-10" />
             <h2 className="text-[36px] md:text-[48px] font-black tracking-[-0.03em] leading-[1.05] text-slate-900 mb-8">
-              We don&apos;t rebuild your business
+              No cambiamos tu negocio. Mejoramos cómo se ve hacia afuera.
             </h2>
             <p className="text-[18px] font-light text-slate-600 leading-[1.65] mb-4">
-              We don&apos;t change how your team works or how your operations run.
+              Tu operación interna puede seguir igual.
             </p>
             <p className="text-[18px] font-light text-slate-600 leading-[1.65]">
-              We improve how customers see and understand your business before they contact you.
+              Nosotros mejoramos cómo los clientes entienden tu negocio desde el primer segundo.
             </p>
           </AnimateIn>
 

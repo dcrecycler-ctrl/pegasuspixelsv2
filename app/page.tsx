@@ -2,10 +2,12 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
 import { TrustClarity } from "@/components/sections/TrustClarity";
-import { WhatWeImprove } from "@/components/sections/WhatWeImprove";
 import { PerceptionSection } from "@/components/sections/PerceptionSection";
+import { SolutionSection } from "@/components/sections/SolutionSection";
+import { WhatWeImprove } from "@/components/sections/WhatWeImprove";
 import { OutcomesSection } from "@/components/sections/OutcomesSection";
 import { HowItWorksSection } from "@/components/sections/HowItWorksSection";
+import { TrustSection } from "@/components/sections/TrustSection";
 import { FinalCTASection } from "@/components/sections/FinalCTASection";
 
 export default function Home() {
@@ -15,10 +17,12 @@ export default function Home() {
       <main className="bg-[#F7F8FA]">
         <Hero />
         <TrustClarity />
-        <WhatWeImprove />
         <PerceptionSection />
+        <SolutionSection />
+        <WhatWeImprove />
         <OutcomesSection />
         <HowItWorksSection />
+        <TrustSection />
         <FinalCTASection />
       </main>
       <Footer />

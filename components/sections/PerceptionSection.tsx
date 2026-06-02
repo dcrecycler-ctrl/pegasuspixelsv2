@@ -1,28 +1,38 @@
 import { AnimateIn } from "@/components/ui/AnimateIn";
 
+const bullets = [
+  "el cliente no entiende rápido lo que ofreces",
+  "el inventario no se ve claro",
+  "el contacto no es inmediato",
+];
+
 export function PerceptionSection() {
   return (
-    <section className="bg-white border-y border-slate-200 py-24 md:py-32">
+    <section className="bg-[#F7F8FA] py-24 md:py-32">
       <div className="max-w-[1200px] mx-auto px-5 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-[680px]">
 
-          {/* Left: text */}
           <AnimateIn>
-            <h2 className="text-[36px] md:text-[48px] font-black tracking-[-0.03em] leading-[1.05] text-slate-900 mb-6">
-              Most businesses lose interest before the conversation starts
+            <h2 className="text-[36px] md:text-[48px] font-black tracking-[-0.03em] leading-[1.05] text-slate-900 mb-8">
+              Muchos negocios pierden clientes antes del primer contacto
             </h2>
-            <p className="text-[18px] font-light text-slate-600 leading-[1.65]">
-              Not because of sales — but because customers arrive unsure or unconvinced.
+            <p className="text-[18px] font-light text-slate-600 leading-[1.65] mb-2">
+              No es falta de interés.
+            </p>
+            <p className="text-[18px] font-light text-slate-600 leading-[1.65] mb-10">
+              Es falta de claridad en cómo se presenta el negocio online.
             </p>
           </AnimateIn>
 
-          {/* Right: image */}
-          <AnimateIn delay={100}>
-            <div className="w-full aspect-[4/3] rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white flex items-center justify-center">
-              <p className="text-slate-300 text-[11px] tracking-[0.12em] uppercase text-center px-8">
-                PERCEPTION_IMAGE — Customer browsing business online
-              </p>
-            </div>
+          <AnimateIn delay={80}>
+            <ul className="space-y-4">
+              {bullets.map((b) => (
+                <li key={b} className="flex items-start gap-4">
+                  <span className="mt-2 w-1.5 h-1.5 rounded-full bg-blue-600 shrink-0" />
+                  <span className="text-[17px] text-slate-700 leading-[1.6]">{b}</span>
+                </li>
+              ))}
+            </ul>
           </AnimateIn>
 
         </div>

@@ -3,18 +3,18 @@ import { AnimateIn } from "@/components/ui/AnimateIn";
 const cards = [
   {
     icon: "language",
-    title: "Online presence",
-    items: ["Inventory presentation", "Clarity of offer", "Structured information"],
+    title: "Presencia digital",
+    items: ["Diseño del sitio", "Claridad del negocio", "Primera impresión profesional"],
   },
   {
-    icon: "visibility",
-    title: "Customer experience before contact",
-    items: ["First impression quality", "Trust building", "Clarity of action"],
+    icon: "inventory_2",
+    title: "Inventario",
+    items: ["Autos, propiedades y servicios bien organizados", "Visual claro y directo", "Navegación simple"],
   },
   {
     icon: "call",
-    title: "Lead entry",
-    items: ["WhatsApp", "Forms", "Calls", "Simple routing"],
+    title: "Contacto de clientes",
+    items: ["WhatsApp", "Formularios", "Llamadas", "Sin pérdida de oportunidades"],
   },
 ];
 
@@ -25,7 +25,7 @@ export function WhatWeImprove() {
 
         <AnimateIn className="mb-14">
           <h2 className="text-[36px] md:text-[48px] font-black tracking-[-0.03em] leading-[1.05] text-slate-900">
-            What we improve
+            Lo que mejoramos
           </h2>
         </AnimateIn>
 
@@ -41,9 +41,9 @@ export function WhatWeImprove() {
                 </h3>
                 <ul className="space-y-3">
                   {items.map((item) => (
-                    <li key={item} className="flex items-center gap-3">
-                      <span className="w-1 h-1 rounded-full bg-slate-400 shrink-0" />
-                      <span className="text-[15px] text-slate-600">{item}</span>
+                    <li key={item} className="flex items-start gap-3">
+                      <span className="mt-2 w-1 h-1 rounded-full bg-slate-400 shrink-0" />
+                      <span className="text-[15px] text-slate-600 leading-[1.5]">{item}</span>
                     </li>
                   ))}
                 </ul>

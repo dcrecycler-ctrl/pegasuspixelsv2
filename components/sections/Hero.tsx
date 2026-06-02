@@ -8,29 +8,27 @@ export function Hero() {
 
           {/* Left: content */}
           <div>
-            <span className="anim-fade-up text-[11px] font-bold tracking-[0.18em] text-blue-600 uppercase block mb-8">
-              Digital presence optimization
-            </span>
-            <h1 className="anim-fade-up delay-100 text-[48px] md:text-[60px] font-black leading-[1.0] tracking-[-0.03em] text-slate-900 mb-8">
-              Your business doesn&apos;t need more changes inside.
-              <br />
-              <span className="text-blue-600">It needs a better presence outside.</span>
+            <h1 className="anim-fade-up text-[44px] md:text-[56px] font-black leading-[1.05] tracking-[-0.03em] text-slate-900 mb-8">
+              Haz que tu negocio se vea claro, confiable y listo para recibir clientes
             </h1>
-            <p className="anim-fade-up delay-200 text-[18px] font-light text-slate-600 leading-[1.65] mb-10 max-w-lg">
-              Customers decide before they ever contact you. We improve how your business looks and feels online so the right customers arrive already interested.
+            <p className="anim-fade-up delay-100 text-[18px] font-light text-slate-600 leading-[1.65] mb-3">
+              Los clientes deciden en segundos si confían en tu negocio.
             </p>
-            <div className="anim-fade-up delay-300 flex flex-col sm:flex-row gap-4">
+            <p className="anim-fade-up delay-100 text-[18px] font-light text-slate-600 leading-[1.65] mb-10">
+              Si tu presencia digital no es clara, pierdes oportunidades antes de que te contacten.
+            </p>
+            <div className="anim-fade-up delay-200 flex flex-col sm:flex-row gap-4">
               <Link
                 href="/contacto"
                 className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-8 py-4 text-[15px] font-semibold rounded-xl hover:bg-blue-700 transition-colors shadow-md shadow-blue-600/15"
               >
-                👉 Improve my business presence
+                👉 Solicitar consulta
               </Link>
               <a
                 href="#how-it-works"
                 className="inline-flex items-center justify-center text-slate-600 px-8 py-4 text-[15px] font-medium rounded-xl border border-slate-200 hover:bg-white hover:border-slate-300 transition-all"
               >
-                See how it works
+                Ver cómo funciona
               </a>
             </div>
           </div>
@@ -39,7 +37,7 @@ export function Hero() {
           <div className="anim-fade-right delay-200">
             <div className="w-full aspect-[4/3] rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-100 to-white flex items-center justify-center shadow-sm">
               <p className="text-slate-300 text-[11px] tracking-[0.12em] uppercase text-center px-8">
-                HERO_IMAGE — Dealership / restaurant / office<br />clean daylight professional
+                HERO_IMAGE — Concesionario o inmobiliaria<br />inventario visible, luz natural, ambiente de confianza
               </p>
             </div>
           </div>
