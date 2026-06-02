@@ -20,7 +20,7 @@ export function FounderSection() {
           {/* Right: text */}
           <AnimateIn delay={100}>
             <p className="text-[11px] font-bold tracking-[0.18em] text-[#2563EB] uppercase mb-6">
-              La mente detrás de PP
+              La mente detrás de Pegasus Pixels
             </p>
             <h2 className="text-[32px] md:text-[44px] font-black tracking-[-0.03em] leading-[1.1] text-[#0F172A] mb-6">
               Hola, soy Alejandro.
