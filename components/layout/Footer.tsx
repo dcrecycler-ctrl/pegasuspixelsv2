@@ -9,7 +9,7 @@ export function Footer() {
               Pegasus Pixels
             </div>
             <p className="text-[13px] font-normal leading-relaxed text-sky-300/70 max-w-xs">
-              Arquitectura digital de precisión para empresas que lideran sus industrias.
+              Presencia digital y gestión de clientes para automotoras, inmobiliarias y restaurantes en Uruguay.
             </p>
           </div>
 
@@ -17,7 +17,7 @@ export function Footer() {
           <div className="flex flex-col gap-6">
             <span className="text-[11px] font-bold tracking-[0.10em] uppercase text-sky-400">Navegación</span>
             <div className="w-8 h-px bg-ocean-600" />
-            <a href="/soluciones" className="text-[13px] font-normal text-sky-300/50 hover:text-sky-100 transition-colors">Soluciones</a>
+            <a href="/soluciones" className="text-[13px] font-normal text-sky-300/50 hover:text-sky-100 transition-colors">Plataformas</a>
             <a href="/industrias" className="text-[13px] font-normal text-sky-300/50 hover:text-sky-100 transition-colors">Industrias</a>
             <a href="/portfolio" className="text-[13px] font-normal text-sky-300/50 hover:text-sky-100 transition-colors">Portfolio</a>
           </div>

@@ -24,15 +24,15 @@ export function SolutionSection() {
 
           <AnimateIn delay={100}>
             <div className="space-y-5">
-              <div className="bg-[#F6F7F9] border border-[#E2E8F0] rounded-[12px] p-7">
-                <p className="text-[11px] font-bold tracking-[0.12em] text-[#2563EB] uppercase mb-3">Puerta de entrada</p>
-                <h3 className="text-[18px] font-bold text-[#0F172A] mb-2">Presencia digital que genera confianza</h3>
-                <p className="text-[14px] text-[#0F172A]/60 leading-[1.65]">Sitio profesional, inventario claro, primera impresión que no deja dudas — diseñado para convertir visitas en consultas.</p>
+              <div className="bg-[#F6F7F9] border border-[#E2E8F0] rounded-[12px] p-10">
+                <p className="text-[11px] font-bold tracking-[0.12em] text-[#2563EB] uppercase mb-4">Puerta de entrada</p>
+                <h3 className="text-[22px] font-bold text-[#0F172A] mb-4">Presencia digital que genera confianza</h3>
+                <p className="text-[16px] text-[#0F172A]/60 leading-[1.75]">Sitio profesional, inventario claro, primera impresión que no deja dudas — diseñado para convertir visitas en consultas.</p>
               </div>
-              <div className="bg-[#F6F7F9] border border-[#E2E8F0] rounded-[12px] p-7">
-                <p className="text-[11px] font-bold tracking-[0.12em] text-[#2563EB] uppercase mb-3">Sistema interno</p>
-                <h3 className="text-[18px] font-bold text-[#0F172A] mb-2">Gestión de leads que cierra ventas</h3>
-                <p className="text-[14px] text-[#0F172A]/60 leading-[1.65]">Pipeline claro, seguimiento estructurado, tu equipo sabe qué hacer con cada consulta que entra — sin depender de la memoria de nadie.</p>
+              <div className="bg-[#F6F7F9] border border-[#E2E8F0] rounded-[12px] p-10">
+                <p className="text-[11px] font-bold tracking-[0.12em] text-[#2563EB] uppercase mb-4">Sistema interno</p>
+                <h3 className="text-[22px] font-bold text-[#0F172A] mb-4">Gestión de leads que cierra ventas</h3>
+                <p className="text-[16px] text-[#0F172A]/60 leading-[1.75]">Pipeline claro, seguimiento estructurado, tu equipo sabe qué hacer con cada consulta que entra — sin depender de la memoria de nadie.</p>
               </div>
             </div>
           </AnimateIn>

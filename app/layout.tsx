@@ -10,9 +10,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Pegasus Pixels | Arquitectura Digital para Empresas Modernas",
+  title: "Pegasus Pixels | Presencia digital y gestión de clientes — Uruguay",
   description:
-    "Ayudamos a inmobiliarias, automotoras y empresas de hospitalidad a mejorar su presencia digital, organizar operaciones y ofrecer una experiencia moderna a sus clientes.",
+    "Mejoramos la presencia digital y la gestión de leads de automotoras, inmobiliarias y restaurantes en Uruguay. Implementamos, capacitamos y te acompañamos.",
   keywords: [
     "arquitectura digital",
     "sistemas empresariales",
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
     "Punta del Este",
   ],
   openGraph: {
-    title: "Pegasus Pixels | Arquitectura Digital para Empresas Modernas",
+    title: "Pegasus Pixels | Presencia digital y gestión de clientes — Uruguay",
     description:
-      "Tecnología y experiencias digitales para empresas modernas.",
+      "Mejoramos cómo tu negocio se ve y cómo gestiona a sus clientes. Automotoras, inmobiliarias y restaurantes en Uruguay.",
     type: "website",
     locale: "es_UY",
   },

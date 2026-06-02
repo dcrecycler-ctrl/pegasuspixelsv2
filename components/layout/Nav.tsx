@@ -5,16 +5,22 @@ import { useEffect, useRef, useState } from "react";
 
 const solucionesDropdown = [
   {
+    label: "Dealio",
+    href: "/dealio",
+    description: "Plataforma para automotoras",
+    icon: "directions_car",
+  },
+  {
     label: "Oikos",
     href: "/oikos",
-    description: "Sistema de gestión inmobiliaria",
+    description: "Plataforma para inmobiliarias",
     icon: "architecture",
   },
   {
-    label: "Dealio",
-    href: "/dealio",
-    description: "Automotive Sales Operating System",
-    icon: "directions_car",
+    label: "Hermes",
+    href: "/contacto",
+    description: "Plataforma para restaurantes",
+    icon: "restaurant",
   },
 ];
 
@@ -73,7 +79,7 @@ export function Nav() {
               onClick={() => setDropdownOpen(!dropdownOpen)}
               className="flex items-center gap-1.5 text-ink-700 hover:text-primary transition-colors duration-300 text-[14px] font-medium"
             >
-              Soluciones
+              Plataformas
               <span
                 className={`material-symbols-outlined text-[16px] transition-transform duration-200 ${
                   dropdownOpen ? "rotate-180" : ""
@@ -140,7 +146,7 @@ export function Nav() {
           href="/contacto"
           className="hidden md:block bg-ocean-900 text-sky-100 px-7 py-3 text-[12px] font-semibold tracking-[0.06em] uppercase hover:bg-ink-800 transition-all rounded-lg"
         >
-          SOLICITAR CONSULTA
+          Hablemos
         </Link>
 
         {/* Mobile hamburger */}
@@ -163,7 +169,7 @@ export function Nav() {
             className="text-ink-700 hover:text-primary transition-colors text-[14px] font-medium"
             onClick={() => setMenuOpen(false)}
           >
-            Soluciones
+            Plataformas
           </Link>
           {solucionesDropdown.map((item) => (
             <Link
@@ -191,7 +197,7 @@ export function Nav() {
             className="bg-ocean-900 text-sky-100 px-7 py-3 text-[12px] font-semibold tracking-[0.06em] uppercase text-center rounded-lg mt-2"
             onClick={() => setMenuOpen(false)}
           >
-            SOLICITAR CONSULTA
+            Hablemos
           </Link>
         </div>
       )}

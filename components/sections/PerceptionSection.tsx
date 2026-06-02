@@ -88,11 +88,11 @@ export function PerceptionSection() {
 
         {/* ── 4. Flow diagram image ── */}
         <AnimateIn delay={120} className="mb-14">
-          <div className="rounded-[12px] bg-white border border-[#E2E8F0] p-6 md:p-10">
+          <div className="rounded-[12px] bg-white border border-[#E2E8F0] p-4">
             <img
               src="/chaos-leads.png"
               alt="Sin sistema central los leads se pierden"
-              className="w-full h-auto max-w-3xl mx-auto block"
+              className="w-full h-auto block"
             />
           </div>
         </AnimateIn>

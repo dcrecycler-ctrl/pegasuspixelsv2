@@ -79,8 +79,8 @@ export function TrustClarity() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
 
           {/* ── Left: sticky ── */}
-          <div className="lg:sticky lg:top-28">
-            <p className="text-[11px] font-bold tracking-[0.18em] text-[#2563EB] uppercase mb-6">
+          <div className="lg:sticky lg:top-28 pr-0 lg:pr-8">
+            <p className="text-[11px] font-bold tracking-[0.18em] text-[#2563EB] uppercase mb-8">
               Cómo trabajamos
             </p>
             <h2 className="text-[30px] md:text-[40px] font-black tracking-[-0.03em] leading-[1.1] text-[#0F172A] mb-6">
@@ -131,7 +131,7 @@ export function TrustClarity() {
                 >
                   {/* Step label */}
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="text-[11px] font-bold tracking-[0.18em] text-[#2563EB] uppercase tabular-nums">
+                    <span className="text-[12px] font-bold tracking-[0.18em] text-[#2563EB] uppercase tabular-nums">
                       {step.number}
                     </span>
                     <div className="w-5 h-px bg-slate-200" />
