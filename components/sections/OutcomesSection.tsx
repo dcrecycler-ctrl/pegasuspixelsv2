@@ -57,7 +57,7 @@ export function OutcomesSection() {
           {cards.map(({ icon, title, text, bullets }, i) => (
             <AnimateIn key={title} delay={i * 80}>
               <div className="group bg-[#F6F7F9] border border-[#E2E8F0] rounded-[12px] p-8 h-full hover:bg-white hover:border-[#2563EB]/25 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-default">
-                <span className="material-symbols-outlined text-[#2563EB] text-[26px] block mb-5">
+                <span className="material-symbols-outlined text-[#2563EB] text-[48px] block mb-5">
                   {icon}
                 </span>
                 <h3 className="text-[17px] font-bold text-[#0F172A] leading-[1.3] mb-2">

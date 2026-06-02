@@ -93,8 +93,8 @@ export function ProductShowcase() {
 
                 <div className="px-6 pt-6 pb-4 border-b border-[#E2E8F0]">
                   <div className="flex items-center gap-3">
-                    <div className={`w-9 h-9 rounded-[8px] ${color} border flex items-center justify-center`}>
-                      <span className={`material-symbols-outlined text-[18px] ${accent}`}>{icon}</span>
+                    <div className={`w-14 h-14 rounded-[10px] ${color} border flex items-center justify-center`}>
+                      <span className={`material-symbols-outlined text-[36px] ${accent}`}>{icon}</span>
                     </div>
                     <div>
                       <p className="text-[15px] font-bold text-[#0F172A]">{name}</p>

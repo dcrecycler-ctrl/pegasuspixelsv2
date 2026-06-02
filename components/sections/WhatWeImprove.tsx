@@ -34,7 +34,7 @@ export function WhatWeImprove() {
           {cards.map(({ icon, title, items }, i) => (
             <AnimateIn key={title} delay={i * 80}>
               <div className="bg-white border border-[#E2E8F0] rounded-[12px] p-8 h-full hover-lift">
-                <span className="material-symbols-outlined text-[#2563EB] text-[28px] block mb-6">
+                <span className="material-symbols-outlined text-[#2563EB] text-[48px] block mb-6">
                   {icon}
                 </span>
                 <h3 className="text-[18px] font-bold text-[#0F172A] leading-[1.25] mb-5">
