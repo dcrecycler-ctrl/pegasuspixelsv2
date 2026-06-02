@@ -63,27 +63,27 @@ const services = [
 const metodologia = [
   {
     number: "01",
-    title: "Diagnóstico",
+    title: "Análisis de demanda",
     description:
-      "Analizamos en profundidad su negocio, su presencia digital actual y sus objetivos. Identificamos los puntos de fricción y las oportunidades de mayor impacto.",
+      "Analizamos cómo entra la demanda hoy e identificamos dónde se pierden oportunidades antes de que lleguen a tu equipo.",
   },
   {
     number: "02",
-    title: "Diseño Estratégico",
+    title: "Revisión de operaciones",
     description:
-      "Desarrollamos la arquitectura de la solución: flujos de usuario, estructura técnica y diseño visual. Todo pensado para sus clientes y su operación específica.",
+      "Revisamos cómo se gestionan las consultas, el seguimiento y los procesos internos. Detectamos lo que es manual, ineficiente o genera fricción.",
   },
   {
     number: "03",
-    title: "Desarrollo",
+    title: "Diseño del sistema",
     description:
-      "Construimos con estándares de producción desde el primer día. Código limpio, sistemas escalables y revisiones continuas para mantener el rumbo.",
+      "Diseñamos la arquitectura digital alrededor de cómo funciona el negocio, no al revés. Cada pieza tiene un propósito operativo claro.",
   },
   {
     number: "04",
-    title: "Entrega y Seguimiento",
+    title: "Implementación y ajuste",
     description:
-      "Lanzamos, medimos y ajustamos. El proyecto no termina en la entrega — aseguramos que los resultados esperados se materialicen en el mundo real.",
+      "Construimos e implementamos el sistema. Medimos resultados reales sobre el flujo de clientes, consultas y conversiones.",
   },
 ];
 
@@ -123,10 +123,10 @@ export default function SolucionesPage() {
         <section className="py-32 bg-on-surface text-surface-container">
           <div className="max-w-[1440px] mx-auto px-5 md:px-16">
             <span className="text-label-sm text-primary-variant uppercase tracking-[0.3em] block mb-16 text-center">
-              Proceso de Trabajo
+              Cómo trabajamos
             </span>
             <h2 className="text-headline-lg text-white text-center mb-20 max-w-2xl mx-auto">
-              Un Proceso Estructurado para Resultados Predecibles
+              No empezamos con diseño. Empezamos con cómo funciona tu negocio.
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {metodologia.map((step) => (
