@@ -6,24 +6,24 @@ import { PageHero } from "@/components/ui/PageHero";
 
 export const metadata: Metadata = {
   title: "Sobre Mí — Pegasus Pixels",
-  description: "Consultor digital especializado en inmobiliarias, automotoras y hospitality. Más de 12 años construyendo infraestructura digital para empresas de élite.",
+  description: "Fundador de Pegasus Pixels. Décadas en las industrias automotriz y de hospitalidad en Estados Unidos, ahora en Punta del Este.",
 };
 
 const experiencia = [
   {
-    period: "2012 — 2016",
-    role: "Desarrollo Web y Consultoría",
-    description: "Primeros años trabajando con pequeñas y medianas empresas en proyectos de presencia digital. Aquí aprendí que la tecnología sin estrategia es solo código.",
+    period: "Industria automotriz",
+    role: "Operaciones y ventas",
+    description: "Décadas trabajando en la industria automotriz y de hospitalidad en Estados Unidos — desde adentro del negocio, no desde afuera.",
   },
   {
-    period: "2016 — 2020",
-    role: "Sistemas Empresariales y Automatización",
-    description: "Especialización en proyectos más complejos: CRMs, plataformas de gestión y automatización de operaciones. El foco migró hacia el impacto en el negocio.",
+    period: "Tecnología al servicio del negocio",
+    role: "El problema siempre fue el sistema",
+    description: "Entendí que los negocios no pierden ventas por falta de clientes — las pierden por falta de sistema. Eso cambió todo.",
   },
   {
     period: "2020 — Presente",
-    role: "Fundador de Pegasus Pixels",
-    description: "Creé Pegasus Pixels para ofrecer un modelo diferente: consultoría y desarrollo integrados, con foco exclusivo en industrias de alto valor y estándares de excelencia.",
+    role: "Pegasus Pixels",
+    description: "Construí las herramientas que siempre me faltaron. Hoy trabajo desde Punta del Este implementando Dealio, Oikos y Hermes para negocios en Uruguay y Estados Unidos.",
   },
 ];
 
@@ -62,7 +62,7 @@ export default function SobreMiPage() {
             <div className="lg:col-span-5">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                alt="Fundador de Pegasus Pixels"
+                alt="Pegasus Pixels"
                 className="w-full aspect-[4/5] object-cover rounded-2xl coastal-shadow"
                 src="/foto-perfil.jpg.jpg"
               />
@@ -220,12 +220,7 @@ export default function SobreMiPage() {
             <p className="text-body-lg text-on-surface-variant max-w-xl mx-auto mb-12">
               No hace falta tener todo claro desde el principio. La claridad emerge del diagnóstico. Empecemos por ahí.
             </p>
-            <Link
-              href="/contacto"
-              className="inline-block bg-primary text-on-primary px-10 py-4 text-label-sm uppercase hover:bg-primary-hover transition-colors rounded-lg"
-            >
-              Agendar Consulta
-            </Link>
+            <a href="https://wa.me/59899000000?text=Hola%2C%20me%20interesa%20saber%20m%C3%A1s%20sobre%20Pegasus%20Pixels" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-10 py-4 text-[14px] font-semibold uppercase rounded-lg hover:bg-white hover:text-[#25D366] border-2 border-[#25D366] transition-all duration-200"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z\"/><path d=\"M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.528 5.855L.057 23.882a.5.5 0 0 0 .606.607l6.098-1.459A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.652-.51-5.17-1.399l-.36-.214-3.733.893.924-3.638-.235-.374A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z\"/></svg>Hablemos por WhatsApp</a>
           </div>
         </section>
       </main>
