@@ -86,72 +86,14 @@ export function PerceptionSection() {
           ))}
         </div>
 
-        {/* ── 4. Flow diagram ── */}
+        {/* ── 4. Flow diagram image ── */}
         <AnimateIn delay={120} className="mb-14">
-          <div className="rounded-[12px] bg-white border border-[#E2E8F0] p-8 md:p-12">
-            <div className="grid grid-cols-1 md:grid-cols-[1fr_40px_1fr_40px_1fr] gap-6 items-center">
-
-              {/* Inputs */}
-              <div>
-                <p className="text-[10px] font-bold tracking-[0.12em] text-[#94A3B8] uppercase mb-4">
-                  Cómo entra el interés
-                </p>
-                <div className="space-y-2">
-                  <div className="rounded-[8px] border border-green-200 bg-green-50 px-4 py-3 text-[13px] font-semibold text-green-700 flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[16px]">chat</span> WhatsApp
-                  </div>
-                  <div className="rounded-[8px] border border-blue-200 bg-blue-50 px-4 py-3 text-[13px] font-semibold text-blue-700 flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[16px]">web</span> Formularios web
-                  </div>
-                  <div className="rounded-[8px] border border-violet-200 bg-violet-50 px-4 py-3 text-[13px] font-semibold text-violet-700 flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[16px]">call</span> Llamadas
-                  </div>
-                </div>
-              </div>
-
-              {/* Arrow */}
-              <div className="hidden md:flex justify-center">
-                <span className="text-[#CBD5E1] text-[28px]">→</span>
-              </div>
-
-              {/* No system */}
-              <div className="rounded-[10px] border border-red-200 bg-red-50 p-6 text-center">
-                <span className="material-symbols-outlined text-red-400 text-[32px] block mb-3">
-                  scatter_plot
-                </span>
-                <p className="text-[13px] font-bold text-red-700 mb-1">Sin sistema central</p>
-                <p className="text-[11px] text-red-400 leading-[1.6]">
-                  WhatsApp, Excel y mensajes sueltos sin proceso estructurado
-                </p>
-              </div>
-
-              {/* Arrow */}
-              <div className="hidden md:flex justify-center">
-                <span className="text-[#CBD5E1] text-[28px]">→</span>
-              </div>
-
-              {/* Lost outcomes */}
-              <div>
-                <p className="text-[10px] font-bold tracking-[0.12em] text-[#94A3B8] uppercase mb-4">
-                  Lo que se pierde
-                </p>
-                <div className="space-y-2">
-                  <div className="rounded-[8px] border border-slate-100 bg-slate-50 px-4 py-3 flex items-center gap-3">
-                    <span className="material-symbols-outlined text-red-300 text-[16px]">cancel</span>
-                    <span className="text-[13px] text-slate-500">Lead sin registrar</span>
-                  </div>
-                  <div className="rounded-[8px] border border-slate-100 bg-slate-50 px-4 py-3 flex items-center gap-3">
-                    <span className="material-symbols-outlined text-red-300 text-[16px]">cancel</span>
-                    <span className="text-[13px] text-slate-500">Sin seguimiento</span>
-                  </div>
-                  <div className="rounded-[8px] border border-slate-100 bg-slate-50 px-4 py-3 flex items-center gap-3">
-                    <span className="material-symbols-outlined text-red-300 text-[16px]">cancel</span>
-                    <span className="text-[13px] text-slate-500">Venta no concretada</span>
-                  </div>
-                </div>
-              </div>
-
-            </div>
+          <div className="rounded-[12px] bg-white border border-[#E2E8F0] overflow-hidden">
+            <img
+              src="/chaos-leads.png"
+              alt="Sin sistema central los leads se pierden"
+              className="w-full h-auto"
+            />
           </div>
         </AnimateIn>
 
