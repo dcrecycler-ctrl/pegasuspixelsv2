@@ -10,7 +10,7 @@ const items = [
 export function OutcomesSection() {
   return (
     <section className="bg-white py-24">
-      <div className="max-w-[1200px] mx-auto px-5 md:px-16 text-center">
+      <div className="max-w-[1440px] mx-auto px-5 md:px-16 text-center">
 
         <AnimateIn className="mb-10">
           <h2 className="text-[32px] md:text-[44px] font-black tracking-[-0.03em] leading-[1.1] text-[#0F172A]">

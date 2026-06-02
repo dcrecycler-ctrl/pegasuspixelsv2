@@ -9,7 +9,7 @@ const bullets = [
 export function PerceptionSection() {
   return (
     <section className="bg-[#F6F7F9] py-24">
-      <div className="max-w-[1200px] mx-auto px-5 md:px-16">
+      <div className="max-w-[1440px] mx-auto px-5 md:px-16">
         <div className="max-w-[640px]">
 
           <AnimateIn>

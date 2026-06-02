@@ -3,7 +3,7 @@ import { AnimateIn } from "@/components/ui/AnimateIn";
 export function SolutionSection() {
   return (
     <section className="bg-white py-24">
-      <div className="max-w-[1200px] mx-auto px-5 md:px-16">
+      <div className="max-w-[1440px] mx-auto px-5 md:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
           {/* Left */}

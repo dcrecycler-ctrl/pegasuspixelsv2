@@ -3,7 +3,7 @@ import { AnimateIn } from "@/components/ui/AnimateIn";
 export function TrustSection() {
   return (
     <section className="bg-white py-24">
-      <div className="max-w-[1200px] mx-auto px-5 md:px-16">
+      <div className="max-w-[1440px] mx-auto px-5 md:px-16">
 
         <AnimateIn>
           <div className="w-full aspect-video rounded-[12px] bg-[#EAECEF] flex items-center justify-center">
