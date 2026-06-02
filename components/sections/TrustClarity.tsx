@@ -122,7 +122,7 @@ export function TrustClarity() {
                 <div
                   key={step.number}
                   ref={(el: HTMLDivElement | null) => { stepRefs.current[i] = el; }}
-                  className="py-10 border-b border-slate-50 last:border-0"
+                  className="py-12 border-b border-slate-100 last:border-0"
                   style={{
                     opacity: i > activeStep ? 0.15 : i === activeStep ? 1 : 0.5,
                     transform: i > activeStep ? "translateY(14px)" : "translateY(0)",
@@ -141,7 +141,7 @@ export function TrustClarity() {
                   </div>
 
                   {/* Description */}
-                  <p className="text-[17px] text-[#0F172A] leading-[1.65] mb-5">
+                  <p className="text-[18px] text-[#0F172A] leading-[1.75] mb-6">
                     {step.description}
                   </p>
 
@@ -150,7 +150,7 @@ export function TrustClarity() {
                     {step.bullets.map((bullet) => (
                       <li key={bullet} className="flex items-center gap-3">
                         <span className="w-1 h-1 rounded-full bg-[#2563EB] shrink-0" />
-                        <span className="text-[14px] text-[#0F172A]/60 leading-[1.5]">{bullet}</span>
+                        <span className="text-[15px] text-[#0F172A]/60 leading-[1.6]">{bullet}</span>
                       </li>
                     ))}
                   </ul>

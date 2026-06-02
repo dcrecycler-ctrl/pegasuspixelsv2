@@ -79,12 +79,9 @@ export function OutcomesSection() {
           ))}
         </div>
 
-        {/* ── Visual placeholder — CRM dashboard mockup ── */}
+        {/* ── Pipeline mockup ── */}
         <AnimateIn delay={160}>
-          <div className="rounded-[12px] border border-dashed border-[#CBD5E1] bg-[#F6F7F9] p-6 md:p-10">
-            <p className="text-[10px] font-bold tracking-[0.18em] text-[#94A3B8] uppercase mb-6 text-center">
-              Placeholder visual — Sistema de resultados y control de leads
-            </p>
+          <div className="rounded-[12px] bg-[#F6F7F9] p-6 md:p-10">
 
             {/* Mini CRM interface */}
             <div className="bg-white border border-[#E2E8F0] rounded-[10px] overflow-hidden shadow-sm">
