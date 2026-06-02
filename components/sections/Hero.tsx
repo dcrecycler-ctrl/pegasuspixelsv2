@@ -18,7 +18,7 @@ export function Hero() {
               Arquitectura de Sistemas Digitales
             </span>
             <h1 className="anim-fade-up delay-100 text-[52px] md:text-display-lg font-black leading-[1.05] tracking-[-0.03em] mb-8 text-on-surface">
-              Tecnología y Experiencias Digitales para Empresas Modernas
+              Construimos la infraestructura digital detrás de los negocios modernos.
             </h1>
             <p className="anim-fade-up delay-200 text-[17px] font-light leading-[1.65] text-ink-700 max-w-xl mb-12">
               Ayudamos a inmobiliarias, automotoras y empresas de hospitalidad a mejorar su presencia digital, organizar operaciones y ofrecer una experiencia moderna a sus clientes.
