@@ -8,22 +8,31 @@ export function SolutionSection() {
 
           {/* Left */}
           <AnimateIn>
+            <p className="text-[11px] font-bold tracking-[0.18em] text-[#2563EB] uppercase mb-6">
+              Lo que hacemos
+            </p>
             <h2 className="text-[32px] md:text-[44px] font-black tracking-[-0.03em] leading-[1.1] text-[#0F172A] mb-6">
-              Convertimos interés en oportunidades claras
+              Mejoramos cómo tu negocio se ve y cómo gestiona a sus clientes
             </h2>
-            <p className="text-[17px] text-[#0F172A]/60 leading-[1.65]">
-              Organizamos la forma en que los clientes interactúan con tu negocio para que nada se pierda.
+            <p className="text-[17px] text-[#0F172A]/60 leading-[1.65] mb-6">
+              Trabajamos en las dos partes del proceso: la presencia digital que genera confianza y atrae consultas, y el sistema interno que organiza cada oportunidad para que ninguna se pierda.
+            </p>
+            <p className="text-[16px] text-[#0F172A]/80 leading-[1.65] font-medium">
+              Porque una vidriera sin sistema es tráfico desperdiciado. Y un sistema sin vidriera es un negocio invisible.
             </p>
           </AnimateIn>
 
-          {/* Right: image placeholder */}
           <AnimateIn delay={100}>
-            <div className="w-full aspect-video rounded-[12px] bg-[#EAECEF] flex items-center justify-center">
-              <div className="text-center">
-                <p className="text-[#94A3B8] text-[13px] font-semibold tracking-[0.15em] uppercase mb-2">IMAGEN</p>
-                <p className="text-[#94A3B8] text-[11px] tracking-[0.08em] text-center px-8">
-                  Inventario estructurado en pantalla con autos o propiedades
-                </p>
+            <div className="space-y-5">
+              <div className="bg-[#F6F7F9] border border-[#E2E8F0] rounded-[12px] p-7">
+                <p className="text-[11px] font-bold tracking-[0.12em] text-[#2563EB] uppercase mb-3">Puerta de entrada</p>
+                <h3 className="text-[18px] font-bold text-[#0F172A] mb-2">Presencia digital que genera confianza</h3>
+                <p className="text-[14px] text-[#0F172A]/60 leading-[1.65]">Sitio profesional, inventario claro, primera impresión que no deja dudas — diseñado para convertir visitas en consultas.</p>
+              </div>
+              <div className="bg-[#F6F7F9] border border-[#E2E8F0] rounded-[12px] p-7">
+                <p className="text-[11px] font-bold tracking-[0.12em] text-[#2563EB] uppercase mb-3">Sistema interno</p>
+                <h3 className="text-[18px] font-bold text-[#0F172A] mb-2">Gestión de leads que cierra ventas</h3>
+                <p className="text-[14px] text-[#0F172A]/60 leading-[1.65]">Pipeline claro, seguimiento estructurado, tu equipo sabe qué hacer con cada consulta que entra — sin depender de la memoria de nadie.</p>
               </div>
             </div>
           </AnimateIn>

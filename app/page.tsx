@@ -7,7 +7,6 @@ import { SolutionSection } from "@/components/sections/SolutionSection";
 import { WhatWeImprove } from "@/components/sections/WhatWeImprove";
 import { OutcomesSection } from "@/components/sections/OutcomesSection";
 import { HowItWorksSection } from "@/components/sections/HowItWorksSection";
-import { TrustSection } from "@/components/sections/TrustSection";
 import { FinalCTASection } from "@/components/sections/FinalCTASection";
 
 export default function Home() {
@@ -22,7 +21,6 @@ export default function Home() {
         <WhatWeImprove />
         <OutcomesSection />
         <HowItWorksSection />
-        <TrustSection />
         <FinalCTASection />
       </main>
       <Footer />

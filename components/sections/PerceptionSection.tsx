@@ -46,36 +46,16 @@ export function PerceptionSection() {
     <section className="bg-[#F6F7F9] py-24 md:py-32">
       <div className="max-w-[1440px] mx-auto px-5 md:px-16">
 
-        {/* ── 1. Top summary row ── */}
-        <AnimateIn className="mb-16">
-          <p className="text-[10px] font-bold tracking-[0.18em] text-[#94A3B8] uppercase mb-5">
-            Resumen del problema
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {summaryCards.map(({ icon, label }) => (
-              <div
-                key={label}
-                className="flex items-center gap-4 bg-white border border-[#E2E8F0] rounded-[10px] px-5 py-4 hover:border-[#2563EB]/40 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-default"
-              >
-                <span className="material-symbols-outlined text-[#2563EB] text-[22px] shrink-0">
-                  {icon}
-                </span>
-                <span className="text-[14px] font-semibold text-[#0F172A]">{label}</span>
-              </div>
-            ))}
-          </div>
-        </AnimateIn>
-
-        {/* ── 2. Main header ── */}
+        {/* ── Main header ── */
         <AnimateIn delay={80} className="mb-14 max-w-2xl">
           <h2 className="text-[32px] md:text-[44px] font-black tracking-[-0.03em] leading-[1.05] text-[#0F172A] mb-5">
-            El problema no es la falta de clientes
+            El problema no es falta de clientes
           </h2>
           <p className="text-[18px] text-[#0F172A]/60 leading-[1.65] mb-4">
-            El problema es que el interés entra, pero no siempre se organiza ni se gestiona correctamente.
+            El interés entra por WhatsApp, llamadas y formularios — y se pierde sin sistema. Cada lead sin seguimiento es una venta que no existió.
           </p>
           <p className="text-[15px] font-semibold text-[#0F172A]">
-            La mayoría de los negocios pierden ventas después del primer contacto.
+            La mayoría de los negocios pierden ventas después del primer contacto, no antes.
           </p>
         </AnimateIn>
 
@@ -180,7 +160,7 @@ export function PerceptionSection() {
             <p className="text-[16px] md:text-[18px] font-semibold text-[#0F172A] leading-[1.65] max-w-2xl">
               Esto no es un problema de marketing.{" "}
               <span className="font-normal text-[#0F172A]/45">
-                Es una falta de control del sistema de ventas.
+                Es una falta de sistema para gestionar lo que ya entra.
               </span>
             </p>
           </div>

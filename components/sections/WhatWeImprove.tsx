@@ -3,18 +3,18 @@ import { AnimateIn } from "@/components/ui/AnimateIn";
 const cards = [
   {
     icon: "language",
-    title: "Presencia digital",
-    items: ["Estructura del sitio", "Inventario claro", "Mejor primera impresión"],
+    title: "Sitio profesional",
+    items: ["Diseño que genera confianza", "Carga rápida en celular", "Estructura clara para el visitante"],
   },
   {
     icon: "inventory_2",
-    title: "Inventario",
-    items: ["Autos / propiedades organizados", "Navegación simple", "Visual claro"],
+    title: "Inventario publicado",
+    items: ["Autos o propiedades con foto y ficha", "Filtros y búsqueda fácil", "Actualización simple para tu equipo"],
   },
   {
     icon: "hub",
-    title: "Gestión de contactos",
-    items: ["WhatsApp / llamadas / formularios", "Registro de clientes", "Seguimiento básico"],
+    title: "Pipeline de leads",
+    items: ["Todas las consultas centralizadas", "Estado de cada oportunidad visible", "Seguimiento estructurado por etapas"],
   },
 ];
 
@@ -24,8 +24,9 @@ export function WhatWeImprove() {
       <div className="max-w-[1440px] mx-auto px-5 md:px-16">
 
         <AnimateIn className="mb-14">
+          <p className="text-[11px] font-bold tracking-[0.18em] text-[#2563EB] uppercase mb-5">El servicio incluye</p>
           <h2 className="text-[32px] md:text-[44px] font-black tracking-[-0.03em] leading-[1.1] text-[#0F172A]">
-            Lo que implementamos
+            Todo lo que tu negocio necesita para capturar y cerrar más ventas
           </h2>
         </AnimateIn>
 

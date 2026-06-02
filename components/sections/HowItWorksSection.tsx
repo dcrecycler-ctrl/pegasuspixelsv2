@@ -1,11 +1,11 @@
 import { AnimateIn } from "@/components/ui/AnimateIn";
 
 const steps = [
-  "El cliente entra a tu sitio",
-  "Ve tu inventario claramente",
-  "Muestra interés",
-  "Te contacta",
-  "El equipo gestiona el contacto",
+  "Analizamos tu negocio y cómo opera hoy",
+  "Diseñamos y lanzamos tu presencia digital",
+  "Configuramos el sistema de gestión de leads",
+  "Capacitamos a tu equipo en persona",
+  "Te acompañamos con soporte continuo",
 ];
 
 export function HowItWorksSection() {
@@ -14,8 +14,9 @@ export function HowItWorksSection() {
       <div className="max-w-[1440px] mx-auto px-5 md:px-16">
 
         <AnimateIn className="mb-14">
+          <p className="text-[11px] font-bold tracking-[0.18em] text-[#2563EB] uppercase mb-5">El proceso</p>
           <h2 className="text-[32px] md:text-[44px] font-black tracking-[-0.03em] leading-[1.1] text-[#0F172A]">
-            Cómo funciona
+            No entregamos software. Implementamos un sistema completo.
           </h2>
         </AnimateIn>
 

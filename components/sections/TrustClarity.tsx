@@ -5,46 +5,46 @@ import { useEffect, useRef, useState } from "react";
 const steps = [
   {
     number: "01",
-    label: "Captura",
+    label: "Presencia",
     description:
-      "Centralizamos todas las consultas en un solo sistema desde web, WhatsApp o formularios.",
+      "Diseñamos y publicamos tu presencia digital — sitio, inventario y primera impresión — para que el cliente que llega encuentre lo que necesita y confíe.",
     bullets: [
-      "Evita leads perdidos",
-      "Reduce mensajes dispersos",
-      "Unifica entrada de clientes",
+      "Sitio profesional y rápido",
+      "Inventario claro y navegable",
+      "Primera impresión que genera confianza",
     ],
   },
   {
     number: "02",
-    label: "Organización",
+    label: "Captura",
     description:
-      "Estructuramos cómo se recibe cada oportunidad con contexto y orden.",
+      "Centralizamos todas las consultas — WhatsApp, formularios, llamadas — en un solo sistema. Nada queda suelto, nada se pierde.",
     bullets: [
-      "Identificación de cada lead",
-      "Orden automático",
-      "Eliminación del caos de mensajes",
+      "Todas las entradas en un lugar",
+      "Cero leads sin registrar",
+      "Tu equipo siempre alineado",
     ],
   },
   {
     number: "03",
-    label: "Respuesta",
+    label: "Gestión",
     description:
-      "Optimizamos la velocidad y consistencia de atención al cliente.",
+      "Cada consulta tiene un estado, un responsable y un próximo paso. Tu equipo sabe qué hacer con cada oportunidad, sin depender de la memoria de nadie.",
     bullets: [
-      "Menos tiempo de respuesta",
-      "Evita leads ignorados",
-      "Flujo de contacto consistente",
+      "Pipeline visual por etapas",
+      "Seguimiento estructurado",
+      "Recontacto de interesados",
     ],
   },
   {
     number: "04",
     label: "Conversión",
     description:
-      "Convertimos consultas en visitas o ventas mediante seguimiento estructurado.",
+      "Con presencia clara y gestión ordenada, más consultas se convierten en visitas y ventas — sin necesitar más tráfico ni más marketing.",
     bullets: [
-      "Seguimiento automático/manual",
-      "Recontacto de interesados",
-      "Mayor tasa de cierre",
+      "Más cierres con el mismo tráfico",
+      "Menos oportunidades perdidas",
+      "Control real del proceso de ventas",
     ],
   },
 ];
@@ -81,16 +81,16 @@ export function TrustClarity() {
           {/* ── Left: sticky ── */}
           <div className="lg:sticky lg:top-28">
             <p className="text-[11px] font-bold tracking-[0.18em] text-[#2563EB] uppercase mb-6">
-              Sistema de gestión
+              Cómo trabajamos
             </p>
             <h2 className="text-[30px] md:text-[40px] font-black tracking-[-0.03em] leading-[1.1] text-[#0F172A] mb-6">
-              Ordenamos cómo entran y se gestionan tus clientes
+              Las dos partes que definen si tu negocio crece
             </h2>
             <p className="text-[17px] text-[#0F172A]/55 leading-[1.65] mb-6">
-              La mayoría de los negocios no pierden clientes por falta de interés, sino por desorden en cómo lo reciben y gestionan.
+              La puerta de entrada tiene que ser impecable para que el cliente llegue. Y cuando llega, necesitás un sistema para no perder ninguna oportunidad.
             </p>
             <p className="text-[15px] font-semibold text-[#0F172A] leading-[1.5]">
-              Un sistema claro convierte cada consulta en una oportunidad real.
+              Una sin la otra no alcanza.
             </p>
 
             {/* Step counter + progress bar (desktop) */}
@@ -164,7 +164,7 @@ export function TrustClarity() {
         {/* ── Bottom result block ── */}
         <div className="mt-20 pt-12 border-t border-slate-100">
           <p className="text-[18px] md:text-[22px] font-semibold text-[#0F172A] leading-[1.5] max-w-2xl">
-            Más consultas organizadas. Menos oportunidades perdidas. Mayor control del proceso de ventas.
+            Presencia que atrae. Sistema que convierte. Nada que se pierde.
           </p>
         </div>
 
