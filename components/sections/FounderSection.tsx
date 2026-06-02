@@ -22,19 +22,19 @@ export function FounderSection() {
           {/* Right: text */}
           <AnimateIn delay={100}>
             <p className="text-[11px] font-bold tracking-[0.18em] text-[#2563EB] uppercase mb-6">
-              La mente detrás de PP
+              The mind behind PP
             </p>
             <h2 className="text-[32px] md:text-[44px] font-black tracking-[-0.03em] leading-[1.1] text-[#0F172A] mb-6">
-              Hola, soy Alejandro.
+              Hi, I&apos;m Alejandro.
             </h2>
             <p className="text-[17px] text-[#0F172A]/70 leading-[1.75] mb-5">
-              Llevo décadas en la industria automotriz uruguaya. Sé exactamente cómo funciona un concesionario por dentro — los leads que se pierden, los seguimientos que no ocurren, las ventas que se escapan sin que nadie lo note.
+              I spent decades in the automotive and hospitality industries in the US. I know exactly how these businesses operate from the inside — the leads that slip through, the follow-ups that never happen, the sales lost without anyone noticing.
             </p>
             <p className="text-[17px] text-[#0F172A]/70 leading-[1.75] mb-5">
-              Pegasus Pixels nació de esa experiencia. No soy un programador que aprendió de negocios — soy alguien del negocio que aprendió a construir las herramientas que siempre le faltaron.
+              Pegasus Pixels was born from that experience. I'm not a developer who learned about business — I'm someone from the business who learned to build the tools that were always missing.
             </p>
             <p className="text-[17px] text-[#0F172A]/70 leading-[1.75] mb-10">
-              Trabajo en persona, en Punta del Este. Cuando implemento un sistema, me quedo hasta que tu equipo lo domina. Eso no es un extra — es parte del servicio.
+              I now work from Punta del Este, serving both local businesses and US clients. When I implement a system, I stay until your team owns it. That's not an extra — it's the service.
             </p>
 
             <div className="flex items-center gap-5">
@@ -43,7 +43,7 @@ export function FounderSection() {
               </div>
               <div>
                 <p className="text-[15px] font-bold text-[#0F172A]">Alejandro González</p>
-                <p className="text-[13px] text-[#94A3B8]">Fundador, Pegasus Pixels · Punta del Este, Uruguay</p>
+                <p className="text-[13px] text-[#94A3B8]">Founder, Pegasus Pixels · Punta del Este</p>
               </div>
             </div>
           </AnimateIn>
