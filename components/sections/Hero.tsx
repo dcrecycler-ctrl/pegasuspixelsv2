@@ -10,7 +10,7 @@ export function Hero() {
               Punta del Este, Uruguay
             </p>
             <h1 className="anim-fade-up text-[44px] md:text-[56px] font-black leading-[1.05] tracking-[-0.03em] text-[#0F172A] mb-8">
-              La primera impresión de tu negocio ya no ocurre en tu local.
+              La primera impresión de tu negocio ya <span className="text-[#2563EB]">no ocurre en tu local.</span>
             </h1>
             <p className="anim-fade-up delay-100 text-[17px] text-[#0F172A]/70 leading-[1.65] mb-4">
               Ocurre en tu sitio web, desde el celular de alguien que todavía no sabe si va a llamarte. Si esa impresión falla, el cliente no llega — no importa cuán bueno sea tu equipo o tu producto.
