@@ -22,19 +22,19 @@ export function FounderSection() {
           {/* Right: text */}
           <AnimateIn delay={100}>
             <p className="text-[11px] font-bold tracking-[0.18em] text-[#2563EB] uppercase mb-6">
-              The mind behind PP
+              La mente detrás de PP
             </p>
             <h2 className="text-[32px] md:text-[44px] font-black tracking-[-0.03em] leading-[1.1] text-[#0F172A] mb-6">
-              Hi, I&apos;m Alejandro.
+              Hola, soy Alejandro.
             </h2>
             <p className="text-[17px] text-[#0F172A]/70 leading-[1.75] mb-5">
-              I spent decades in the automotive and hospitality industries in the US. I know exactly how these businesses operate from the inside — the leads that slip through, the follow-ups that never happen, the sales lost without anyone noticing.
+              Pasé décadas en las industrias automotriz y de hospitalidad en Estados Unidos. Sé exactamente cómo funcionan estos negocios por dentro — los leads que se escapan, los seguimientos que no ocurren, las ventas que se pierden sin que nadie lo note.
             </p>
             <p className="text-[17px] text-[#0F172A]/70 leading-[1.75] mb-5">
-              Pegasus Pixels was born from that experience. I'm not a developer who learned about business — I'm someone from the business who learned to build the tools that were always missing.
+              Pegasus Pixels nació de esa experiencia. No soy un desarrollador que aprendió de negocios — soy alguien del negocio que aprendió a construir las herramientas que siempre le faltaron.
             </p>
             <p className="text-[17px] text-[#0F172A]/70 leading-[1.75] mb-10">
-              I now work from Punta del Este, serving both local businesses and US clients. When I implement a system, I stay until your team owns it. That's not an extra — it's the service.
+              Hoy trabajo desde Punta del Este, atendiendo clientes locales y en Estados Unidos. Cuando implemento un sistema, me quedo hasta que tu equipo lo domina. Eso no es un extra — es parte del servicio.
             </p>
 
             <div className="flex items-center gap-5">
@@ -43,7 +43,7 @@ export function FounderSection() {
               </div>
               <div>
                 <p className="text-[15px] font-bold text-[#0F172A]">Alejandro González</p>
-                <p className="text-[13px] text-[#94A3B8]">Founder, Pegasus Pixels · Punta del Este</p>
+                <p className="text-[13px] text-[#94A3B8]">Fundador, Pegasus Pixels · Punta del Este</p>
               </div>
             </div>
           </AnimateIn>
