@@ -36,15 +36,14 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Right: image placeholder */}
+          {/* Right: hero image */}
           <div className="anim-fade-right delay-200">
-            <div className="w-full aspect-[4/3] rounded-[16px] bg-[#EAECEF] flex items-center justify-center overflow-hidden">
-              <div className="text-center px-8">
-                <p className="text-[#94A3B8] text-[13px] font-semibold tracking-[0.15em] uppercase mb-2">IMAGEN</p>
-                <p className="text-[#94A3B8] text-[11px] tracking-[0.08em] leading-[1.6] text-center">
-                  Interior de showroom de autos moderno — luz cálida, autos en exhibición, ambiente profesional
-                </p>
-              </div>
+            <div className="w-full aspect-[4/3] rounded-[16px] overflow-hidden">
+              <img
+                src="/dealer-floor.jpg"
+                alt="Showroom de autos moderno"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
