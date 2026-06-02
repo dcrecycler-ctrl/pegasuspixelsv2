@@ -46,7 +46,7 @@ export function PerceptionSection() {
     <section className="bg-[#F6F7F9] py-24 md:py-32">
       <div className="max-w-[1440px] mx-auto px-5 md:px-16">
 
-        {/* ── Main header ── */
+        {/* ── Main header ── */}
         <AnimateIn delay={80} className="mb-14 max-w-2xl">
           <h2 className="text-[32px] md:text-[44px] font-black tracking-[-0.03em] leading-[1.05] text-[#0F172A] mb-5">
             El problema no es falta de clientes
