@@ -75,7 +75,7 @@ export function PerceptionSection() {
                 <span className="material-symbols-outlined text-[#2563EB] text-[48px] block mb-5">
                   {icon}
                 </span>
-                <h3 className="text-[19px] font-black text-[#0F172A] leading-[1.3] mb-3">
+                <h3 className="text-[17px] font-bold text-[#0F172A] leading-[1.3] mb-3">
                   {title}
                 </h3>
                 <p className="text-[15px] text-[#0F172A]/55 leading-[1.65]">
