@@ -1,148 +1,186 @@
+"use client";
+
+import { useState } from "react";
 import { AnimateIn } from "@/components/ui/AnimateIn";
 
-const breakdown = [
+const summaryCards = [
+  { icon: "person_off",   label: "Leads perdidos" },
+  { icon: "timer_off",    label: "Seguimiento inconsistente" },
+  { icon: "scatter_plot", label: "Información dispersa" },
+];
+
+const problemCards = [
   {
-    number: "01",
-    title: "Leads that get lost",
-    body: "Clients interested are not always properly recorded.",
-    bullets: [
-      "Missed messages",
-      "Untracked contacts",
-      "Opportunities never entered into a system",
-    ],
+    icon: "person_off",
+    title: "Leads que se pierden",
+    text: "Los clientes interesados no siempre son registrados correctamente.",
   },
   {
-    number: "02",
-    title: "Inconsistent follow-up",
-    body: "Interest exists but is not managed properly.",
-    bullets: [
-      "Delayed responses",
-      "Lack of continuity",
-      "Cold leads not reactivated",
-    ],
+    icon: "timer_off",
+    title: "Seguimiento inconsistente",
+    text: "El interés existe, pero no se gestiona de forma continua.",
   },
   {
-    number: "03",
-    title: "Fragmented information",
-    body: "No centralized system exists.",
-    bullets: [
-      "WhatsApp used as informal database",
-      "Incomplete Excel tracking",
-      "No visibility of pipeline status",
-    ],
+    icon: "scatter_plot",
+    title: "Información dispersa",
+    text: "WhatsApp, Excel y mensajes aislados sin sistema central.",
   },
 ];
 
+const sources = [
+  { label: "WhatsApp",       cls: "bg-green-50  text-green-700  border-green-200"  },
+  { label: "Formularios web", cls: "bg-blue-50   text-blue-700   border-blue-200"   },
+  { label: "Llamadas",       cls: "bg-violet-50 text-violet-700 border-violet-200" },
+];
+
+const lost = [
+  "Oportunidad no registrada",
+  "Sin seguimiento",
+  "Venta no concretada",
+];
+
 export function PerceptionSection() {
+  const [hovered, setHovered] = useState<number | null>(null);
+
   return (
     <section className="bg-[#F6F7F9] py-24 md:py-32">
       <div className="max-w-[1440px] mx-auto px-5 md:px-16">
 
-        {/* ── 1. Header ── */}
-        <AnimateIn className="mb-16 max-w-2xl">
+        {/* ── 1. Top summary row ── */}
+        <AnimateIn className="mb-16">
+          <p className="text-[10px] font-bold tracking-[0.18em] text-[#94A3B8] uppercase mb-5">
+            Resumen del problema
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {summaryCards.map(({ icon, label }) => (
+              <div
+                key={label}
+                className="flex items-center gap-4 bg-white border border-[#E2E8F0] rounded-[10px] px-5 py-4 hover:border-[#2563EB]/40 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-default"
+              >
+                <span className="material-symbols-outlined text-[#2563EB] text-[22px] shrink-0">
+                  {icon}
+                </span>
+                <span className="text-[14px] font-semibold text-[#0F172A]">{label}</span>
+              </div>
+            ))}
+          </div>
+        </AnimateIn>
+
+        {/* ── 2. Main header ── */}
+        <AnimateIn delay={80} className="mb-14 max-w-2xl">
           <h2 className="text-[32px] md:text-[44px] font-black tracking-[-0.03em] leading-[1.05] text-[#0F172A] mb-5">
             El problema no es la falta de clientes
           </h2>
-          <p className="text-[18px] text-[#0F172A]/60 leading-[1.65]">
-            El problema es que los clientes interesados no se convierten en ventas porque el proceso no está estructurado.
+          <p className="text-[18px] text-[#0F172A]/60 leading-[1.65] mb-4">
+            El problema es que el interés entra, pero no siempre se organiza ni se gestiona correctamente.
+          </p>
+          <p className="text-[15px] font-semibold text-[#0F172A]">
+            La mayoría de los negocios pierden ventas después del primer contacto.
           </p>
         </AnimateIn>
 
-        {/* ── 2. Core message block ── */}
-        <AnimateIn delay={80} className="mb-16">
-          <div className="bg-white border border-[#E2E8F0] rounded-[12px] p-8 md:p-10 max-w-xl">
-            <p className="text-[16px] text-[#0F172A]/70 leading-[1.7] mb-6">
-              En la mayoría de los negocios, el interés sí existe.
-              <br />
-              <span className="font-semibold text-[#0F172A]">Pero el sistema falla después:</span>
-            </p>
-            <ul className="space-y-3">
-              {["Leads que se pierden", "Seguimiento inconsistente", "Información dispersa (WhatsApp / Excel)"].map((item) => (
-                <li key={item} className="flex items-center gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#2563EB] shrink-0" />
-                  <span className="text-[15px] text-[#0F172A]/80">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </AnimateIn>
-
-        {/* ── 3. Visual placeholder ── */}
-        <AnimateIn delay={120} className="mb-16">
-          <div className="w-full rounded-[12px] border border-dashed border-[#CBD5E1] bg-white p-10 md:p-16">
-            <div className="max-w-3xl mx-auto">
-              <p className="text-[11px] font-bold tracking-[0.18em] text-[#94A3B8] uppercase mb-8 text-center">
-                Visual Placeholder
-              </p>
-
-              {/* Abstract pipeline flow diagram */}
-              <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-2">
-                {[
-                  { label: "WhatsApp", color: "bg-green-100 text-green-700 border-green-200" },
-                  { label: "Formularios", color: "bg-blue-100 text-blue-700 border-blue-200" },
-                  { label: "Llamadas", color: "bg-purple-100 text-purple-700 border-purple-200" },
-                ].map((source) => (
-                  <div key={source.label} className={`rounded-[8px] border px-5 py-3 text-[13px] font-semibold ${source.color}`}>
-                    {source.label}
-                  </div>
-                ))}
-
-                <div className="hidden md:flex items-center text-slate-300 text-[20px] font-light">→</div>
-
-                <div className="rounded-[8px] border-2 border-dashed border-red-200 bg-red-50 px-6 py-4 text-center">
-                  <p className="text-[13px] font-bold text-red-500">Sin sistema</p>
-                  <p className="text-[11px] text-red-400 mt-1">Caos de gestión</p>
-                </div>
-
-                <div className="hidden md:flex items-center text-slate-300 text-[20px] font-light">→</div>
-
-                <div className="rounded-[8px] border border-slate-200 bg-slate-50 px-6 py-4 text-center">
-                  <p className="text-[13px] font-bold text-slate-400">Oportunidad</p>
-                  <p className="text-[11px] text-red-400 mt-1">Perdida</p>
-                </div>
-              </div>
-
-              <p className="text-[11px] text-[#94A3B8] text-center mt-8 tracking-[0.1em] uppercase">
-                Concept — Revenue Leakage in Dealer Operations
-              </p>
-            </div>
-          </div>
-        </AnimateIn>
-
-        {/* ── 4. Expanded breakdown ── */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-          {breakdown.map(({ number, title, body, bullets }, i) => (
-            <AnimateIn key={number} delay={i * 80}>
-              <div className="bg-white border border-[#E2E8F0] rounded-[12px] p-8 h-full">
-                <span className="text-[11px] font-bold tracking-[0.18em] text-[#2563EB] uppercase block mb-4">
-                  {number}
+        {/* ── 3. Interactive problem cards ── */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-14">
+          {problemCards.map(({ icon, title, text }, i) => (
+            <AnimateIn key={title} delay={i * 80}>
+              <div
+                className="bg-white border border-[#E2E8F0] rounded-[12px] p-8 h-full cursor-default hover:shadow-lg hover:-translate-y-1 hover:border-[#2563EB]/25 transition-all duration-300"
+                style={{
+                  opacity: hovered !== null && hovered !== i ? 0.45 : 1,
+                  transition: "opacity 200ms ease, transform 300ms ease, box-shadow 300ms ease, border-color 300ms ease",
+                }}
+                onMouseEnter={() => setHovered(i)}
+                onMouseLeave={() => setHovered(null)}
+              >
+                <span className="material-symbols-outlined text-[#2563EB] text-[26px] block mb-5">
+                  {icon}
                 </span>
                 <h3 className="text-[17px] font-bold text-[#0F172A] leading-[1.3] mb-3">
                   {title}
                 </h3>
-                <p className="text-[14px] text-[#0F172A]/55 leading-[1.6] mb-5">
-                  {body}
+                <p className="text-[15px] text-[#0F172A]/55 leading-[1.65]">
+                  {text}
                 </p>
-                <ul className="space-y-2">
-                  {bullets.map((b) => (
-                    <li key={b} className="flex items-start gap-3">
-                      <span className="mt-[7px] w-1 h-1 rounded-full bg-slate-300 shrink-0" />
-                      <span className="text-[13px] text-[#0F172A]/60 leading-[1.5]">{b}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
             </AnimateIn>
           ))}
         </div>
 
-        {/* ── 5. Final impact statement ── */}
-        <AnimateIn delay={160}>
+        {/* ── 4. Visual placeholder — flow diagram ── */}
+        <AnimateIn delay={120} className="mb-14">
+          <div className="rounded-[12px] border border-dashed border-[#CBD5E1] bg-white p-8 md:p-12">
+            <p className="text-[10px] font-bold tracking-[0.18em] text-[#94A3B8] uppercase mb-10 text-center">
+              Placeholder visual — Fuga de ingresos en el sistema de ventas
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-[1fr_32px_1fr_32px_1fr] gap-6 items-center">
+
+              {/* Inputs */}
+              <div>
+                <p className="text-[10px] font-bold tracking-[0.12em] text-[#94A3B8] uppercase mb-4">
+                  Entradas
+                </p>
+                <div className="space-y-2">
+                  {sources.map(({ label, cls }) => (
+                    <div key={label} className={`rounded-[8px] border px-4 py-3 text-[13px] font-semibold ${cls}`}>
+                      {label}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Arrow */}
+              <div className="hidden md:flex justify-center text-[#CBD5E1] text-[20px] font-light">
+                →
+              </div>
+
+              {/* Broken system */}
+              <div className="rounded-[10px] border-2 border-dashed border-red-200 bg-red-50 p-6 text-center">
+                <span className="material-symbols-outlined text-red-400 text-[28px] block mb-2">
+                  warning
+                </span>
+                <p className="text-[13px] font-bold text-red-600 mb-1">
+                  Sin sistema central
+                </p>
+                <p className="text-[11px] text-red-400 leading-[1.5]">
+                  Información dispersa<br />Sin proceso estructurado
+                </p>
+              </div>
+
+              {/* Arrow */}
+              <div className="hidden md:flex justify-center text-[#CBD5E1] text-[20px] font-light">
+                →
+              </div>
+
+              {/* Lost outcomes */}
+              <div>
+                <p className="text-[10px] font-bold tracking-[0.12em] text-[#94A3B8] uppercase mb-4">
+                  Resultado
+                </p>
+                <div className="space-y-2">
+                  {lost.map((item) => (
+                    <div
+                      key={item}
+                      className="rounded-[8px] border border-slate-100 bg-slate-50 px-4 py-3 flex items-center gap-2"
+                    >
+                      <span className="material-symbols-outlined text-red-300 text-[14px]">close</span>
+                      <span className="text-[13px] text-slate-400">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </AnimateIn>
+
+        {/* ── 5. Final impact line ── */}
+        <AnimateIn delay={140}>
           <div className="border-t border-[#E2E8F0] pt-10">
-            <p className="text-[16px] md:text-[18px] font-semibold text-[#0F172A] leading-[1.6] max-w-2xl">
-              This is not a marketing problem.{" "}
-              <span className="text-[#0F172A]/50 font-normal">
-                It is a lack of system control over revenue flow.
+            <p className="text-[16px] md:text-[18px] font-semibold text-[#0F172A] leading-[1.65] max-w-2xl">
+              Esto no es un problema de marketing.{" "}
+              <span className="font-normal text-[#0F172A]/45">
+                Es una falta de control del sistema de ventas.
               </span>
             </p>
           </div>
