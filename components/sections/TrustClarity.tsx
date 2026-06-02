@@ -2,24 +2,18 @@ import { AnimateIn } from "@/components/ui/AnimateIn";
 
 export function TrustClarity() {
   return (
-    <section className="bg-white border-y border-slate-200 py-24 md:py-28">
-      <div className="max-w-[1200px] mx-auto px-5 md:px-10">
-        <div className="max-w-[680px]">
+    <section className="bg-[#F6F7F9] py-24">
+      <div className="max-w-[1200px] mx-auto px-5 md:px-16 text-center">
 
-          <AnimateIn>
-            <div className="w-10 h-px bg-blue-600 mb-10" />
-            <h2 className="text-[36px] md:text-[48px] font-black tracking-[-0.03em] leading-[1.05] text-slate-900 mb-8">
-              No cambiamos tu negocio. Mejoramos cómo se ve hacia afuera.
-            </h2>
-            <p className="text-[18px] font-light text-slate-600 leading-[1.65] mb-4">
-              Tu operación interna puede seguir igual.
-            </p>
-            <p className="text-[18px] font-light text-slate-600 leading-[1.65]">
-              Nosotros mejoramos cómo los clientes entienden tu negocio desde el primer segundo.
-            </p>
-          </AnimateIn>
+        <AnimateIn className="max-w-[720px] mx-auto">
+          <h2 className="text-[32px] md:text-[44px] font-black tracking-[-0.03em] leading-[1.1] text-[#0F172A] mb-6">
+            Ordenamos cómo tu negocio se presenta y cómo gestiona el interés que recibe
+          </h2>
+          <p className="text-[17px] text-[#0F172A]/60 leading-[1.65]">
+            Mejoramos cómo los clientes entienden tu negocio y damos estructura a los contactos que ya entran.
+          </p>
+        </AnimateIn>
 
-        </div>
       </div>
     </section>
   );

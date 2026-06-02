@@ -2,14 +2,17 @@ import { AnimateIn } from "@/components/ui/AnimateIn";
 
 export function TrustSection() {
   return (
-    <section className="bg-white border-y border-slate-200 py-24">
-      <div className="max-w-[1200px] mx-auto px-5 md:px-10">
+    <section className="bg-white py-24">
+      <div className="max-w-[1200px] mx-auto px-5 md:px-16">
 
         <AnimateIn>
-          <div className="w-full aspect-[21/8] rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-100 to-white flex items-center justify-center">
-            <p className="text-slate-300 text-[11px] tracking-[0.12em] uppercase text-center px-8">
-              REAL_BUSINESS_IMAGE — Negocio real con inventario visible,<br />ambiente profesional y clientes confiando en el lugar
-            </p>
+          <div className="w-full aspect-video rounded-[12px] bg-[#EAECEF] flex items-center justify-center">
+            <div className="text-center">
+              <p className="text-[#94A3B8] text-[13px] font-semibold tracking-[0.15em] uppercase mb-2">IMAGEN</p>
+              <p className="text-[#94A3B8] text-[11px] tracking-[0.08em] text-center px-8">
+                Clientes interactuando con inventario en entorno real de negocio
+              </p>
+            </div>
           </div>
         </AnimateIn>
 

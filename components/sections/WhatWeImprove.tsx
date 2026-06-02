@@ -4,46 +4,46 @@ const cards = [
   {
     icon: "language",
     title: "Presencia digital",
-    items: ["Diseño del sitio", "Claridad del negocio", "Primera impresión profesional"],
+    items: ["Estructura del sitio", "Inventario claro", "Mejor primera impresión"],
   },
   {
     icon: "inventory_2",
     title: "Inventario",
-    items: ["Autos, propiedades y servicios bien organizados", "Visual claro y directo", "Navegación simple"],
+    items: ["Autos / propiedades organizados", "Navegación simple", "Visual claro"],
   },
   {
-    icon: "call",
-    title: "Contacto de clientes",
-    items: ["WhatsApp", "Formularios", "Llamadas", "Sin pérdida de oportunidades"],
+    icon: "hub",
+    title: "Gestión de contactos",
+    items: ["WhatsApp / llamadas / formularios", "Registro de clientes", "Seguimiento básico"],
   },
 ];
 
 export function WhatWeImprove() {
   return (
-    <section className="bg-[#F7F8FA] py-24 md:py-32">
-      <div className="max-w-[1200px] mx-auto px-5 md:px-10">
+    <section className="bg-[#F6F7F9] py-24">
+      <div className="max-w-[1200px] mx-auto px-5 md:px-16">
 
         <AnimateIn className="mb-14">
-          <h2 className="text-[36px] md:text-[48px] font-black tracking-[-0.03em] leading-[1.05] text-slate-900">
-            Lo que mejoramos
+          <h2 className="text-[32px] md:text-[44px] font-black tracking-[-0.03em] leading-[1.1] text-[#0F172A]">
+            Lo que implementamos
           </h2>
         </AnimateIn>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {cards.map(({ icon, title, items }, i) => (
             <AnimateIn key={title} delay={i * 80}>
-              <div className="bg-white border border-slate-200 rounded-2xl p-8 h-full hover-lift">
-                <span className="material-symbols-outlined text-blue-600 text-[32px] block mb-6">
+              <div className="bg-white border border-[#E2E8F0] rounded-[12px] p-8 h-full hover-lift">
+                <span className="material-symbols-outlined text-[#2563EB] text-[28px] block mb-6">
                   {icon}
                 </span>
-                <h3 className="text-[20px] font-bold text-slate-900 leading-[1.25] mb-6">
+                <h3 className="text-[18px] font-bold text-[#0F172A] leading-[1.25] mb-5">
                   {title}
                 </h3>
                 <ul className="space-y-3">
                   {items.map((item) => (
                     <li key={item} className="flex items-start gap-3">
-                      <span className="mt-2 w-1 h-1 rounded-full bg-slate-400 shrink-0" />
-                      <span className="text-[15px] text-slate-600 leading-[1.5]">{item}</span>
+                      <span className="mt-[9px] w-1 h-1 rounded-full bg-[#94A3B8] shrink-0" />
+                      <span className="text-[14px] text-[#0F172A]/60 leading-[1.5]">{item}</span>
                     </li>
                   ))}
                 </ul>

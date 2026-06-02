@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Nav />
-      <main className="bg-[#F7F8FA]">
+      <main className="bg-white">
         <Hero />
         <TrustClarity />
         <PerceptionSection />
