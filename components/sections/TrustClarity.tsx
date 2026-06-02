@@ -131,7 +131,7 @@ export function TrustClarity() {
                 >
                   {/* Step label */}
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="text-[13px] font-black tracking-[0.18em] text-[#2563EB] uppercase tabular-nums">
+                    <span className="text-[44px] font-black text-[#2563EB] leading-none">
                       {step.number}
                     </span>
                     <div className="w-5 h-px bg-slate-200" />
