@@ -1,31 +1,27 @@
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
-import { RealityShift } from "@/components/sections/RealityShift";
-import { ConnectedBenefits } from "@/components/sections/ConnectedBenefits";
-import { HowWeWork } from "@/components/sections/HowWeWork";
-import { DigitalInfrastructure } from "@/components/sections/DigitalInfrastructure";
-import { BusinessLayers } from "@/components/sections/BusinessLayers";
-import { Industries } from "@/components/sections/Industries";
-import { ConnectedExample } from "@/components/sections/ConnectedExample";
-import { DigitalAudit } from "@/components/sections/DigitalAudit";
-import { Contact } from "@/components/sections/Contact";
+import { ProblemSection } from "@/components/sections/ProblemSection";
+import { TransformationSection } from "@/components/sections/TransformationSection";
+import { SolutionSection } from "@/components/sections/SolutionSection";
+import { OutcomesSection } from "@/components/sections/OutcomesSection";
+import { TrustSection } from "@/components/sections/TrustSection";
+import { HowItWorksSection } from "@/components/sections/HowItWorksSection";
+import { FinalCTASection } from "@/components/sections/FinalCTASection";
 
 export default function Home() {
   return (
     <>
       <Nav />
-      <main>
+      <main className="bg-[#0C111D]">
         <Hero />
-        <RealityShift />
-        <ConnectedBenefits />
-        <HowWeWork />
-        <DigitalInfrastructure />
-        <BusinessLayers />
-        <Industries />
-        <ConnectedExample />
-        <DigitalAudit />
-        <Contact />
+        <ProblemSection />
+        <TransformationSection />
+        <SolutionSection />
+        <OutcomesSection />
+        <TrustSection />
+        <HowItWorksSection />
+        <FinalCTASection />
       </main>
       <Footer />
     </>
