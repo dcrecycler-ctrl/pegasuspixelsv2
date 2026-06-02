@@ -24,8 +24,8 @@ export function HowItWorksSection() {
           {steps.map((step, i) => (
             <AnimateIn key={i} delay={i * 80}>
               <div className="bg-white border border-[#E2E8F0] rounded-[12px] p-7 h-full hover-lift">
-                <span className="block text-[44px] font-black text-[#E2E8F0] leading-none mb-4">
-                  {i + 1}
+                <span className="block text-[13px] font-black tracking-[0.18em] text-[#2563EB] uppercase tabular-nums leading-none mb-4">
+                  {String(i + 1).padStart(2, "0")}
                 </span>
                 <p className="text-[15px] font-semibold text-[#0F172A] leading-[1.4]">
                   {step}
